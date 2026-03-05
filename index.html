@@ -6,20 +6,54 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Digital Command Center 2025</h1>
-    <div id="productsContainer" class="grid"></div>
-</div>
+<nav class="navbar">
+  <div class="logo">Digital Command Center 2025</div>
+  <div class="menu">
+    <button class="nav-btn active-btn" onclick="showSection('status', this)">
+      Status Productos Digitales
+    </button>
+    <button class="nav-btn" onclick="showSection('proyecciones', this)">
+      Proyecciones por producto
+    </button>
+    <button class="nav-btn" onclick="showSection('plan', this)">
+      Plan de trabajo
+    </button>
+  </div>
+</nav>
+
+<section id="statusSection" class="section active">
+  <div class="carousel" id="productsContainer"></div>
+</section>
+
+<section id="proyeccionesSection" class="section">
+  <div class="placeholder">
+    <h2>Proyecciones por Producto</h2>
+  </div>
+</section>
+
+<section id="planSection" class="section">
+  <div class="placeholder">
+    <h2>Plan de Trabajo</h2>
+  </div>
+</section>
 
 <div id="modal" class="modal hidden">
-    <div class="modal-content">
+  <div class="modal-content cinematic">
     <span id="closeBtn">&times;</span>
     <h2 id="modalTitle"></h2>
-    <canvas id="chart"></canvas>
-    <div id="metrics"></div>
+
+    <div class="modal-grid">
+      <div>
+        <canvas id="chart"></canvas>
+        <div id="metrics"></div>
+      </div>
+      <div class="analysis-area" id="analysisPanel"></div>
     </div>
+
+  </div>
 </div>
 
 <script src="script.js"></script>
