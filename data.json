@@ -1,0 +1,449 @@
+{
+"products": [
+    {
+    "name": "PAPS",
+    "monthlyData": [
+        {
+        "mes": "2025-01-01 00:00:00",
+        "valorTotal": 417137300.0,
+        "valorAutogestionado": 65027300.0,
+        "valorAsesor": 352110000.0
+        },
+        {
+        "mes": "2025-02-01 00:00:00",
+        "valorTotal": 313808678.0,
+        "valorAutogestionado": 40558350.0,
+        "valorAsesor": 273250328.0
+        },
+        {
+        "mes": "2025-03-01 00:00:00",
+        "valorTotal": 284087524.0,
+        "valorAutogestionado": 25732100.0,
+        "valorAsesor": 258355424.0
+        },
+        {
+        "mes": "2025-04-01 00:00:00",
+        "valorTotal": 276342475.0,
+        "valorAutogestionado": 32113000.0,
+        "valorAsesor": 244229475.0
+        },
+        {
+        "mes": "2025-05-01 00:00:00",
+        "valorTotal": 311136856.0,
+        "valorAutogestionado": 48195900.0,
+        "valorAsesor": 262940956.0
+        },
+        {
+        "mes": "2025-06-01 00:00:00",
+        "valorTotal": 265642303.0,
+        "valorAutogestionado": 31736200.0,
+        "valorAsesor": 233906103.0
+        },
+        {
+        "mes": "2025-07-01 00:00:00",
+        "valorTotal": 356638278.0,
+        "valorAutogestionado": 27655000.0,
+        "valorAsesor": 328983278.0
+        },
+        {
+        "mes": "2025-08-01 00:00:00",
+        "valorTotal": 298722774.0,
+        "valorAutogestionado": 30786000.0,
+        "valorAsesor": 267936774.0
+        },
+        {
+        "mes": "2025-09-01 00:00:00",
+        "valorTotal": 284270309.0,
+        "valorAutogestionado": 27375209.0,
+        "valorAsesor": 256895100.0
+        },
+        {
+        "mes": "2025-10-01 00:00:00",
+        "valorTotal": 240371440.0,
+        "valorAutogestionado": 25315200.0,
+        "valorAsesor": 215056240.0
+        },
+        {
+        "mes": "2025-11-01 00:00:00",
+        "valorTotal": 205338957.0,
+        "valorAutogestionado": 17155000.0,
+        "valorAsesor": 188183957.0
+        },
+        {
+        "mes": "2025-12-01 00:00:00",
+        "valorTotal": 240961744.0,
+        "valorAutogestionado": 35602100.0,
+        "valorAsesor": 205359644.0
+        },
+        {
+        "mes": "2026-01-01 00:00:00",
+        "valorTotal": 430186139.0,
+        "valorAutogestionado": 50311923.0,
+        "valorAsesor": 379874216.0
+        },
+        {
+        "mes": "2026-02-01 00:00:00",
+        "valorTotal": 260050933.0,
+        "valorAutogestionado": 36139800.0,
+        "valorAsesor": 223911133.0
+        }
+    ]
+    },
+    {
+    "name": "PAPS Gamificada",
+    "monthlyData": [
+        {
+        "mes": "2025-01-01 00:00:00",
+        "valorTotal": 63495200.0,
+        "valorAutogestionado": 17539000.0,
+        "valorAsesor": 45956200.0
+        },
+        {
+        "mes": "2025-02-01 00:00:00",
+        "valorTotal": 85654807.0,
+        "valorAutogestionado": 24208007.0,
+        "valorAsesor": 52748800.0
+        },
+        {
+        "mes": "2025-03-01 00:00:00",
+        "valorTotal": 70954599.0,
+        "valorAutogestionado": 9481000.0,
+        "valorAsesor": 61473599.0
+        },
+        {
+        "mes": "2025-04-01 00:00:00",
+        "valorTotal": 119884399.0,
+        "valorAutogestionado": 12655000.0,
+        "valorAsesor": 107229399.0
+        },
+        {
+        "mes": "2025-05-01 00:00:00",
+        "valorTotal": 148470300.0,
+        "valorAutogestionado": 42905000.0,
+        "valorAsesor": 105565300.0
+        },
+        {
+        "mes": "2025-06-01 00:00:00",
+        "valorTotal": 129613900.0,
+        "valorAutogestionado": 19618000.0,
+        "valorAsesor": 109995900.0
+        },
+        {
+        "mes": "2025-07-01 00:00:00",
+        "valorTotal": 115466900.0,
+        "valorAutogestionado": 42153000.0,
+        "valorAsesor": 73313900.0
+        },
+        {
+        "mes": "2025-08-01 00:00:00",
+        "valorTotal": 76466497.0,
+        "valorAutogestionado": 9710300.0,
+        "valorAsesor": 66756197.0
+        },
+        {
+        "mes": "2025-09-01 00:00:00",
+        "valorTotal": 89930507.0,
+        "valorAutogestionado": 15116000.0,
+        "valorAsesor": 74814507.0
+        },
+        {
+        "mes": "2025-10-01 00:00:00",
+        "valorTotal": 86545008.0,
+        "valorAutogestionado": 13182008.0,
+        "valorAsesor": 73363000.0
+        },
+        {
+        "mes": "2025-11-01 00:00:00",
+        "valorTotal": 81438108.0,
+        "valorAutogestionado": 9206000.0,
+        "valorAsesor": 72232108.0
+        },
+        {
+        "mes": "2025-12-01 00:00:00",
+        "valorTotal": 68605499.0,
+        "valorAutogestionado": 14517000.0,
+        "valorAsesor": 54088499.0
+        },
+        {
+        "mes": "2026-01-01 00:00:00",
+        "valorTotal": 77915500.0,
+        "valorAutogestionado": 24408000.0,
+        "valorAsesor": 53507500.0
+        },
+        {
+        "mes": "2026-02-01 00:00:00",
+        "valorTotal": 60516000.0,
+        "valorAutogestionado": 13539500.0,
+        "valorAsesor": 46976500.0
+        }
+    ]
+    },
+    {
+    "name": "CDATS",
+    "monthlyData": [
+        {
+        "mes": "2025-01-01 00:00:00",
+        "valorTotal": 3325609518.0,
+        "valorAutogestionado": 151970913.0,
+        "valorAsesor": 1006925100.0
+        },
+        {
+        "mes": "2025-02-01 00:00:00",
+        "valorTotal": 955186626.0,
+        "valorAutogestionado": 90884681.0,
+        "valorAsesor": 864301945.0
+        },
+        {
+        "mes": "2025-03-01 00:00:00",
+        "valorTotal": 1051659474.0,
+        "valorAutogestionado": 157985613.0,
+        "valorAsesor": 893673861.0
+        },
+        {
+        "mes": "2025-04-01 00:00:00",
+        "valorTotal": 752076318.0,
+        "valorAutogestionado": 110696290.0,
+        "valorAsesor": 641380028.0
+        },
+        {
+        "mes": "2025-05-01 00:00:00",
+        "valorTotal": 945868468.0,
+        "valorAutogestionado": 93371162.0,
+        "valorAsesor": 852497306.0
+        },
+        {
+        "mes": "2025-06-01 00:00:00",
+        "valorTotal": 1163146610.0,
+        "valorAutogestionado": 180606481.0,
+        "valorAsesor": 982540129.0
+        },
+        {
+        "mes": "2025-07-01 00:00:00",
+        "valorTotal": 1241510506.0,
+        "valorAutogestionado": 109421889.0,
+        "valorAsesor": 1132088617.0
+        },
+        {
+        "mes": "2025-08-01 00:00:00",
+        "valorTotal": 893094756.0,
+        "valorAutogestionado": 64350500.0,
+        "valorAsesor": 828744256.0
+        },
+        {
+        "mes": "2025-09-01 00:00:00",
+        "valorTotal": 756662414.0,
+        "valorAutogestionado": 105590671.0,
+        "valorAsesor": 651071743.0
+        },
+        {
+        "mes": "2025-10-01 00:00:00",
+        "valorTotal": 1041026685.0,
+        "valorAutogestionado": 112471562.0,
+        "valorAsesor": 928555123.0
+        },
+        {
+        "mes": "2025-11-01 00:00:00",
+        "valorTotal": 614266075.0,
+        "valorAutogestionado": 37287800.0,
+        "valorAsesor": 576978275.0
+        },
+        {
+        "mes": "2025-12-01 00:00:00",
+        "valorTotal": 998545339.0,
+        "valorAutogestionado": 212702639.0,
+        "valorAsesor": 785842700.0
+        },
+        {
+        "mes": "2026-01-01 00:00:00",
+        "valorTotal": 1541997011.0,
+        "valorAutogestionado": 137010850.0,
+        "valorAsesor": 1404986161.0
+        },
+        {
+        "mes": "2026-02-01 00:00:00",
+        "valorTotal": 1212550392.0,
+        "valorAutogestionado": 207159833.0,
+        "valorAsesor": 1005390559.0
+        }
+    ]
+    },
+    {
+    "name": "FINCO EDUCAR",
+    "monthlyData": [
+        {
+        "mes": "2025-01-01 00:00:00",
+        "valorTotal": 19474273688.44,
+        "valorAutogestionado": 2716730391.0,
+        "valorAsesor": 16757543297.44
+        },
+        {
+        "mes": "2025-02-01 00:00:00",
+        "valorTotal": 7053792634.0,
+        "valorAutogestionado": 930782715.0,
+        "valorAsesor": 6123009919.0
+        },
+        {
+        "mes": "2025-03-01 00:00:00",
+        "valorTotal": 2334619171.99,
+        "valorAutogestionado": 230615330.0,
+        "valorAsesor": 2104003841.99
+        },
+        {
+        "mes": "2025-04-01 00:00:00",
+        "valorTotal": 1955937220.0,
+        "valorAutogestionado": 162100861.0,
+        "valorAsesor": 1793836359.0
+        },
+        {
+        "mes": "2025-05-01 00:00:00",
+        "valorTotal": 3309230518.21,
+        "valorAutogestionado": 186421728.0,
+        "valorAsesor": 3122808790.21
+        },
+        {
+        "mes": "2025-06-01 00:00:00",
+        "valorTotal": 12275083160.0,
+        "valorAutogestionado": 795895227.0,
+        "valorAsesor": 11479187933.0
+        },
+        {
+        "mes": "2025-07-01 00:00:00",
+        "valorTotal": 24980840451.88,
+        "valorAutogestionado": 1630915297.0,
+        "valorAsesor": 23349925154.88
+        },
+        {
+        "mes": "2025-08-01 00:00:00",
+        "valorTotal": 8143457018.690001,
+        "valorAutogestionado": 588414734.0,
+        "valorAsesor": 7555042284.690001
+        },
+        {
+        "mes": "2025-09-01 00:00:00",
+        "valorTotal": 3160040489.0,
+        "valorAutogestionado": 229168151.0,
+        "valorAsesor": 2930872338.0
+        },
+        {
+        "mes": "2025-10-01 00:00:00",
+        "valorTotal": 3000253692.54,
+        "valorAutogestionado": 185558089.0,
+        "valorAsesor": 2814695603.54
+        },
+        {
+        "mes": "2025-11-01 00:00:00",
+        "valorTotal": 3927617731.0,
+        "valorAutogestionado": 176955242.0,
+        "valorAsesor": 3750662489.0
+        },
+        {
+        "mes": "2025-12-01 00:00:00",
+        "valorTotal": 20230170355.0,
+        "valorAutogestionado": 1166306021.0,
+        "valorAsesor": 19063864334.0
+        },
+        {
+        "mes": "2026-01-01 00:00:00",
+        "valorTotal": 23894599518.0,
+        "valorAutogestionado": 3830611391.0,
+        "valorAsesor": 20063988127.0
+        },
+        {
+        "mes": "2026-02-01 00:00:00",
+        "valorTotal": 9528347925.0,
+        "valorAutogestionado": 478707453.0,
+        "valorAsesor": 9049640472.0
+        }
+    ]
+    },
+    {
+    "name": "FINCO GO",
+    "monthlyData": [
+        {
+        "mes": "2025-01-01 00:00:00",
+        "valorTotal": 700300000.0,
+        "valorAutogestionado": 0.0,
+        "valorAsesor": 700300000.0
+        },
+        {
+        "mes": "2025-02-01 00:00:00",
+        "valorTotal": 69253295.0,
+        "valorAutogestionado": 0.0,
+        "valorAsesor": 69253295.0
+        },
+        {
+        "mes": "2025-03-01 00:00:00",
+        "valorTotal": 50220735.0,
+        "valorAutogestionado": 0.0,
+        "valorAsesor": 50220735.0
+        },
+        {
+        "mes": "2025-04-01 00:00:00",
+        "valorTotal": 75373118.0,
+        "valorAutogestionado": 0.0,
+        "valorAsesor": 75373118.0
+        },
+        {
+        "mes": "2025-05-01 00:00:00",
+        "valorTotal": 98044852.0,
+        "valorAutogestionado": 0.0,
+        "valorAsesor": 98044852.0
+        },
+        {
+        "mes": "2025-06-01 00:00:00",
+        "valorTotal": 66396209.0,
+        "valorAutogestionado": 0.0,
+        "valorAsesor": 66396209.0
+        },
+        {
+        "mes": "2025-07-01 00:00:00",
+        "valorTotal": 66125696.0,
+        "valorAutogestionado": 0.0,
+        "valorAsesor": 66125696.0
+        },
+        {
+        "mes": "2025-08-01 00:00:00",
+        "valorTotal": 81801729.0,
+        "valorAutogestionado": 12624600.0,
+        "valorAsesor": 69177129.0
+        },
+        {
+        "mes": "2025-09-01 00:00:00",
+        "valorTotal": 98646322.0,
+        "valorAutogestionado": 9023500.0,
+        "valorAsesor": 89622822.0
+        },
+        {
+        "mes": "2025-10-01 00:00:00",
+        "valorTotal": 94340300.0,
+        "valorAutogestionado": 12221050.0,
+        "valorAsesor": 82119250.0
+        },
+        {
+        "mes": "2025-11-01 00:00:00",
+        "valorTotal": 448395300.0,
+        "valorAutogestionado": 324966850.0,
+        "valorAsesor": 123428450.0
+        },
+        {
+        "mes": "2025-12-01 00:00:00",
+        "valorTotal": 180040244.0,
+        "valorAutogestionado": 73472250.0,
+        "valorAsesor": 106567994.0
+        },
+        {
+        "mes": "2026-01-01 00:00:00",
+        "valorTotal": 109740900.0,
+        "valorAutogestionado": 46670250.0,
+        "valorAsesor": 63070650.0
+        },
+        {
+        "mes": "2026-02-01 00:00:00",
+        "valorTotal": 175810025.0,
+        "valorAutogestionado": 88015893.0,
+        "valorAsesor": 87794132.0
+        }
+    ]
+    }
+]
+}
