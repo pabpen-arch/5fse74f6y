@@ -10,20 +10,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px 40px;
   background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(10px);
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.menu {
-  display: flex;
-  gap: 20px;
 }
 
 .nav-btn {
@@ -31,11 +19,6 @@ body {
   color: #94a3b8;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.nav-btn:hover {
-  color: white;
 }
 
 .active-btn {
@@ -43,18 +26,10 @@ body {
   border-bottom: 2px solid #3b82f6;
 }
 
-/* SECTIONS */
+.section { display: none; padding: 40px; }
+.section.active { display: block; }
 
-.section {
-  display: none;
-  padding: 40px;
-}
-
-.section.active {
-  display: block;
-}
-
-/* GRID PRODUCTOS */
+/* GRID */
 
 .carousel {
   display: grid;
@@ -69,8 +44,8 @@ body {
   height: 200px;
   padding: 25px;
   border-radius: 20px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
+  border-left: 6px solid transparent;
+  transition: 0.4s;
 }
 
 .card:hover {
@@ -89,15 +64,13 @@ body {
   align-items: center;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
 .modal-content {
   width: 90%;
   max-width: 1200px;
   background: linear-gradient(145deg, #0f172a, #1e293b);
-  padding: 50px;
+  padding: 40px;
   border-radius: 20px;
 }
 
@@ -112,7 +85,14 @@ body {
   padding: 25px;
   border-radius: 15px;
   font-size: 14px;
-  line-height: 1.6;
+}
+
+.projection-control {
+  margin-top: 20px;
+}
+
+.projection-control input[type=range] {
+  width: 100%;
 }
 
 button {
@@ -120,21 +100,7 @@ button {
   color: white;
   border: none;
   padding: 8px 15px;
-  margin: 10px 5px;
+  margin: 5px;
   border-radius: 8px;
   cursor: pointer;
-}
-
-button:hover {
-  background: #1d4ed8;
-}
-
-.placeholder {
-  text-align: center;
-  margin-top: 120px;
-  color: #94a3b8;
-}
-
-.card {
-  border-left: 6px solid transparent;
 }

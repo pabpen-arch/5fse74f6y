@@ -41,16 +41,34 @@
 </section>
 
 <div id="modal" class="modal hidden">
-  <div class="modal-content cinematic">
+  <div class="modal-content">
+
     <span id="closeBtn">&times;</span>
     <h2 id="modalTitle"></h2>
 
     <div class="modal-grid">
+
       <div>
         <canvas id="chart"></canvas>
-        <div id="metrics"></div>
+
+        <div id="metrics">
+          <button onclick="toggleDataset(0)">Valor Total</button>
+          <button onclick="toggleDataset(1)">Autogestionado</button>
+          <button onclick="toggleDataset(2)">Asesor</button>
+
+          <div class="projection-control">
+            <label>
+              Simular Adopción Digital:
+              <span id="projectionValue">--</span>%
+            </label>
+            <input type="range" id="projectionSlider" min="0" max="80" value="0">
+          </div>
+        </div>
+
       </div>
+
       <div class="analysis-area" id="analysisPanel"></div>
+
     </div>
 
   </div>
