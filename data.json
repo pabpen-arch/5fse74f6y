@@ -1,449 +1,1109 @@
 {
-"products": [
-    {
-    "name": "PAPS",
-    "monthlyData": [
+    "products": [
         {
-        "mes": "2025-01-01 00:00:00",
-        "valorTotal": 417137300.0,
-        "valorAutogestionado": 65027300.0,
-        "valorAsesor": 352110000.0
+            "name": "CDATS",
+            "monthlyData": [
+                {
+                    "mes": "2024-10-01",
+                    "valorTotal": 996111700,
+                    "valorAutogestionado": 94491000,
+                    "valorAsesor": 901620700,
+                    "promMonto": 36893026,
+                    "plazoPromedio": 235,
+                    "promMontoAutogestionado": 3499667,
+                    "plazoPromAutogestionado": 241,
+                    "promMontoAsesor": 33393359,
+                    "plazoPromAsesor": 233
+                },
+                {
+                    "mes": "2024-11-01",
+                    "valorTotal": 683431100,
+                    "valorAutogestionado": 102272000,
+                    "valorAsesor": 581159100,
+                    "promMonto": 26285812,
+                    "plazoPromedio": 185,
+                    "promMontoAutogestionado": 3933538,
+                    "plazoPromAutogestionado": 183,
+                    "promMontoAsesor": 22352273,
+                    "plazoPromAsesor": 186
+                },
+                {
+                    "mes": "2024-12-01",
+                    "valorTotal": 723356049,
+                    "valorAutogestionado": 107352048,
+                    "valorAsesor": 616004001,
+                    "promMonto": 27821386,
+                    "plazoPromedio": 193,
+                    "promMontoAutogestionado": 4128925,
+                    "plazoPromAutogestionado": 187,
+                    "promMontoAsesor": 23692462,
+                    "plazoPromAsesor": 194
+                },
+                {
+                    "mes": "2025-01-01",
+                    "valorTotal": 1158896013,
+                    "valorAutogestionado": 151970913,
+                    "valorAsesor": 1006925100,
+                    "promMonto": 42922075,
+                    "plazoPromedio": 205,
+                    "promMontoAutogestionado": 5628552,
+                    "plazoPromAutogestionado": 208,
+                    "promMontoAsesor": 37293522,
+                    "plazoPromAsesor": 204
+                },
+                {
+                    "mes": "2025-02-01",
+                    "valorTotal": 955186626,
+                    "valorAutogestionado": 90884681,
+                    "valorAsesor": 864301945,
+                    "promMonto": 39799443,
+                    "plazoPromedio": 198,
+                    "promMontoAutogestionado": 3786862,
+                    "plazoPromAutogestionado": 201,
+                    "promMontoAsesor": 36012581,
+                    "plazoPromAsesor": 198
+                },
+                {
+                    "mes": "2025-03-01",
+                    "valorTotal": 1051659474,
+                    "valorAutogestionado": 157985613,
+                    "valorAsesor": 893673861,
+                    "promMonto": 40448441,
+                    "plazoPromedio": 210,
+                    "promMontoAutogestionado": 6076370,
+                    "plazoPromAutogestionado": 199,
+                    "promMontoAsesor": 34372072,
+                    "plazoPromAsesor": 213
+                },
+                {
+                    "mes": "2025-04-01",
+                    "valorTotal": 752076318,
+                    "valorAutogestionado": 110696290,
+                    "valorAsesor": 641380028,
+                    "promMonto": 28926012,
+                    "plazoPromedio": 206,
+                    "promMontoAutogestionado": 4257550,
+                    "plazoPromAutogestionado": 205,
+                    "promMontoAsesor": 24668463,
+                    "plazoPromAsesor": 206
+                },
+                {
+                    "mes": "2025-05-01",
+                    "valorTotal": 945868468,
+                    "valorAutogestionado": 93371162,
+                    "valorAsesor": 852497306,
+                    "promMonto": 35032165,
+                    "plazoPromedio": 205,
+                    "promMontoAutogestionado": 3458191,
+                    "plazoPromAutogestionado": 206,
+                    "promMontoAsesor": 31573974,
+                    "plazoPromAsesor": 204
+                },
+                {
+                    "mes": "2025-06-01",
+                    "valorTotal": 1163146610,
+                    "valorAutogestionado": 180606481,
+                    "valorAsesor": 982540129,
+                    "promMonto": 46525864,
+                    "plazoPromedio": 216,
+                    "promMontoAutogestionado": 7224259,
+                    "plazoPromAutogestionado": 262,
+                    "promMontoAsesor": 39301605,
+                    "plazoPromAsesor": 203
+                },
+                {
+                    "mes": "2025-07-01",
+                    "valorTotal": 1241510506,
+                    "valorAutogestionado": 109421889,
+                    "valorAsesor": 1132088617,
+                    "promMonto": 45981871,
+                    "plazoPromedio": 203,
+                    "promMontoAutogestionado": 4052663,
+                    "plazoPromAutogestionado": 181,
+                    "promMontoAsesor": 41929208,
+                    "plazoPromAsesor": 208
+                },
+                {
+                    "mes": "2025-08-01",
+                    "valorTotal": 893094756,
+                    "valorAutogestionado": 64350500,
+                    "valorAsesor": 828744256,
+                    "promMonto": 34349798,
+                    "plazoPromedio": 187,
+                    "promMontoAutogestionado": 2475019,
+                    "plazoPromAutogestionado": 172,
+                    "promMontoAsesor": 31874779,
+                    "plazoPromAsesor": 189
+                },
+                {
+                    "mes": "2025-09-01",
+                    "valorTotal": 756662414,
+                    "valorAutogestionado": 105590671,
+                    "valorAsesor": 651071743,
+                    "promMonto": 29102401,
+                    "plazoPromedio": 186,
+                    "promMontoAutogestionado": 4061180,
+                    "plazoPromAutogestionado": 184,
+                    "promMontoAsesor": 25041221,
+                    "plazoPromAsesor": 186
+                },
+                {
+                    "mes": "2025-10-01",
+                    "valorTotal": 1041026685,
+                    "valorAutogestionado": 112471562,
+                    "valorAsesor": 928555123,
+                    "promMonto": 38556544,
+                    "plazoPromedio": 199,
+                    "promMontoAutogestionado": 4165613,
+                    "plazoPromAutogestionado": 194,
+                    "promMontoAsesor": 34390930,
+                    "plazoPromAsesor": 200
+                },
+                {
+                    "mes": "2025-11-01",
+                    "valorTotal": 601814075,
+                    "valorAutogestionado": 37287800,
+                    "valorAsesor": 564526275,
+                    "promMonto": 24072563,
+                    "plazoPromedio": 212,
+                    "promMontoAutogestionado": 1491512,
+                    "plazoPromAutogestionado": 218,
+                    "promMontoAsesor": 22581051,
+                    "plazoPromAsesor": 211
+                },
+                {
+                    "mes": "2025-12-01",
+                    "valorTotal": 998545339,
+                    "valorAutogestionado": 212702639,
+                    "valorAsesor": 785842700,
+                    "promMonto": 36983161,
+                    "plazoPromedio": 212,
+                    "promMontoAutogestionado": 7877876,
+                    "plazoPromAutogestionado": 177,
+                    "promMontoAsesor": 29105285,
+                    "plazoPromAsesor": 225
+                },
+                {
+                    "mes": "2026-01-01",
+                    "valorTotal": 1541997011,
+                    "valorAutogestionado": 137010850,
+                    "valorAsesor": 1404986161,
+                    "promMonto": 57111000,
+                    "plazoPromedio": 219,
+                    "promMontoAutogestionado": 5074476,
+                    "plazoPromAutogestionado": 209,
+                    "promMontoAsesor": 52036524,
+                    "plazoPromAsesor": 221
+                },
+                {
+                    "mes": "2026-02-01",
+                    "valorTotal": 1488029656,
+                    "valorAutogestionado": 273646097,
+                    "valorAsesor": 1214383559,
+                    "promMonto": 62001236,
+                    "plazoPromedio": 224,
+                    "promMontoAutogestionado": 11401921,
+                    "plazoPromAutogestionado": 204,
+                    "promMontoAsesor": 50599315,
+                    "plazoPromAsesor": 230
+                },
+                {
+                    "mes": "2026-03-01",
+                    "valorTotal": 328456000,
+                    "valorAutogestionado": 30100000,
+                    "valorAsesor": 298356000,
+                    "promMonto": 46922286,
+                    "plazoPromedio": 215,
+                    "promMontoAutogestionado": 4300000,
+                    "plazoPromAutogestionado": 195,
+                    "promMontoAsesor": 42622286,
+                    "plazoPromAsesor": 218
+                }
+            ]
         },
         {
-        "mes": "2025-02-01 00:00:00",
-        "valorTotal": 313808678.0,
-        "valorAutogestionado": 40558350.0,
-        "valorAsesor": 273250328.0
+            "name": "FINCO EDUCAR",
+            "monthlyData": [
+                {
+                    "mes": "2024-10-01",
+                    "valorTotal": 1710487132,
+                    "valorAutogestionado": 173571859,
+                    "valorAsesor": 1536915273,
+                    "promMonto": 63351375,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 6428587,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 56922788,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2024-11-01",
+                    "valorTotal": 3025953554,
+                    "valorAutogestionado": 167620702,
+                    "valorAsesor": 2858332852,
+                    "promMonto": 116382829,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 6446950,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 109935879,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2024-12-01",
+                    "valorTotal": 13670439431,
+                    "valorAutogestionado": 941582992,
+                    "valorAsesor": 12728856439,
+                    "promMonto": 525786132,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 36214730,
+                    "plazoPromAutogestionado": 7,
+                    "promMontoAsesor": 489571402,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-01-01",
+                    "valorTotal": 19474273688,
+                    "valorAutogestionado": 2716730391,
+                    "valorAsesor": 16757543297,
+                    "promMonto": 721269396,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 100619644,
+                    "plazoPromAutogestionado": 7,
+                    "promMontoAsesor": 620649752,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-02-01",
+                    "valorTotal": 7053792634,
+                    "valorAutogestionado": 930782715,
+                    "valorAsesor": 6123009919,
+                    "promMonto": 293908026,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 38782613,
+                    "plazoPromAutogestionado": 7,
+                    "promMontoAsesor": 255125413,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-03-01",
+                    "valorTotal": 2334619172,
+                    "valorAutogestionado": 230615330,
+                    "valorAsesor": 2104003842,
+                    "promMonto": 89793045,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 8869820,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 80923225,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-04-01",
+                    "valorTotal": 1955937220,
+                    "valorAutogestionado": 162100861,
+                    "valorAsesor": 1793836359,
+                    "promMonto": 75228355,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 6234648,
+                    "plazoPromAutogestionado": 7,
+                    "promMontoAsesor": 68993706,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-05-01",
+                    "valorTotal": 3309230518,
+                    "valorAutogestionado": 186421728,
+                    "valorAsesor": 3122808790,
+                    "promMonto": 122564093,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 6904508,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 115659585,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-06-01",
+                    "valorTotal": 12275083160,
+                    "valorAutogestionado": 795895227,
+                    "valorAsesor": 11479187933,
+                    "promMonto": 491003326,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 31835809,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 459167517,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-07-01",
+                    "valorTotal": 24980840452,
+                    "valorAutogestionado": 1630915297,
+                    "valorAsesor": 23349925155,
+                    "promMonto": 925216313,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 60404270,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 864812043,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-08-01",
+                    "valorTotal": 8143457019,
+                    "valorAutogestionado": 588414734,
+                    "valorAsesor": 7555042285,
+                    "promMonto": 313209885,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 22631336,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 290578549,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-09-01",
+                    "valorTotal": 3160040489,
+                    "valorAutogestionado": 229168151,
+                    "valorAsesor": 2930872338,
+                    "promMonto": 121540019,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 8814160,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 112725859,
+                    "plazoPromAsesor": 11
+                },
+                {
+                    "mes": "2025-10-01",
+                    "valorTotal": 3000253693,
+                    "valorAutogestionado": 185558089,
+                    "valorAsesor": 2814695604,
+                    "promMonto": 111120507,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 6872522,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 104247985,
+                    "plazoPromAsesor": 11
+                },
+                {
+                    "mes": "2025-11-01",
+                    "valorTotal": 3927617731,
+                    "valorAutogestionado": 176955242,
+                    "valorAsesor": 3750662489,
+                    "promMonto": 157104709,
+                    "plazoPromedio": 11,
+                    "promMontoAutogestionado": 7078210,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 150026500,
+                    "plazoPromAsesor": 11
+                },
+                {
+                    "mes": "2025-12-01",
+                    "valorTotal": 20230170355,
+                    "valorAutogestionado": 1166306021,
+                    "valorAsesor": 19063864334,
+                    "promMonto": 749265569,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 43196519,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 706069049,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2026-01-01",
+                    "valorTotal": 23894599518,
+                    "valorAutogestionado": 3830611391,
+                    "valorAsesor": 20063988127,
+                    "promMonto": 884985167,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 141874496,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 743110671,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2026-02-01",
+                    "valorTotal": 10985250797,
+                    "valorAutogestionado": 5292115738,
+                    "valorAsesor": 5693135059,
+                    "promMonto": 457718783,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 220504822,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 237213961,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2026-03-01",
+                    "valorTotal": 1075309630,
+                    "valorAutogestionado": 48017790,
+                    "valorAsesor": 1027291840,
+                    "promMonto": 153615661,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 6859684,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 146755977,
+                    "plazoPromAsesor": 11
+                }
+            ]
         },
         {
-        "mes": "2025-03-01 00:00:00",
-        "valorTotal": 284087524.0,
-        "valorAutogestionado": 25732100.0,
-        "valorAsesor": 258355424.0
+            "name": "FINCO GO",
+            "monthlyData": [
+                {
+                    "mes": "2024-10-01",
+                    "valorTotal": 1872870000,
+                    "valorAutogestionado": 0,
+                    "valorAsesor": 1872870000,
+                    "promMonto": 69365556,
+                    "plazoPromedio": 12,
+                    "promMontoAutogestionado": 0,
+                    "plazoPromAutogestionado": 0,
+                    "promMontoAsesor": 69365556,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2024-11-01",
+                    "valorTotal": 1557980000,
+                    "valorAutogestionado": 0,
+                    "valorAsesor": 1557980000,
+                    "promMonto": 59922308,
+                    "plazoPromedio": 12,
+                    "promMontoAutogestionado": 0,
+                    "plazoPromAutogestionado": 0,
+                    "promMontoAsesor": 59922308,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2024-12-01",
+                    "valorTotal": 601760000,
+                    "valorAutogestionado": 0,
+                    "valorAsesor": 601760000,
+                    "promMonto": 23144615,
+                    "plazoPromedio": 12,
+                    "promMontoAutogestionado": 0,
+                    "plazoPromAutogestionado": 0,
+                    "promMontoAsesor": 23144615,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2025-01-01",
+                    "valorTotal": 700300000,
+                    "valorAutogestionado": 0,
+                    "valorAsesor": 700300000,
+                    "promMonto": 25937037,
+                    "plazoPromedio": 11,
+                    "promMontoAutogestionado": 0,
+                    "plazoPromAutogestionado": 0,
+                    "promMontoAsesor": 25937037,
+                    "plazoPromAsesor": 11
+                },
+                {
+                    "mes": "2025-02-01",
+                    "valorTotal": 69253295,
+                    "valorAutogestionado": 0,
+                    "valorAsesor": 69253295,
+                    "promMonto": 2885554,
+                    "plazoPromedio": 12,
+                    "promMontoAutogestionado": 0,
+                    "plazoPromAutogestionado": 0,
+                    "promMontoAsesor": 2885554,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2025-03-01",
+                    "valorTotal": 50220735,
+                    "valorAutogestionado": 11650400,
+                    "valorAsesor": 38570335,
+                    "promMonto": 1931567,
+                    "plazoPromedio": 11,
+                    "promMontoAutogestionado": 448092,
+                    "plazoPromAutogestionado": 12,
+                    "promMontoAsesor": 1483474,
+                    "plazoPromAsesor": 11
+                },
+                {
+                    "mes": "2025-04-01",
+                    "valorTotal": 75373118,
+                    "valorAutogestionado": 9900000,
+                    "valorAsesor": 65473118,
+                    "promMonto": 2898966,
+                    "plazoPromedio": 11,
+                    "promMontoAutogestionado": 380769,
+                    "plazoPromAutogestionado": 12,
+                    "promMontoAsesor": 2518197,
+                    "plazoPromAsesor": 11
+                },
+                {
+                    "mes": "2025-05-01",
+                    "valorTotal": 98044852,
+                    "valorAutogestionado": 4960000,
+                    "valorAsesor": 93084852,
+                    "promMonto": 3631291,
+                    "plazoPromedio": 12,
+                    "promMontoAutogestionado": 183704,
+                    "plazoPromAutogestionado": 12,
+                    "promMontoAsesor": 3447587,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2025-06-01",
+                    "valorTotal": 66396209,
+                    "valorAutogestionado": 13293313,
+                    "valorAsesor": 53102896,
+                    "promMonto": 2655848,
+                    "plazoPromedio": 12,
+                    "promMontoAutogestionado": 531733,
+                    "plazoPromAutogestionado": 12,
+                    "promMontoAsesor": 2124116,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2025-07-01",
+                    "valorTotal": 66125696,
+                    "valorAutogestionado": 8852000,
+                    "valorAsesor": 57273696,
+                    "promMonto": 2449100,
+                    "plazoPromedio": 11,
+                    "promMontoAutogestionado": 327852,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 2121248,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2025-08-01",
+                    "valorTotal": 81801729,
+                    "valorAutogestionado": 12624600,
+                    "valorAsesor": 69177129,
+                    "promMonto": 3146220,
+                    "plazoPromedio": 12,
+                    "promMontoAutogestionado": 485562,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 2660659,
+                    "plazoPromAsesor": 12
+                },
+                {
+                    "mes": "2025-09-01",
+                    "valorTotal": 98646322,
+                    "valorAutogestionado": 9023500,
+                    "valorAsesor": 89622822,
+                    "promMonto": 3794089,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 347058,
+                    "plazoPromAutogestionado": 8,
+                    "promMontoAsesor": 3447032,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-10-01",
+                    "valorTotal": 94340300,
+                    "valorAutogestionado": 12221050,
+                    "valorAsesor": 82119250,
+                    "promMonto": 3494085,
+                    "plazoPromedio": 6,
+                    "promMontoAutogestionado": 452631,
+                    "plazoPromAutogestionado": 5,
+                    "promMontoAsesor": 3041454,
+                    "plazoPromAsesor": 6
+                },
+                {
+                    "mes": "2025-11-01",
+                    "valorTotal": 448395300,
+                    "valorAutogestionado": 324966850,
+                    "valorAsesor": 123428450,
+                    "promMonto": 17935812,
+                    "plazoPromedio": 6,
+                    "promMontoAutogestionado": 12998674,
+                    "plazoPromAutogestionado": 6,
+                    "promMontoAsesor": 4937138,
+                    "plazoPromAsesor": 6
+                },
+                {
+                    "mes": "2025-12-01",
+                    "valorTotal": 180040244,
+                    "valorAutogestionado": 73472250,
+                    "valorAsesor": 106567994,
+                    "promMonto": 6668157,
+                    "plazoPromedio": 6,
+                    "promMontoAutogestionado": 2721194,
+                    "plazoPromAutogestionado": 6,
+                    "promMontoAsesor": 3946963,
+                    "plazoPromAsesor": 6
+                },
+                {
+                    "mes": "2026-01-01",
+                    "valorTotal": 109740900,
+                    "valorAutogestionado": 46670250,
+                    "valorAsesor": 63070650,
+                    "promMonto": 4064478,
+                    "plazoPromedio": 6,
+                    "promMontoAutogestionado": 1728528,
+                    "plazoPromAutogestionado": 6,
+                    "promMontoAsesor": 2335950,
+                    "plazoPromAsesor": 6
+                },
+                {
+                    "mes": "2026-02-01",
+                    "valorTotal": 226992629,
+                    "valorAutogestionado": 112293156,
+                    "valorAsesor": 114699473,
+                    "promMonto": 9458026,
+                    "plazoPromedio": 6,
+                    "promMontoAutogestionado": 4678882,
+                    "plazoPromAutogestionado": 6,
+                    "promMontoAsesor": 4779145,
+                    "plazoPromAsesor": 6
+                },
+                {
+                    "mes": "2026-03-01",
+                    "valorTotal": 57039440,
+                    "valorAutogestionado": 18052716,
+                    "valorAsesor": 38986724,
+                    "promMonto": 8148491,
+                    "plazoPromedio": 6,
+                    "promMontoAutogestionado": 2578959,
+                    "plazoPromAutogestionado": 6,
+                    "promMontoAsesor": 5569532,
+                    "plazoPromAsesor": 6
+                }
+            ]
         },
         {
-        "mes": "2025-04-01 00:00:00",
-        "valorTotal": 276342475.0,
-        "valorAutogestionado": 32113000.0,
-        "valorAsesor": 244229475.0
+            "name": "PAPS",
+            "monthlyData": [
+                {
+                    "mes": "2024-10-01",
+                    "valorTotal": 148643400,
+                    "valorAutogestionado": 24002000,
+                    "valorAsesor": 124641400,
+                    "promMonto": 5505311,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 888963,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 4616348,
+                    "plazoPromAsesor": 7
+                },
+                {
+                    "mes": "2024-11-01",
+                    "valorTotal": 112286600,
+                    "valorAutogestionado": 12375000,
+                    "valorAsesor": 99911600,
+                    "promMonto": 4318715,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 475962,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 3842754,
+                    "plazoPromAsesor": 7
+                },
+                {
+                    "mes": "2024-12-01",
+                    "valorTotal": 179287146,
+                    "valorAutogestionado": 14971000,
+                    "valorAsesor": 164316146,
+                    "promMonto": 6895659,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 575808,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 6319852,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-01-01",
+                    "valorTotal": 417137300,
+                    "valorAutogestionado": 56102100,
+                    "valorAsesor": 361035200,
+                    "promMonto": 15449530,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 2077856,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 13371674,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-02-01",
+                    "valorTotal": 313808678,
+                    "valorAutogestionado": 29447550,
+                    "valorAsesor": 284361128,
+                    "promMonto": 13075362,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 1226981,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 11848380,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-03-01",
+                    "valorTotal": 284087524,
+                    "valorAutogestionado": 24102800,
+                    "valorAsesor": 259984724,
+                    "promMonto": 10926443,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 927031,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 9999412,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-04-01",
+                    "valorTotal": 276342475,
+                    "valorAutogestionado": 28518000,
+                    "valorAsesor": 247824475,
+                    "promMonto": 10628557,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 1096846,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 9531711,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-05-01",
+                    "valorTotal": 311136856,
+                    "valorAutogestionado": 37001300,
+                    "valorAsesor": 274135556,
+                    "promMonto": 11523587,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 1370419,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 10153169,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-06-01",
+                    "valorTotal": 265642303,
+                    "valorAutogestionado": 22760000,
+                    "valorAsesor": 242882303,
+                    "promMonto": 10625692,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 910400,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 9715292,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-07-01",
+                    "valorTotal": 356638278,
+                    "valorAutogestionado": 26255000,
+                    "valorAsesor": 330383278,
+                    "promMonto": 13208825,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 972407,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 12236418,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-08-01",
+                    "valorTotal": 292272774,
+                    "valorAutogestionado": 24336000,
+                    "valorAsesor": 267936774,
+                    "promMonto": 11241261,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 936000,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 10305261,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-09-01",
+                    "valorTotal": 284270309,
+                    "valorAutogestionado": 25474209,
+                    "valorAsesor": 258796100,
+                    "promMonto": 10933473,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 979777,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 9953696,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-10-01",
+                    "valorTotal": 240371440,
+                    "valorAutogestionado": 25315200,
+                    "valorAsesor": 215056240,
+                    "promMonto": 8902646,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 937600,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 7965046,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-11-01",
+                    "valorTotal": 205338957,
+                    "valorAutogestionado": 17155000,
+                    "valorAsesor": 188183957,
+                    "promMonto": 8213558,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 686200,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 7527358,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2025-12-01",
+                    "valorTotal": 240961744,
+                    "valorAutogestionado": 35602100,
+                    "valorAsesor": 205359644,
+                    "promMonto": 8924509,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 1318596,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 7605913,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2026-01-01",
+                    "valorTotal": 430186139,
+                    "valorAutogestionado": 50311923,
+                    "valorAsesor": 379874216,
+                    "promMonto": 15932820,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 1863405,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 14069415,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2026-02-01",
+                    "valorTotal": 332550387,
+                    "valorAutogestionado": 47596200,
+                    "valorAsesor": 284954187,
+                    "promMonto": 13856266,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 1983175,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 11873091,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2026-03-01",
+                    "valorTotal": 98173153,
+                    "valorAutogestionado": 10127620,
+                    "valorAsesor": 88045533,
+                    "promMonto": 14024736,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 1446803,
+                    "plazoPromAutogestionado": 9,
+                    "promMontoAsesor": 12577933,
+                    "plazoPromAsesor": 8
+                }
+            ]
         },
         {
-        "mes": "2025-05-01 00:00:00",
-        "valorTotal": 311136856.0,
-        "valorAutogestionado": 48195900.0,
-        "valorAsesor": 262940956.0
-        },
-        {
-        "mes": "2025-06-01 00:00:00",
-        "valorTotal": 265642303.0,
-        "valorAutogestionado": 31736200.0,
-        "valorAsesor": 233906103.0
-        },
-        {
-        "mes": "2025-07-01 00:00:00",
-        "valorTotal": 356638278.0,
-        "valorAutogestionado": 27655000.0,
-        "valorAsesor": 328983278.0
-        },
-        {
-        "mes": "2025-08-01 00:00:00",
-        "valorTotal": 298722774.0,
-        "valorAutogestionado": 30786000.0,
-        "valorAsesor": 267936774.0
-        },
-        {
-        "mes": "2025-09-01 00:00:00",
-        "valorTotal": 284270309.0,
-        "valorAutogestionado": 27375209.0,
-        "valorAsesor": 256895100.0
-        },
-        {
-        "mes": "2025-10-01 00:00:00",
-        "valorTotal": 240371440.0,
-        "valorAutogestionado": 25315200.0,
-        "valorAsesor": 215056240.0
-        },
-        {
-        "mes": "2025-11-01 00:00:00",
-        "valorTotal": 205338957.0,
-        "valorAutogestionado": 17155000.0,
-        "valorAsesor": 188183957.0
-        },
-        {
-        "mes": "2025-12-01 00:00:00",
-        "valorTotal": 240961744.0,
-        "valorAutogestionado": 35602100.0,
-        "valorAsesor": 205359644.0
-        },
-        {
-        "mes": "2026-01-01 00:00:00",
-        "valorTotal": 430186139.0,
-        "valorAutogestionado": 50311923.0,
-        "valorAsesor": 379874216.0
-        },
-        {
-        "mes": "2026-02-01 00:00:00",
-        "valorTotal": 260050933.0,
-        "valorAutogestionado": 36139800.0,
-        "valorAsesor": 223911133.0
+            "name": "PAPS Gamificada",
+            "monthlyData": [
+                {
+                    "mes": "2024-10-01",
+                    "valorTotal": 54224999,
+                    "valorAutogestionado": 11534000,
+                    "valorAsesor": 42690999,
+                    "promMonto": 2008333,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 427185,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 1581148,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2024-11-01",
+                    "valorTotal": 50409000,
+                    "valorAutogestionado": 8951000,
+                    "valorAsesor": 41458000,
+                    "promMonto": 1938808,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 344269,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 1594538,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2024-12-01",
+                    "valorTotal": 46981000,
+                    "valorAutogestionado": 16806000,
+                    "valorAsesor": 30175000,
+                    "promMonto": 1806962,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 646385,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 1160577,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-01-01",
+                    "valorTotal": 63495200,
+                    "valorAutogestionado": 17539000,
+                    "valorAsesor": 45956200,
+                    "promMonto": 2351674,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 649593,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 1702081,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-02-01",
+                    "valorTotal": 76956807,
+                    "valorAutogestionado": 24208007,
+                    "valorAsesor": 52748800,
+                    "promMonto": 3206534,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 1008667,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 2197867,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-03-01",
+                    "valorTotal": 70954599,
+                    "valorAutogestionado": 9481000,
+                    "valorAsesor": 61473599,
+                    "promMonto": 2729023,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 364654,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 2364369,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-04-01",
+                    "valorTotal": 119884399,
+                    "valorAutogestionado": 12655000,
+                    "valorAsesor": 107229399,
+                    "promMonto": 4610938,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 486731,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 4124208,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-05-01",
+                    "valorTotal": 148470300,
+                    "valorAutogestionado": 42905000,
+                    "valorAsesor": 105565300,
+                    "promMonto": 5498900,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 1589074,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 3909826,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-06-01",
+                    "valorTotal": 129613900,
+                    "valorAutogestionado": 19618000,
+                    "valorAsesor": 109995900,
+                    "promMonto": 5184556,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 784720,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 4399836,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-07-01",
+                    "valorTotal": 115466900,
+                    "valorAutogestionado": 42153000,
+                    "valorAsesor": 73313900,
+                    "promMonto": 4276552,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 1561222,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 2715330,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-08-01",
+                    "valorTotal": 76466497,
+                    "valorAutogestionado": 9710300,
+                    "valorAsesor": 66756197,
+                    "promMonto": 2941019,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 373473,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 2567546,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-09-01",
+                    "valorTotal": 89930507,
+                    "valorAutogestionado": 15116000,
+                    "valorAsesor": 74814507,
+                    "promMonto": 3458866,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 581385,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 2877481,
+                    "plazoPromAsesor": 10
+                },
+                {
+                    "mes": "2025-10-01",
+                    "valorTotal": 86545008,
+                    "valorAutogestionado": 13182008,
+                    "valorAsesor": 73363000,
+                    "promMonto": 3205371,
+                    "plazoPromedio": 9,
+                    "promMontoAutogestionado": 488223,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 2717148,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-11-01",
+                    "valorTotal": 81438108,
+                    "valorAutogestionado": 9206000,
+                    "valorAsesor": 72232108,
+                    "promMonto": 3257524,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 368240,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 2889284,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2025-12-01",
+                    "valorTotal": 68605499,
+                    "valorAutogestionado": 14517000,
+                    "valorAsesor": 54088499,
+                    "promMonto": 2540944,
+                    "plazoPromedio": 10,
+                    "promMontoAutogestionado": 537667,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 2003278,
+                    "plazoPromAsesor": 9
+                },
+                {
+                    "mes": "2026-01-01",
+                    "valorTotal": 77915500,
+                    "valorAutogestionado": 24408000,
+                    "valorAsesor": 53507500,
+                    "promMonto": 2885759,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 904000,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 1981759,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2026-02-01",
+                    "valorTotal": 73668000,
+                    "valorAutogestionado": 15248500,
+                    "valorAsesor": 58419500,
+                    "promMonto": 3069500,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 635354,
+                    "plazoPromAutogestionado": 10,
+                    "promMontoAsesor": 2434146,
+                    "plazoPromAsesor": 8
+                },
+                {
+                    "mes": "2026-03-01",
+                    "valorTotal": 4448000,
+                    "valorAutogestionado": 1028000,
+                    "valorAsesor": 3420000,
+                    "promMonto": 635429,
+                    "plazoPromedio": 8,
+                    "promMontoAutogestionado": 146857,
+                    "plazoPromAutogestionado": 11,
+                    "promMontoAsesor": 488571,
+                    "plazoPromAsesor": 7
+                }
+            ]
         }
     ]
-    },
-    {
-    "name": "PAPS Gamificada",
-    "monthlyData": [
-        {
-        "mes": "2025-01-01 00:00:00",
-        "valorTotal": 63495200.0,
-        "valorAutogestionado": 17539000.0,
-        "valorAsesor": 45956200.0
-        },
-        {
-        "mes": "2025-02-01 00:00:00",
-        "valorTotal": 85654807.0,
-        "valorAutogestionado": 24208007.0,
-        "valorAsesor": 52748800.0
-        },
-        {
-        "mes": "2025-03-01 00:00:00",
-        "valorTotal": 70954599.0,
-        "valorAutogestionado": 9481000.0,
-        "valorAsesor": 61473599.0
-        },
-        {
-        "mes": "2025-04-01 00:00:00",
-        "valorTotal": 119884399.0,
-        "valorAutogestionado": 12655000.0,
-        "valorAsesor": 107229399.0
-        },
-        {
-        "mes": "2025-05-01 00:00:00",
-        "valorTotal": 148470300.0,
-        "valorAutogestionado": 42905000.0,
-        "valorAsesor": 105565300.0
-        },
-        {
-        "mes": "2025-06-01 00:00:00",
-        "valorTotal": 129613900.0,
-        "valorAutogestionado": 19618000.0,
-        "valorAsesor": 109995900.0
-        },
-        {
-        "mes": "2025-07-01 00:00:00",
-        "valorTotal": 115466900.0,
-        "valorAutogestionado": 42153000.0,
-        "valorAsesor": 73313900.0
-        },
-        {
-        "mes": "2025-08-01 00:00:00",
-        "valorTotal": 76466497.0,
-        "valorAutogestionado": 9710300.0,
-        "valorAsesor": 66756197.0
-        },
-        {
-        "mes": "2025-09-01 00:00:00",
-        "valorTotal": 89930507.0,
-        "valorAutogestionado": 15116000.0,
-        "valorAsesor": 74814507.0
-        },
-        {
-        "mes": "2025-10-01 00:00:00",
-        "valorTotal": 86545008.0,
-        "valorAutogestionado": 13182008.0,
-        "valorAsesor": 73363000.0
-        },
-        {
-        "mes": "2025-11-01 00:00:00",
-        "valorTotal": 81438108.0,
-        "valorAutogestionado": 9206000.0,
-        "valorAsesor": 72232108.0
-        },
-        {
-        "mes": "2025-12-01 00:00:00",
-        "valorTotal": 68605499.0,
-        "valorAutogestionado": 14517000.0,
-        "valorAsesor": 54088499.0
-        },
-        {
-        "mes": "2026-01-01 00:00:00",
-        "valorTotal": 77915500.0,
-        "valorAutogestionado": 24408000.0,
-        "valorAsesor": 53507500.0
-        },
-        {
-        "mes": "2026-02-01 00:00:00",
-        "valorTotal": 60516000.0,
-        "valorAutogestionado": 13539500.0,
-        "valorAsesor": 46976500.0
-        }
-    ]
-    },
-    {
-    "name": "CDATS",
-    "monthlyData": [
-        {
-        "mes": "2025-01-01 00:00:00",
-        "valorTotal": 3325609518.0,
-        "valorAutogestionado": 151970913.0,
-        "valorAsesor": 1006925100.0
-        },
-        {
-        "mes": "2025-02-01 00:00:00",
-        "valorTotal": 955186626.0,
-        "valorAutogestionado": 90884681.0,
-        "valorAsesor": 864301945.0
-        },
-        {
-        "mes": "2025-03-01 00:00:00",
-        "valorTotal": 1051659474.0,
-        "valorAutogestionado": 157985613.0,
-        "valorAsesor": 893673861.0
-        },
-        {
-        "mes": "2025-04-01 00:00:00",
-        "valorTotal": 752076318.0,
-        "valorAutogestionado": 110696290.0,
-        "valorAsesor": 641380028.0
-        },
-        {
-        "mes": "2025-05-01 00:00:00",
-        "valorTotal": 945868468.0,
-        "valorAutogestionado": 93371162.0,
-        "valorAsesor": 852497306.0
-        },
-        {
-        "mes": "2025-06-01 00:00:00",
-        "valorTotal": 1163146610.0,
-        "valorAutogestionado": 180606481.0,
-        "valorAsesor": 982540129.0
-        },
-        {
-        "mes": "2025-07-01 00:00:00",
-        "valorTotal": 1241510506.0,
-        "valorAutogestionado": 109421889.0,
-        "valorAsesor": 1132088617.0
-        },
-        {
-        "mes": "2025-08-01 00:00:00",
-        "valorTotal": 893094756.0,
-        "valorAutogestionado": 64350500.0,
-        "valorAsesor": 828744256.0
-        },
-        {
-        "mes": "2025-09-01 00:00:00",
-        "valorTotal": 756662414.0,
-        "valorAutogestionado": 105590671.0,
-        "valorAsesor": 651071743.0
-        },
-        {
-        "mes": "2025-10-01 00:00:00",
-        "valorTotal": 1041026685.0,
-        "valorAutogestionado": 112471562.0,
-        "valorAsesor": 928555123.0
-        },
-        {
-        "mes": "2025-11-01 00:00:00",
-        "valorTotal": 614266075.0,
-        "valorAutogestionado": 37287800.0,
-        "valorAsesor": 576978275.0
-        },
-        {
-        "mes": "2025-12-01 00:00:00",
-        "valorTotal": 998545339.0,
-        "valorAutogestionado": 212702639.0,
-        "valorAsesor": 785842700.0
-        },
-        {
-        "mes": "2026-01-01 00:00:00",
-        "valorTotal": 1541997011.0,
-        "valorAutogestionado": 137010850.0,
-        "valorAsesor": 1404986161.0
-        },
-        {
-        "mes": "2026-02-01 00:00:00",
-        "valorTotal": 1212550392.0,
-        "valorAutogestionado": 207159833.0,
-        "valorAsesor": 1005390559.0
-        }
-    ]
-    },
-    {
-    "name": "FINCO EDUCAR",
-    "monthlyData": [
-        {
-        "mes": "2025-01-01 00:00:00",
-        "valorTotal": 19474273688.44,
-        "valorAutogestionado": 2716730391.0,
-        "valorAsesor": 16757543297.44
-        },
-        {
-        "mes": "2025-02-01 00:00:00",
-        "valorTotal": 7053792634.0,
-        "valorAutogestionado": 930782715.0,
-        "valorAsesor": 6123009919.0
-        },
-        {
-        "mes": "2025-03-01 00:00:00",
-        "valorTotal": 2334619171.99,
-        "valorAutogestionado": 230615330.0,
-        "valorAsesor": 2104003841.99
-        },
-        {
-        "mes": "2025-04-01 00:00:00",
-        "valorTotal": 1955937220.0,
-        "valorAutogestionado": 162100861.0,
-        "valorAsesor": 1793836359.0
-        },
-        {
-        "mes": "2025-05-01 00:00:00",
-        "valorTotal": 3309230518.21,
-        "valorAutogestionado": 186421728.0,
-        "valorAsesor": 3122808790.21
-        },
-        {
-        "mes": "2025-06-01 00:00:00",
-        "valorTotal": 12275083160.0,
-        "valorAutogestionado": 795895227.0,
-        "valorAsesor": 11479187933.0
-        },
-        {
-        "mes": "2025-07-01 00:00:00",
-        "valorTotal": 24980840451.88,
-        "valorAutogestionado": 1630915297.0,
-        "valorAsesor": 23349925154.88
-        },
-        {
-        "mes": "2025-08-01 00:00:00",
-        "valorTotal": 8143457018.690001,
-        "valorAutogestionado": 588414734.0,
-        "valorAsesor": 7555042284.690001
-        },
-        {
-        "mes": "2025-09-01 00:00:00",
-        "valorTotal": 3160040489.0,
-        "valorAutogestionado": 229168151.0,
-        "valorAsesor": 2930872338.0
-        },
-        {
-        "mes": "2025-10-01 00:00:00",
-        "valorTotal": 3000253692.54,
-        "valorAutogestionado": 185558089.0,
-        "valorAsesor": 2814695603.54
-        },
-        {
-        "mes": "2025-11-01 00:00:00",
-        "valorTotal": 3927617731.0,
-        "valorAutogestionado": 176955242.0,
-        "valorAsesor": 3750662489.0
-        },
-        {
-        "mes": "2025-12-01 00:00:00",
-        "valorTotal": 20230170355.0,
-        "valorAutogestionado": 1166306021.0,
-        "valorAsesor": 19063864334.0
-        },
-        {
-        "mes": "2026-01-01 00:00:00",
-        "valorTotal": 23894599518.0,
-        "valorAutogestionado": 3830611391.0,
-        "valorAsesor": 20063988127.0
-        },
-        {
-        "mes": "2026-02-01 00:00:00",
-        "valorTotal": 9528347925.0,
-        "valorAutogestionado": 478707453.0,
-        "valorAsesor": 9049640472.0
-        }
-    ]
-    },
-    {
-    "name": "FINCO GO",
-    "monthlyData": [
-        {
-        "mes": "2025-01-01 00:00:00",
-        "valorTotal": 700300000.0,
-        "valorAutogestionado": 0.0,
-        "valorAsesor": 700300000.0
-        },
-        {
-        "mes": "2025-02-01 00:00:00",
-        "valorTotal": 69253295.0,
-        "valorAutogestionado": 0.0,
-        "valorAsesor": 69253295.0
-        },
-        {
-        "mes": "2025-03-01 00:00:00",
-        "valorTotal": 50220735.0,
-        "valorAutogestionado": 0.0,
-        "valorAsesor": 50220735.0
-        },
-        {
-        "mes": "2025-04-01 00:00:00",
-        "valorTotal": 75373118.0,
-        "valorAutogestionado": 0.0,
-        "valorAsesor": 75373118.0
-        },
-        {
-        "mes": "2025-05-01 00:00:00",
-        "valorTotal": 98044852.0,
-        "valorAutogestionado": 0.0,
-        "valorAsesor": 98044852.0
-        },
-        {
-        "mes": "2025-06-01 00:00:00",
-        "valorTotal": 66396209.0,
-        "valorAutogestionado": 0.0,
-        "valorAsesor": 66396209.0
-        },
-        {
-        "mes": "2025-07-01 00:00:00",
-        "valorTotal": 66125696.0,
-        "valorAutogestionado": 0.0,
-        "valorAsesor": 66125696.0
-        },
-        {
-        "mes": "2025-08-01 00:00:00",
-        "valorTotal": 81801729.0,
-        "valorAutogestionado": 12624600.0,
-        "valorAsesor": 69177129.0
-        },
-        {
-        "mes": "2025-09-01 00:00:00",
-        "valorTotal": 98646322.0,
-        "valorAutogestionado": 9023500.0,
-        "valorAsesor": 89622822.0
-        },
-        {
-        "mes": "2025-10-01 00:00:00",
-        "valorTotal": 94340300.0,
-        "valorAutogestionado": 12221050.0,
-        "valorAsesor": 82119250.0
-        },
-        {
-        "mes": "2025-11-01 00:00:00",
-        "valorTotal": 448395300.0,
-        "valorAutogestionado": 324966850.0,
-        "valorAsesor": 123428450.0
-        },
-        {
-        "mes": "2025-12-01 00:00:00",
-        "valorTotal": 180040244.0,
-        "valorAutogestionado": 73472250.0,
-        "valorAsesor": 106567994.0
-        },
-        {
-        "mes": "2026-01-01 00:00:00",
-        "valorTotal": 109740900.0,
-        "valorAutogestionado": 46670250.0,
-        "valorAsesor": 63070650.0
-        },
-        {
-        "mes": "2026-02-01 00:00:00",
-        "valorTotal": 175810025.0,
-        "valorAutogestionado": 88015893.0,
-        "valorAsesor": 87794132.0
-        }
-    ]
-    }
-]
 }

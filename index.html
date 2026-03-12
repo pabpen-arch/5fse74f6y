@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Digital Command Center 2025</title>
+<title>Plataforma de Inteligencia Digital</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -10,40 +10,77 @@
 <body>
 
 <nav class="navbar">
-  <div class="logo">Digital Command Center 2025</div>
+  <div class="logo">
+    Plataforma de Inteligencia Digital<br>
+    <span class="sub-logo">Canal Virtual – Modelo de Crecimiento</span>
+  </div>
+
   <div class="menu">
-    <button class="nav-btn active-btn" onclick="showSection('status', this)">
-      Status Productos Digitales
-    </button>
-    <button class="nav-btn" onclick="showSection('proyecciones', this)">
-      Proyecciones por producto
-    </button>
-    <button class="nav-btn" onclick="showSection('plan', this)">
-      Plan de trabajo
-    </button>
+    <button class="nav-btn active-btn" onclick="showSection('benchmark', this)">Benchmark</button>
+    <button class="nav-btn" onclick="showSection('status', this)">Status Productos</button>
+    <button class="nav-btn" onclick="showSection('proyecciones', this)">Proyecciones</button>
+    <button class="nav-btn" onclick="showSection('plan', this)">Plan de Trabajo</button>
   </div>
 </nav>
 
-<section id="statusSection" class="section active">
-  <div class="carousel" id="productsContainer"></div>
+<!-- ================= BENCHMARK ================= -->
+
+<section id="benchmarkSection" class="section active">
+
+  <div class="section-header">
+    <h1>Contexto Competitivo Digital</h1>
+    <p>Panorama estratégico del mercado</p>
+  </div>
+
+  <div class="benchmark-grid">
+
+    <div class="benchmark-analysis" id="benchmarkCDAT"></div>
+
+    <div class="benchmark-analysis" id="benchmarkPAP"></div>
+
+  </div>
+
 </section>
+
+<!-- ================= STATUS ================= -->
+
+<section id="statusSection" class="section">
+
+  <div class="section-header">
+    <h1>Status Productos Digitales</h1>
+    <p>Desempeño y adopción del canal virtual</p>
+  </div>
+
+  <div class="carousel" id="productsContainer"></div>
+
+</section>
+
+<!-- ================= PROYECCIONES ================= -->
 
 <section id="proyeccionesSection" class="section">
-  <div class="placeholder">
-    <h2>Proyecciones por Producto</h2>
+  <div class="section-header">
+    <h1>Escenarios Estratégicos</h1>
+    <p>Simulación de crecimiento digital</p>
   </div>
 </section>
+
+<!-- ================= PLAN ================= -->
 
 <section id="planSection" class="section">
-  <div class="placeholder">
-    <h2>Plan de Trabajo</h2>
+  <div class="section-header">
+    <h1>Roadmap Estratégico</h1>
+    <p>Iniciativas clave 2025–2026</p>
   </div>
 </section>
 
+<!-- ================= MODAL ================= -->
+
 <div id="modal" class="modal hidden">
+
   <div class="modal-content">
 
     <span id="closeBtn">&times;</span>
+
     <h2 id="modalTitle"></h2>
 
     <div class="modal-grid">
@@ -52,6 +89,7 @@
         <canvas id="chart"></canvas>
 
         <div id="metrics">
+
           <button onclick="toggleDataset(0)">Valor Total</button>
           <button onclick="toggleDataset(1)">Autogestionado</button>
           <button onclick="toggleDataset(2)">Asesor</button>
@@ -59,12 +97,12 @@
           <div class="projection-control">
             <label>
               Simular Adopción Digital:
-              <span id="projectionValue">--</span>%
+              <span id="projectionValue">0</span>%
             </label>
             <input type="range" id="projectionSlider" min="0" max="80" value="0">
           </div>
-        </div>
 
+        </div>
       </div>
 
       <div class="analysis-area" id="analysisPanel"></div>
@@ -72,6 +110,7 @@
     </div>
 
   </div>
+
 </div>
 
 <script src="script.js"></script>
