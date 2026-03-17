@@ -9,6 +9,8 @@
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
+
 <nav class="navbar">
   <div class="logo">
     Plataforma de Inteligencia Digital<br>
@@ -18,7 +20,7 @@
   <div class="menu">
     <button class="nav-btn active-btn" onclick="showSection('benchmark', this)">Benchmark</button>
     <button class="nav-btn" onclick="showSection('status', this)">Status Productos</button>
-    <button class="nav-btn" onclick="showSection('proyecciones', this)">Proyecciones</button>
+    <button class="nav-btn" onclick="showSection('proyecciones', this)">Digital Impact Lab</button>
     <button class="nav-btn" onclick="showSection('plan', this)">Plan de Trabajo</button>
   </div>
 </nav>
@@ -28,21 +30,18 @@
 <section id="benchmarkSection" class="section active">
 
   <div class="section-header">
-    <h1>Contexto Competitivo Digital</h1>
-    <p>Panorama estratégico del mercado</p>
+    <h1>Digital Market Intelligence</h1>
+    <p>Panorama competitivo del ecosistema digital</p>
   </div>
 
-  <div class="benchmark-grid">
-
-    <div class="benchmark-analysis" id="benchmarkCDAT"></div>
-
-    <div class="benchmark-analysis" id="benchmarkPAP"></div>
-
+  <div class="benchmark-wrapper">
+    <div class="benchmark-block" id="benchmarkCDAT"></div>
+    <div class="benchmark-block" id="benchmarkPAP"></div>
   </div>
 
 </section>
 
-<!-- ================= STATUS ================= -->
+<!-- ================= STATUS PRODUCTOS ================= -->
 
 <section id="statusSection" class="section">
 
@@ -55,39 +54,48 @@
 
 </section>
 
-<!-- ================= PROYECCIONES ================= -->
+<!-- ================= DIGITAL IMPACT LAB ================= -->
 
 <section id="proyeccionesSection" class="section">
+
   <div class="section-header">
-    <h1>Escenarios Estratégicos</h1>
-    <p>Simulación de crecimiento digital</p>
+    <h1>Digital Impact Lab</h1>
+    <p>Iniciativas estratégicas del canal virtual</p>
   </div>
+
+  <div id="impactContainer" class="carousel"></div>
+
 </section>
 
-<!-- ================= PLAN ================= -->
+<!-- ================= PLAN DE TRABAJO ================= -->
 
 <section id="planSection" class="section">
+
   <div class="section-header">
-    <h1>Roadmap Estratégico</h1>
-    <p>Iniciativas clave 2025–2026</p>
+    <h1>Innovation Pipeline 2025</h1>
+    <p>Iniciativas estratégicas del canal virtual</p>
   </div>
+
+  <div class="roadmap" id="roadmapContainer"></div>
+
 </section>
 
-<!-- ================= MODAL ================= -->
+<!-- ================= MODAL GENERAL (PRODUCTOS + IMPACT) ================= -->
 
 <div id="modal" class="modal hidden">
 
   <div class="modal-content">
 
     <span id="closeBtn">&times;</span>
-
     <h2 id="modalTitle"></h2>
 
     <div class="modal-grid">
 
-      <div>
-        <canvas id="chart"></canvas>
+      <!-- ===== GRÁFICA PRINCIPAL ===== -->
 
+      <div>
+          <canvas id="chartProduct"></canvas>
+          <canvas id="chartImpact" style="display:none;"></canvas>
         <div id="metrics">
 
           <button onclick="toggleDataset(0)">Valor Total</button>
@@ -102,8 +110,16 @@
             <input type="range" id="projectionSlider" min="0" max="80" value="0">
           </div>
 
+          <!-- 🔥 Indicador dinámico -->
+          <div class="impact-indicator">
+            Impacto Proyectado:
+            <strong id="impactValue">$0</strong>
+          </div>
+
         </div>
       </div>
+
+      <!-- ===== PANEL DERECHO (ANÁLISIS / PIE CHART) ===== -->
 
       <div class="analysis-area" id="analysisPanel"></div>
 
@@ -114,5 +130,9 @@
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
+
+
+onclick="showSection('impact', this)"
