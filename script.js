@@ -51,6 +51,11 @@ fetch("data.json")
 
 function openModal(product){
 
+  // Mostrar botones nuevamente para productos
+  document.querySelectorAll("#metrics button").forEach(btn=>{
+    btn.style.display = "inline-block";
+  });
+
   currentProductData=product;
 
   document.getElementById("modal").classList.remove("hidden");
@@ -392,6 +397,11 @@ function renderImpactCard(months, totalValues, labelsPie, valuesPie){
 
 function openImpactModal(){
 
+    // Ocultar botones de métricas para WhatsApp
+  document.querySelectorAll("#metrics button").forEach(btn=>{
+    btn.style.display = "none";
+  });
+
   currentProductData = null; // 🔥 desactiva proyección de productos
 
   const modal = document.getElementById("modal");
@@ -458,8 +468,17 @@ function openImpactModal(){
           "#ef4444","#8b5cf6"
         ]
       }]
+    },
+    options:{
+      plugins:{
+      legend:{
+        labels:{
+          color:"#ffffff"   // 🔥 TEXTO BLANCO
+        }
+      }
     }
-  });
-}
+  }
+});
+  }
 
 loadImpactData();

@@ -4,8 +4,8 @@ body{
 margin:0;
 font-family:'Segoe UI', sans-serif;
 background:
-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-url("fondo.png");
+linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+url("1853.jpeg");
 background-size: cover;
 background-position: center;
 min-height:100vh;
