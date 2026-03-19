@@ -1,0 +1,3139 @@
+{
+    "total_mes": [
+        {
+            "Mes": "2024-07",
+            "Total Brigadas": 6
+        },
+        {
+            "Mes": "2024-08",
+            "Total Brigadas": 48
+        },
+        {
+            "Mes": "2024-09",
+            "Total Brigadas": 55
+        },
+        {
+            "Mes": "2024-10",
+            "Total Brigadas": 62
+        },
+        {
+            "Mes": "2024-11",
+            "Total Brigadas": 49
+        },
+        {
+            "Mes": "2024-12",
+            "Total Brigadas": 15
+        },
+        {
+            "Mes": "2025-01",
+            "Total Brigadas": 18
+        },
+        {
+            "Mes": "2025-02",
+            "Total Brigadas": 43
+        },
+        {
+            "Mes": "2025-03",
+            "Total Brigadas": 63
+        },
+        {
+            "Mes": "2025-04",
+            "Total Brigadas": 74
+        },
+        {
+            "Mes": "2025-05",
+            "Total Brigadas": 125
+        },
+        {
+            "Mes": "2025-06",
+            "Total Brigadas": 63
+        },
+        {
+            "Mes": "2025-07",
+            "Total Brigadas": 109
+        },
+        {
+            "Mes": "2025-08",
+            "Total Brigadas": 134
+        },
+        {
+            "Mes": "2025-09",
+            "Total Brigadas": 131
+        },
+        {
+            "Mes": "2025-10",
+            "Total Brigadas": 89
+        },
+        {
+            "Mes": "2025-11",
+            "Total Brigadas": 65
+        },
+        {
+            "Mes": "2025-12",
+            "Total Brigadas": 4
+        },
+        {
+            "Mes": "2026-01",
+            "Total Brigadas": 26
+        },
+        {
+            "Mes": "2026-02",
+            "Total Brigadas": 97
+        },
+        {
+            "Mes": "2026-03",
+            "Total Brigadas": 19
+        }
+    ],
+    "por_estado": [
+        {
+            "Mes": "2024-07",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 3,
+            "Total": 6,
+            "%": 0.5
+        },
+        {
+            "Mes": "2024-07",
+            "Estado": "Confirmada",
+            "Cantidad": 2,
+            "Total": 6,
+            "%": 0.3333333333333333
+        },
+        {
+            "Mes": "2024-07",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 1,
+            "Total": 6,
+            "%": 0.16666666666666666
+        },
+        {
+            "Mes": "2024-08",
+            "Estado": "Cancelada por empresa",
+            "Cantidad": 1,
+            "Total": 48,
+            "%": 0.020833333333333332
+        },
+        {
+            "Mes": "2024-08",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 4,
+            "Total": 48,
+            "%": 0.08333333333333333
+        },
+        {
+            "Mes": "2024-08",
+            "Estado": "Confirmada",
+            "Cantidad": 39,
+            "Total": 48,
+            "%": 0.8125
+        },
+        {
+            "Mes": "2024-08",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 3,
+            "Total": 48,
+            "%": 0.0625
+        },
+        {
+            "Mes": "2024-08",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 1,
+            "Total": 48,
+            "%": 0.020833333333333332
+        },
+        {
+            "Mes": "2024-09",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 5,
+            "Total": 55,
+            "%": 0.09090909090909091
+        },
+        {
+            "Mes": "2024-09",
+            "Estado": "Confirmada",
+            "Cantidad": 39,
+            "Total": 55,
+            "%": 0.7090909090909091
+        },
+        {
+            "Mes": "2024-09",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 1,
+            "Total": 55,
+            "%": 0.01818181818181818
+        },
+        {
+            "Mes": "2024-09",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 10,
+            "Total": 55,
+            "%": 0.18181818181818182
+        },
+        {
+            "Mes": "2024-10",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 6,
+            "Total": 62,
+            "%": 0.0967741935483871
+        },
+        {
+            "Mes": "2024-10",
+            "Estado": "Confirmada",
+            "Cantidad": 51,
+            "Total": 62,
+            "%": 0.8225806451612904
+        },
+        {
+            "Mes": "2024-10",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 3,
+            "Total": 62,
+            "%": 0.04838709677419355
+        },
+        {
+            "Mes": "2024-11",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 4,
+            "Total": 49,
+            "%": 0.08163265306122448
+        },
+        {
+            "Mes": "2024-11",
+            "Estado": "Confirmada",
+            "Cantidad": 41,
+            "Total": 49,
+            "%": 0.8367346938775511
+        },
+        {
+            "Mes": "2024-11",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 2,
+            "Total": 49,
+            "%": 0.04081632653061224
+        },
+        {
+            "Mes": "2024-12",
+            "Estado": "Confirmada",
+            "Cantidad": 10,
+            "Total": 15,
+            "%": 0.6666666666666666
+        },
+        {
+            "Mes": "2024-12",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 1,
+            "Total": 15,
+            "%": 0.06666666666666667
+        },
+        {
+            "Mes": "2024-12",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 4,
+            "Total": 15,
+            "%": 0.26666666666666666
+        },
+        {
+            "Mes": "2025-01",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 2,
+            "Total": 18,
+            "%": 0.1111111111111111
+        },
+        {
+            "Mes": "2025-01",
+            "Estado": "Confirmada",
+            "Cantidad": 14,
+            "Total": 18,
+            "%": 0.7777777777777778
+        },
+        {
+            "Mes": "2025-01",
+            "Estado": "Inconsistencia empresa ",
+            "Cantidad": 1,
+            "Total": 18,
+            "%": 0.05555555555555555
+        },
+        {
+            "Mes": "2025-01",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 1,
+            "Total": 18,
+            "%": 0.05555555555555555
+        },
+        {
+            "Mes": "2025-02",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 1,
+            "Total": 43,
+            "%": 0.023255813953488372
+        },
+        {
+            "Mes": "2025-02",
+            "Estado": "Confirmada",
+            "Cantidad": 37,
+            "Total": 43,
+            "%": 0.8604651162790697
+        },
+        {
+            "Mes": "2025-02",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 2,
+            "Total": 43,
+            "%": 0.046511627906976744
+        },
+        {
+            "Mes": "2025-02",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 1,
+            "Total": 43,
+            "%": 0.023255813953488372
+        },
+        {
+            "Mes": "2025-02",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 2,
+            "Total": 43,
+            "%": 0.046511627906976744
+        },
+        {
+            "Mes": "2025-03",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 9,
+            "Total": 63,
+            "%": 0.14285714285714285
+        },
+        {
+            "Mes": "2025-03",
+            "Estado": "Confirmada",
+            "Cantidad": 46,
+            "Total": 63,
+            "%": 0.7301587301587301
+        },
+        {
+            "Mes": "2025-03",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 6,
+            "Total": 63,
+            "%": 0.09523809523809523
+        },
+        {
+            "Mes": "2025-03",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-04",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 7,
+            "Total": 74,
+            "%": 0.0945945945945946
+        },
+        {
+            "Mes": "2025-04",
+            "Estado": "Confirmada",
+            "Cantidad": 61,
+            "Total": 74,
+            "%": 0.8243243243243243
+        },
+        {
+            "Mes": "2025-04",
+            "Estado": "Inconsistencia proveedor",
+            "Cantidad": 1,
+            "Total": 74,
+            "%": 0.013513513513513514
+        },
+        {
+            "Mes": "2025-04",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 3,
+            "Total": 74,
+            "%": 0.04054054054054054
+        },
+        {
+            "Mes": "2025-04",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 1,
+            "Total": 74,
+            "%": 0.013513513513513514
+        },
+        {
+            "Mes": "2025-04",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 1,
+            "Total": 74,
+            "%": 0.013513513513513514
+        },
+        {
+            "Mes": "2025-05",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 14,
+            "Total": 125,
+            "%": 0.112
+        },
+        {
+            "Mes": "2025-05",
+            "Estado": "Confirmada",
+            "Cantidad": 97,
+            "Total": 125,
+            "%": 0.776
+        },
+        {
+            "Mes": "2025-05",
+            "Estado": "Inconsistencia proveedor",
+            "Cantidad": 2,
+            "Total": 125,
+            "%": 0.016
+        },
+        {
+            "Mes": "2025-05",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 1,
+            "Total": 125,
+            "%": 0.008
+        },
+        {
+            "Mes": "2025-05",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 3,
+            "Total": 125,
+            "%": 0.024
+        },
+        {
+            "Mes": "2025-05",
+            "Estado": "Pendiente confirmación area ",
+            "Cantidad": 1,
+            "Total": 125,
+            "%": 0.008
+        },
+        {
+            "Mes": "2025-05",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 7,
+            "Total": 125,
+            "%": 0.056
+        },
+        {
+            "Mes": "2025-06",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 15,
+            "Total": 63,
+            "%": 0.23809523809523808
+        },
+        {
+            "Mes": "2025-06",
+            "Estado": "Confirmada",
+            "Cantidad": 40,
+            "Total": 63,
+            "%": 0.6349206349206349
+        },
+        {
+            "Mes": "2025-06",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 4,
+            "Total": 63,
+            "%": 0.06349206349206349
+        },
+        {
+            "Mes": "2025-06",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 3,
+            "Total": 63,
+            "%": 0.047619047619047616
+        },
+        {
+            "Mes": "2025-06",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-07",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 8,
+            "Total": 109,
+            "%": 0.07339449541284404
+        },
+        {
+            "Mes": "2025-07",
+            "Estado": "Confirmada",
+            "Cantidad": 91,
+            "Total": 109,
+            "%": 0.8348623853211009
+        },
+        {
+            "Mes": "2025-07",
+            "Estado": "Inconsistencia proveedor",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 3,
+            "Total": 109,
+            "%": 0.027522935779816515
+        },
+        {
+            "Mes": "2025-07",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 3,
+            "Total": 109,
+            "%": 0.027522935779816515
+        },
+        {
+            "Mes": "2025-07",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 3,
+            "Total": 109,
+            "%": 0.027522935779816515
+        },
+        {
+            "Mes": "2025-08",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 4,
+            "Total": 134,
+            "%": 0.029850746268656716
+        },
+        {
+            "Mes": "2025-08",
+            "Estado": "Confirmada",
+            "Cantidad": 102,
+            "Total": 134,
+            "%": 0.7611940298507462
+        },
+        {
+            "Mes": "2025-08",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-08",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 5,
+            "Total": 134,
+            "%": 0.03731343283582089
+        },
+        {
+            "Mes": "2025-08",
+            "Estado": "Pendiente confirmación area ",
+            "Cantidad": 12,
+            "Total": 134,
+            "%": 0.08955223880597014
+        },
+        {
+            "Mes": "2025-08",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 9,
+            "Total": 134,
+            "%": 0.06716417910447761
+        },
+        {
+            "Mes": "2025-08",
+            "Estado": "Solictud fuera de los tiempos ",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-09",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 6,
+            "Total": 131,
+            "%": 0.04580152671755725
+        },
+        {
+            "Mes": "2025-09",
+            "Estado": "Confirmada",
+            "Cantidad": 105,
+            "Total": 131,
+            "%": 0.8015267175572519
+        },
+        {
+            "Mes": "2025-09",
+            "Estado": "Inconsistencia proveedor",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "Estado": "Pendiente confirmación area ",
+            "Cantidad": 4,
+            "Total": 131,
+            "%": 0.030534351145038167
+        },
+        {
+            "Mes": "2025-09",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 12,
+            "Total": 131,
+            "%": 0.0916030534351145
+        },
+        {
+            "Mes": "2025-10",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 5,
+            "Total": 89,
+            "%": 0.056179775280898875
+        },
+        {
+            "Mes": "2025-10",
+            "Estado": "Confirmada",
+            "Cantidad": 67,
+            "Total": 89,
+            "%": 0.7528089887640449
+        },
+        {
+            "Mes": "2025-10",
+            "Estado": "No contamos con proveedor ",
+            "Cantidad": 3,
+            "Total": 89,
+            "%": 0.033707865168539325
+        },
+        {
+            "Mes": "2025-10",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 10,
+            "Total": 89,
+            "%": 0.11235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 4,
+            "Total": 89,
+            "%": 0.0449438202247191
+        },
+        {
+            "Mes": "2025-11",
+            "Estado": "Cancelada por solicitud del area",
+            "Cantidad": 8,
+            "Total": 65,
+            "%": 0.12307692307692308
+        },
+        {
+            "Mes": "2025-11",
+            "Estado": "Confirmada",
+            "Cantidad": 54,
+            "Total": 65,
+            "%": 0.8307692307692308
+        },
+        {
+            "Mes": "2025-11",
+            "Estado": "Inconsistencia proveedor",
+            "Cantidad": 1,
+            "Total": 65,
+            "%": 0.015384615384615385
+        },
+        {
+            "Mes": "2025-11",
+            "Estado": "Pendiente confirmación area ",
+            "Cantidad": 1,
+            "Total": 65,
+            "%": 0.015384615384615385
+        },
+        {
+            "Mes": "2025-11",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 1,
+            "Total": 65,
+            "%": 0.015384615384615385
+        },
+        {
+            "Mes": "2025-12",
+            "Estado": "Confirmada",
+            "Cantidad": 3,
+            "Total": 4,
+            "%": 0.75
+        },
+        {
+            "Mes": "2025-12",
+            "Estado": "Proveedor No tiene disponibilidad ",
+            "Cantidad": 1,
+            "Total": 4,
+            "%": 0.25
+        },
+        {
+            "Mes": "2026-01",
+            "Estado": "Confirmada",
+            "Cantidad": 26,
+            "Total": 26,
+            "%": 1.0
+        },
+        {
+            "Mes": "2026-02",
+            "Estado": "Cancelada por solciitud del area",
+            "Cantidad": 5,
+            "Total": 97,
+            "%": 0.05154639175257732
+        },
+        {
+            "Mes": "2026-02",
+            "Estado": "Confirmada",
+            "Cantidad": 52,
+            "Total": 97,
+            "%": 0.5360824742268041
+        },
+        {
+            "Mes": "2026-02",
+            "Estado": "Confirmada, pendiente parafiscales ",
+            "Cantidad": 4,
+            "Total": 97,
+            "%": 0.041237113402061855
+        },
+        {
+            "Mes": "2026-02",
+            "Estado": "En proceso",
+            "Cantidad": 31,
+            "Total": 97,
+            "%": 0.31958762886597936
+        },
+        {
+            "Mes": "2026-02",
+            "Estado": "No se tuvo respuesta y/o aprobacion de area",
+            "Cantidad": 2,
+            "Total": 97,
+            "%": 0.020618556701030927
+        },
+        {
+            "Mes": "2026-02",
+            "Estado": "Pendiente confirmación area ",
+            "Cantidad": 3,
+            "Total": 97,
+            "%": 0.030927835051546393
+        },
+        {
+            "Mes": "2026-03",
+            "Estado": "Confirmada",
+            "Cantidad": 5,
+            "Total": 19,
+            "%": 0.2631578947368421
+        },
+        {
+            "Mes": "2026-03",
+            "Estado": "Confirmada, pendiente parafiscales ",
+            "Cantidad": 1,
+            "Total": 19,
+            "%": 0.05263157894736842
+        },
+        {
+            "Mes": "2026-03",
+            "Estado": "En proceso",
+            "Cantidad": 12,
+            "Total": 19,
+            "%": 0.631578947368421
+        },
+        {
+            "Mes": "2026-03",
+            "Estado": "Pendiente confirmación area ",
+            "Cantidad": 1,
+            "Total": 19,
+            "%": 0.05263157894736842
+        }
+    ],
+    "por_canal": [
+        {
+            "Mes": "2024-07",
+            "COORDINADOR DEL CANAL": "Ana carolina ruiz ",
+            "Cantidad": 1,
+            "Total": 6,
+            "%": 0.16666666666666666
+        },
+        {
+            "Mes": "2024-07",
+            "COORDINADOR DEL CANAL": "Angelo valbuena ",
+            "Cantidad": 1,
+            "Total": 6,
+            "%": 0.16666666666666666
+        },
+        {
+            "Mes": "2024-07",
+            "COORDINADOR DEL CANAL": "Camila garcia ",
+            "Cantidad": 3,
+            "Total": 6,
+            "%": 0.5
+        },
+        {
+            "Mes": "2024-07",
+            "COORDINADOR DEL CANAL": "Erika Muñoz ",
+            "Cantidad": 1,
+            "Total": 6,
+            "%": 0.16666666666666666
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Ana Carolina ",
+            "Cantidad": 2,
+            "Total": 48,
+            "%": 0.041666666666666664
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Ana Carolina Ruiz ",
+            "Cantidad": 9,
+            "Total": 48,
+            "%": 0.1875
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Ana carolina ",
+            "Cantidad": 2,
+            "Total": 48,
+            "%": 0.041666666666666664
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Angelo Valbuena ",
+            "Cantidad": 13,
+            "Total": 48,
+            "%": 0.2708333333333333
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Cristian Peñaloza ",
+            "Cantidad": 3,
+            "Total": 48,
+            "%": 0.0625
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Erika Muñoz ",
+            "Cantidad": 2,
+            "Total": 48,
+            "%": 0.041666666666666664
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Erika muñoz ",
+            "Cantidad": 1,
+            "Total": 48,
+            "%": 0.020833333333333332
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Isabel Burbnao ",
+            "Cantidad": 1,
+            "Total": 48,
+            "%": 0.020833333333333332
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Jimmy chambo ",
+            "Cantidad": 5,
+            "Total": 48,
+            "%": 0.10416666666666667
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Maria Camila Garcia ",
+            "Cantidad": 9,
+            "Total": 48,
+            "%": 0.1875
+        },
+        {
+            "Mes": "2024-08",
+            "COORDINADOR DEL CANAL": "Ricardo Rojas",
+            "Cantidad": 1,
+            "Total": 48,
+            "%": 0.020833333333333332
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Ana Carolina Ruiz ",
+            "Cantidad": 10,
+            "Total": 55,
+            "%": 0.18181818181818182
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Ana carolina ",
+            "Cantidad": 2,
+            "Total": 55,
+            "%": 0.03636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Ana carolina Ruiz ",
+            "Cantidad": 2,
+            "Total": 55,
+            "%": 0.03636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Angelo Valbuena ",
+            "Cantidad": 2,
+            "Total": 55,
+            "%": 0.03636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Angelo valbuena ",
+            "Cantidad": 2,
+            "Total": 55,
+            "%": 0.03636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Camila garcia ",
+            "Cantidad": 1,
+            "Total": 55,
+            "%": 0.01818181818181818
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Claudia Quiroz ",
+            "Cantidad": 4,
+            "Total": 55,
+            "%": 0.07272727272727272
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Cristian Peñaloza ",
+            "Cantidad": 1,
+            "Total": 55,
+            "%": 0.01818181818181818
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Diana Celis",
+            "Cantidad": 1,
+            "Total": 55,
+            "%": 0.01818181818181818
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Erika Muñoz ",
+            "Cantidad": 9,
+            "Total": 55,
+            "%": 0.16363636363636364
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Erika muñoz ",
+            "Cantidad": 2,
+            "Total": 55,
+            "%": 0.03636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Jimmy chambo ",
+            "Cantidad": 13,
+            "Total": 55,
+            "%": 0.23636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Maria Camila Garcia ",
+            "Cantidad": 2,
+            "Total": 55,
+            "%": 0.03636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "COORDINADOR DEL CANAL": "Victor Idrobo",
+            "Cantidad": 4,
+            "Total": 55,
+            "%": 0.07272727272727272
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "ANA CAROLINA ",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "ANA CAROLINA - FERRAM",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "ANA CAROLINA -FERRAM",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Ana Carolina Ruiz ",
+            "Cantidad": 6,
+            "Total": 62,
+            "%": 0.0967741935483871
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Ana Carolinaa Ruiz ",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Ana carolina RUIZ ",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Ana carolina Ruiz ",
+            "Cantidad": 8,
+            "Total": 62,
+            "%": 0.12903225806451613
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Ana carolina ruiz ",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Ana carolnaa Ruiz ",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Claudia Quiroz ",
+            "Cantidad": 3,
+            "Total": 62,
+            "%": 0.04838709677419355
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Claudia Quiroz - ferram",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Diana Celis",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Erika muñoz ",
+            "Cantidad": 8,
+            "Total": 62,
+            "%": 0.12903225806451613
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Isabel Burbnao ",
+            "Cantidad": 3,
+            "Total": 62,
+            "%": 0.04838709677419355
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Jimmy chambo ",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "Jose Ricardo ",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "LILIANA GANARRA - FERRAM",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 5,
+            "Total": 62,
+            "%": 0.08064516129032258
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "camgar@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 62,
+            "%": 0.04838709677419355
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "jimmy chambo ",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "COORDINADOR DEL CANAL": "jimmy chambo - ferram",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 18,
+            "Total": 49,
+            "%": 0.3673469387755102
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 10,
+            "Total": 49,
+            "%": 0.20408163265306123
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "asesorexterno_ricroj@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "comiteeducacion@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 6,
+            "Total": 49,
+            "%": 0.12244897959183673
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "jinhoy@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 49,
+            "%": 0.061224489795918366
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 7,
+            "Total": 49,
+            "%": 0.14285714285714285
+        },
+        {
+            "Mes": "2024-11",
+            "COORDINADOR DEL CANAL": "valpen@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-12",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 4,
+            "Total": 15,
+            "%": 0.26666666666666666
+        },
+        {
+            "Mes": "2024-12",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 15,
+            "%": 0.06666666666666667
+        },
+        {
+            "Mes": "2024-12",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 15,
+            "%": 0.13333333333333333
+        },
+        {
+            "Mes": "2024-12",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 15,
+            "%": 0.06666666666666667
+        },
+        {
+            "Mes": "2024-12",
+            "COORDINADOR DEL CANAL": "valpen@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 15,
+            "%": 0.13333333333333333
+        },
+        {
+            "Mes": "2024-12",
+            "COORDINADOR DEL CANAL": "vicidr@fincomercio.com",
+            "Cantidad": 4,
+            "Total": 15,
+            "%": 0.26666666666666666
+        },
+        {
+            "Mes": "2024-12",
+            "COORDINADOR DEL CANAL": "vivcru@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 15,
+            "%": 0.06666666666666667
+        },
+        {
+            "Mes": "2025-01",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 6,
+            "Total": 18,
+            "%": 0.3333333333333333
+        },
+        {
+            "Mes": "2025-01",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 5,
+            "Total": 18,
+            "%": 0.2777777777777778
+        },
+        {
+            "Mes": "2025-01",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 18,
+            "%": 0.1111111111111111
+        },
+        {
+            "Mes": "2025-01",
+            "COORDINADOR DEL CANAL": "cripen@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 18,
+            "%": 0.05555555555555555
+        },
+        {
+            "Mes": "2025-01",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 18,
+            "%": 0.16666666666666666
+        },
+        {
+            "Mes": "2025-01",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 18,
+            "%": 0.05555555555555555
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 43,
+            "%": 0.046511627906976744
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 15,
+            "Total": 43,
+            "%": 0.3488372093023256
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "dialin@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 43,
+            "%": 0.046511627906976744
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 7,
+            "Total": 43,
+            "%": 0.16279069767441862
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 43,
+            "%": 0.06976744186046512
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 5,
+            "Total": 43,
+            "%": 0.11627906976744186
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "valpen@fincomercio.com",
+            "Cantidad": 7,
+            "Total": 43,
+            "%": 0.16279069767441862
+        },
+        {
+            "Mes": "2025-02",
+            "COORDINADOR DEL CANAL": "vivcru@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 43,
+            "%": 0.023255813953488372
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "adrgir@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 17,
+            "Total": 63,
+            "%": 0.2698412698412698
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 7,
+            "Total": 63,
+            "%": 0.1111111111111111
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "clavil@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "cripen@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 63,
+            "%": 0.047619047619047616
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 13,
+            "Total": 63,
+            "%": 0.20634920634920634
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 63,
+            "%": 0.047619047619047616
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 10,
+            "Total": 63,
+            "%": 0.15873015873015872
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 63,
+            "%": 0.047619047619047616
+        },
+        {
+            "Mes": "2025-03",
+            "COORDINADOR DEL CANAL": "vivcru@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "adrgir@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 74,
+            "%": 0.013513513513513514
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 13,
+            "Total": 74,
+            "%": 0.17567567567567569
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 15,
+            "Total": 74,
+            "%": 0.20270270270270271
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 74,
+            "%": 0.04054054054054054
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 74,
+            "%": 0.04054054054054054
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 27,
+            "Total": 74,
+            "%": 0.36486486486486486
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 10,
+            "Total": 74,
+            "%": 0.13513513513513514
+        },
+        {
+            "Mes": "2025-04",
+            "COORDINADOR DEL CANAL": "nivpit@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 74,
+            "%": 0.02702702702702703
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 59,
+            "Total": 125,
+            "%": 0.472
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 13,
+            "Total": 125,
+            "%": 0.104
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 125,
+            "%": 0.016
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com ",
+            "Cantidad": 4,
+            "Total": 125,
+            "%": 0.032
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 11,
+            "Total": 125,
+            "%": 0.088
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 15,
+            "Total": 125,
+            "%": 0.12
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 9,
+            "Total": 125,
+            "%": 0.072
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com ",
+            "Cantidad": 4,
+            "Total": 125,
+            "%": 0.032
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "josalv1@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 125,
+            "%": 0.008
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "katsua@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 125,
+            "%": 0.008
+        },
+        {
+            "Mes": "2025-05",
+            "COORDINADOR DEL CANAL": "vivcru@fincomercio.com",
+            "Cantidad": 6,
+            "Total": 125,
+            "%": 0.048
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 18,
+            "Total": 63,
+            "%": 0.2857142857142857
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "andgom@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "carlop@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 4,
+            "Total": 63,
+            "%": 0.06349206349206349
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 23,
+            "Total": 63,
+            "%": 0.36507936507936506
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "jimcha@fincomercio.com",
+            "Cantidad": 5,
+            "Total": 63,
+            "%": 0.07936507936507936
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "josalv1@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "nivpit@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "rubmor@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-06",
+            "COORDINADOR DEL CANAL": "yucsar@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 63,
+            "%": 0.047619047619047616
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "adrgir@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 45,
+            "Total": 109,
+            "%": 0.41284403669724773
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "claqui@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 22,
+            "Total": 109,
+            "%": 0.2018348623853211
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "jencab@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "jinlav@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "josalv1@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "lizgal@fincomercio.com ",
+            "Cantidad": 13,
+            "Total": 109,
+            "%": 0.11926605504587157
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "valveg@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "vicari@fincomercio.com ",
+            "Cantidad": 13,
+            "Total": 109,
+            "%": 0.11926605504587157
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "yesgom@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "COORDINADOR DEL CANAL": "yucsar@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 134,
+            "%": 0.014925373134328358
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 55,
+            "Total": 134,
+            "%": 0.41044776119402987
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 134,
+            "%": 0.022388059701492536
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "danval@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 134,
+            "%": 0.014925373134328358
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 134,
+            "%": 0.022388059701492536
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 14,
+            "Total": 134,
+            "%": 0.1044776119402985
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "jenalv@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "josalv1@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 134,
+            "%": 0.022388059701492536
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "josleg@fincomercio ",
+            "Cantidad": 7,
+            "Total": 134,
+            "%": 0.05223880597014925
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "lizgal@fincomercio.com",
+            "Cantidad": 11,
+            "Total": 134,
+            "%": 0.08208955223880597
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "lizgal@fincomercio.com ",
+            "Cantidad": 19,
+            "Total": 134,
+            "%": 0.1417910447761194
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 10,
+            "Total": 134,
+            "%": 0.07462686567164178
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "valveg@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 134,
+            "%": 0.014925373134328358
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "vicari@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-08",
+            "COORDINADOR DEL CANAL": "yucsar@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "adrgir@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "adrnrin@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 56,
+            "Total": 131,
+            "%": 0.42748091603053434
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com",
+            "Cantidad": 10,
+            "Total": 131,
+            "%": 0.07633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com ",
+            "Cantidad": 4,
+            "Total": 131,
+            "%": 0.030534351145038167
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "carlop@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "cripen@fincomercio.com ",
+            "Cantidad": 5,
+            "Total": 131,
+            "%": 0.03816793893129771
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 3,
+            "Total": 131,
+            "%": 0.022900763358778626
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 25,
+            "Total": 131,
+            "%": 0.19083969465648856
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "jenalv@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "josleg@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "katcel@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "lizgal@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "lizgal@fincomercio.com ",
+            "Cantidad": 8,
+            "Total": 131,
+            "%": 0.061068702290076333
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "nivpit@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "COORDINADOR DEL CANAL": "vicari@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 131,
+            "%": 0.022900763358778626
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 39,
+            "Total": 89,
+            "%": 0.43820224719101125
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com ",
+            "Cantidad": 4,
+            "Total": 89,
+            "%": 0.0449438202247191
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "angval@fincomercio.com ",
+            "Cantidad": 6,
+            "Total": 89,
+            "%": 0.06741573033707865
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 14,
+            "Total": 89,
+            "%": 0.15730337078651685
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 89,
+            "%": 0.02247191011235955
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 89,
+            "%": 0.033707865168539325
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "josleg@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "katcel@fincomercio.com ",
+            "Cantidad": 4,
+            "Total": 89,
+            "%": 0.0449438202247191
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "lizgal@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 89,
+            "%": 0.02247191011235955
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "nivpit@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "nubjai@fincomercio.com",
+            "Cantidad": 6,
+            "Total": 89,
+            "%": 0.06741573033707865
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "valveg@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "COORDINADOR DEL CANAL": "vicari@fincomercio.com ",
+            "Cantidad": 6,
+            "Total": 89,
+            "%": 0.06741573033707865
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "adrgir@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 65,
+            "%": 0.03076923076923077
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 33,
+            "Total": 65,
+            "%": 0.5076923076923077
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com ",
+            "Cantidad": 6,
+            "Total": 65,
+            "%": 0.09230769230769231
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "camgar@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 65,
+            "%": 0.015384615384615385
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 14,
+            "Total": 65,
+            "%": 0.2153846153846154
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "katcel@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 65,
+            "%": 0.015384615384615385
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 65,
+            "%": 0.03076923076923077
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "vicari@fincomercio.com ",
+            "Cantidad": 5,
+            "Total": 65,
+            "%": 0.07692307692307693
+        },
+        {
+            "Mes": "2025-11",
+            "COORDINADOR DEL CANAL": "vicidr@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 65,
+            "%": 0.015384615384615385
+        },
+        {
+            "Mes": "2025-12",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 4,
+            "%": 0.75
+        },
+        {
+            "Mes": "2025-12",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 4,
+            "%": 0.25
+        },
+        {
+            "Mes": "2026-01",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 18,
+            "Total": 26,
+            "%": 0.6923076923076923
+        },
+        {
+            "Mes": "2026-01",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 7,
+            "Total": 26,
+            "%": 0.2692307692307692
+        },
+        {
+            "Mes": "2026-01",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 26,
+            "%": 0.038461538461538464
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 71,
+            "Total": 97,
+            "%": 0.7319587628865979
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "angval1@fincomercio.com ",
+            "Cantidad": 9,
+            "Total": 97,
+            "%": 0.09278350515463918
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 5,
+            "Total": 97,
+            "%": 0.05154639175257732
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "jasnar@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "katcel@fincomercio.com ",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "marmun@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 97,
+            "%": 0.020618556701030927
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "nivpit@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 97,
+            "%": 0.030927835051546393
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "valveg@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "vicari@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 97,
+            "%": 0.030927835051546393
+        },
+        {
+            "Mes": "2026-02",
+            "COORDINADOR DEL CANAL": "yucsar@fincomercio.com",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-03",
+            "COORDINADOR DEL CANAL": "adrgir@fincomercio.com ",
+            "Cantidad": 2,
+            "Total": 19,
+            "%": 0.10526315789473684
+        },
+        {
+            "Mes": "2026-03",
+            "COORDINADOR DEL CANAL": "anarui@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 19,
+            "%": 0.15789473684210525
+        },
+        {
+            "Mes": "2026-03",
+            "COORDINADOR DEL CANAL": "erimun@fincomercio.com ",
+            "Cantidad": 9,
+            "Total": 19,
+            "%": 0.47368421052631576
+        },
+        {
+            "Mes": "2026-03",
+            "COORDINADOR DEL CANAL": "gonrey@fincomercio.com",
+            "Cantidad": 2,
+            "Total": 19,
+            "%": 0.10526315789473684
+        },
+        {
+            "Mes": "2026-03",
+            "COORDINADOR DEL CANAL": "jasnar@fincomercio.com ",
+            "Cantidad": 3,
+            "Total": 19,
+            "%": 0.15789473684210525
+        }
+    ],
+    "por_ciudad": [
+        {
+            "Mes": "2024-07",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 6,
+            "Total": 6,
+            "%": 1.0
+        },
+        {
+            "Mes": "2024-08",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 2,
+            "Total": 48,
+            "%": 0.041666666666666664
+        },
+        {
+            "Mes": "2024-08",
+            "CIUDAD": "Bogota",
+            "Cantidad": 1,
+            "Total": 48,
+            "%": 0.020833333333333332
+        },
+        {
+            "Mes": "2024-08",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 35,
+            "Total": 48,
+            "%": 0.7291666666666666
+        },
+        {
+            "Mes": "2024-08",
+            "CIUDAD": "Madrid",
+            "Cantidad": 1,
+            "Total": 48,
+            "%": 0.020833333333333332
+        },
+        {
+            "Mes": "2024-08",
+            "CIUDAD": "Medellin",
+            "Cantidad": 5,
+            "Total": 48,
+            "%": 0.10416666666666667
+        },
+        {
+            "Mes": "2024-08",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 4,
+            "Total": 48,
+            "%": 0.08333333333333333
+        },
+        {
+            "Mes": "2024-09",
+            "CIUDAD": "Bogota",
+            "Cantidad": 1,
+            "Total": 55,
+            "%": 0.01818181818181818
+        },
+        {
+            "Mes": "2024-09",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 31,
+            "Total": 55,
+            "%": 0.5636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "CIUDAD": "Cali",
+            "Cantidad": 4,
+            "Total": 55,
+            "%": 0.07272727272727272
+        },
+        {
+            "Mes": "2024-09",
+            "CIUDAD": "Funza",
+            "Cantidad": 1,
+            "Total": 55,
+            "%": 0.01818181818181818
+        },
+        {
+            "Mes": "2024-09",
+            "CIUDAD": "Medellin",
+            "Cantidad": 13,
+            "Total": 55,
+            "%": 0.23636363636363636
+        },
+        {
+            "Mes": "2024-09",
+            "CIUDAD": "Pereira",
+            "Cantidad": 4,
+            "Total": 55,
+            "%": 0.07272727272727272
+        },
+        {
+            "Mes": "2024-09",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 1,
+            "Total": 55,
+            "%": 0.01818181818181818
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 3,
+            "Total": 62,
+            "%": 0.04838709677419355
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "Bogota",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 43,
+            "Total": 62,
+            "%": 0.6935483870967742
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "Cali",
+            "Cantidad": 4,
+            "Total": 62,
+            "%": 0.06451612903225806
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "Chía",
+            "Cantidad": 2,
+            "Total": 62,
+            "%": 0.03225806451612903
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "Medellin",
+            "Cantidad": 6,
+            "Total": 62,
+            "%": 0.0967741935483871
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "Monteria",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-10",
+            "CIUDAD": "SIN CIUDAD",
+            "Cantidad": 1,
+            "Total": 62,
+            "%": 0.016129032258064516
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "Bogota",
+            "Cantidad": 4,
+            "Total": 49,
+            "%": 0.08163265306122448
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 30,
+            "Total": 49,
+            "%": 0.6122448979591837
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "Cali",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "Chía",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "Funza",
+            "Cantidad": 1,
+            "Total": 49,
+            "%": 0.02040816326530612
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "Medellin",
+            "Cantidad": 2,
+            "Total": 49,
+            "%": 0.04081632653061224
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "SIN CIUDAD",
+            "Cantidad": 7,
+            "Total": 49,
+            "%": 0.14285714285714285
+        },
+        {
+            "Mes": "2024-11",
+            "CIUDAD": "Santa Marta",
+            "Cantidad": 3,
+            "Total": 49,
+            "%": 0.061224489795918366
+        },
+        {
+            "Mes": "2024-12",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 8,
+            "Total": 15,
+            "%": 0.5333333333333333
+        },
+        {
+            "Mes": "2024-12",
+            "CIUDAD": "Medellin",
+            "Cantidad": 1,
+            "Total": 15,
+            "%": 0.06666666666666667
+        },
+        {
+            "Mes": "2024-12",
+            "CIUDAD": "Pereira",
+            "Cantidad": 4,
+            "Total": 15,
+            "%": 0.26666666666666666
+        },
+        {
+            "Mes": "2024-12",
+            "CIUDAD": "SIN CIUDAD",
+            "Cantidad": 2,
+            "Total": 15,
+            "%": 0.13333333333333333
+        },
+        {
+            "Mes": "2025-01",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 13,
+            "Total": 18,
+            "%": 0.7222222222222222
+        },
+        {
+            "Mes": "2025-01",
+            "CIUDAD": "Cali",
+            "Cantidad": 2,
+            "Total": 18,
+            "%": 0.1111111111111111
+        },
+        {
+            "Mes": "2025-01",
+            "CIUDAD": "Medellin",
+            "Cantidad": 1,
+            "Total": 18,
+            "%": 0.05555555555555555
+        },
+        {
+            "Mes": "2025-01",
+            "CIUDAD": "SIN CIUDAD",
+            "Cantidad": 1,
+            "Total": 18,
+            "%": 0.05555555555555555
+        },
+        {
+            "Mes": "2025-01",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 1,
+            "Total": 18,
+            "%": 0.05555555555555555
+        },
+        {
+            "Mes": "2025-02",
+            "CIUDAD": "Bogota",
+            "Cantidad": 1,
+            "Total": 43,
+            "%": 0.023255813953488372
+        },
+        {
+            "Mes": "2025-02",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 36,
+            "Total": 43,
+            "%": 0.8372093023255814
+        },
+        {
+            "Mes": "2025-02",
+            "CIUDAD": "Medellin",
+            "Cantidad": 3,
+            "Total": 43,
+            "%": 0.06976744186046512
+        },
+        {
+            "Mes": "2025-02",
+            "CIUDAD": "SIN CIUDAD",
+            "Cantidad": 1,
+            "Total": 43,
+            "%": 0.023255813953488372
+        },
+        {
+            "Mes": "2025-02",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 2,
+            "Total": 43,
+            "%": 0.046511627906976744
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Bogota",
+            "Cantidad": 7,
+            "Total": 63,
+            "%": 0.1111111111111111
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 35,
+            "Total": 63,
+            "%": 0.5555555555555556
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Cali",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Cartagena",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Cundinamarca",
+            "Cantidad": 1,
+            "Total": 63,
+            "%": 0.015873015873015872
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Funza",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Medellin",
+            "Cantidad": 11,
+            "Total": 63,
+            "%": 0.1746031746031746
+        },
+        {
+            "Mes": "2025-03",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 3,
+            "Total": 63,
+            "%": 0.047619047619047616
+        },
+        {
+            "Mes": "2025-04",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 56,
+            "Total": 74,
+            "%": 0.7567567567567568
+        },
+        {
+            "Mes": "2025-04",
+            "CIUDAD": "Cali",
+            "Cantidad": 7,
+            "Total": 74,
+            "%": 0.0945945945945946
+        },
+        {
+            "Mes": "2025-04",
+            "CIUDAD": "Chía",
+            "Cantidad": 1,
+            "Total": 74,
+            "%": 0.013513513513513514
+        },
+        {
+            "Mes": "2025-04",
+            "CIUDAD": "Medellin",
+            "Cantidad": 10,
+            "Total": 74,
+            "%": 0.13513513513513514
+        },
+        {
+            "Mes": "2025-05",
+            "CIUDAD": "Bogota",
+            "Cantidad": 1,
+            "Total": 125,
+            "%": 0.008
+        },
+        {
+            "Mes": "2025-05",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 101,
+            "Total": 125,
+            "%": 0.808
+        },
+        {
+            "Mes": "2025-05",
+            "CIUDAD": "Cali",
+            "Cantidad": 6,
+            "Total": 125,
+            "%": 0.048
+        },
+        {
+            "Mes": "2025-05",
+            "CIUDAD": "Chía",
+            "Cantidad": 2,
+            "Total": 125,
+            "%": 0.016
+        },
+        {
+            "Mes": "2025-05",
+            "CIUDAD": "Medellin",
+            "Cantidad": 14,
+            "Total": 125,
+            "%": 0.112
+        },
+        {
+            "Mes": "2025-05",
+            "CIUDAD": "Tocancipa",
+            "Cantidad": 1,
+            "Total": 125,
+            "%": 0.008
+        },
+        {
+            "Mes": "2025-06",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 3,
+            "Total": 63,
+            "%": 0.047619047619047616
+        },
+        {
+            "Mes": "2025-06",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 53,
+            "Total": 63,
+            "%": 0.8412698412698413
+        },
+        {
+            "Mes": "2025-06",
+            "CIUDAD": "Cundinamarca",
+            "Cantidad": 2,
+            "Total": 63,
+            "%": 0.031746031746031744
+        },
+        {
+            "Mes": "2025-06",
+            "CIUDAD": "Medellin",
+            "Cantidad": 5,
+            "Total": 63,
+            "%": 0.07936507936507936
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Bogota / Vía siberia",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 85,
+            "Total": 109,
+            "%": 0.7798165137614679
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Bogotá / soacha",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Bucaramanga",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Cali",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Cartagena",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Funza",
+            "Cantidad": 2,
+            "Total": 109,
+            "%": 0.01834862385321101
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Medellin",
+            "Cantidad": 13,
+            "Total": 109,
+            "%": 0.11926605504587157
+        },
+        {
+            "Mes": "2025-07",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 1,
+            "Total": 109,
+            "%": 0.009174311926605505
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Bogota / Vía siberia",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 91,
+            "Total": 134,
+            "%": 0.6791044776119403
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Cali",
+            "Cantidad": 7,
+            "Total": 134,
+            "%": 0.05223880597014925
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Cartagena",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Medellin",
+            "Cantidad": 30,
+            "Total": 134,
+            "%": 0.22388059701492538
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Tunja",
+            "Cantidad": 1,
+            "Total": 134,
+            "%": 0.007462686567164179
+        },
+        {
+            "Mes": "2025-08",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 2,
+            "Total": 134,
+            "%": 0.014925373134328358
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Bogota / Vía siberia",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 106,
+            "Total": 131,
+            "%": 0.8091603053435115
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Cali",
+            "Cantidad": 4,
+            "Total": 131,
+            "%": 0.030534351145038167
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Cartagena",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Medellin",
+            "Cantidad": 12,
+            "Total": 131,
+            "%": 0.0916030534351145
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Mosquera",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Neiva",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Pereira",
+            "Cantidad": 2,
+            "Total": 131,
+            "%": 0.015267175572519083
+        },
+        {
+            "Mes": "2025-09",
+            "CIUDAD": "Tunja",
+            "Cantidad": 1,
+            "Total": 131,
+            "%": 0.007633587786259542
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 74,
+            "Total": 89,
+            "%": 0.8314606741573034
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Bucaramanga",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Cali",
+            "Cantidad": 5,
+            "Total": 89,
+            "%": 0.056179775280898875
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Cartagena",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Medellin",
+            "Cantidad": 5,
+            "Total": 89,
+            "%": 0.056179775280898875
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Neiva",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-10",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 1,
+            "Total": 89,
+            "%": 0.011235955056179775
+        },
+        {
+            "Mes": "2025-11",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 60,
+            "Total": 65,
+            "%": 0.9230769230769231
+        },
+        {
+            "Mes": "2025-11",
+            "CIUDAD": "Medellin",
+            "Cantidad": 4,
+            "Total": 65,
+            "%": 0.06153846153846154
+        },
+        {
+            "Mes": "2025-11",
+            "CIUDAD": "Pereira",
+            "Cantidad": 1,
+            "Total": 65,
+            "%": 0.015384615384615385
+        },
+        {
+            "Mes": "2025-12",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 4,
+            "Total": 4,
+            "%": 1.0
+        },
+        {
+            "Mes": "2026-01",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 26,
+            "Total": 26,
+            "%": 1.0
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Barranquilla",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 85,
+            "Total": 97,
+            "%": 0.8762886597938144
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Cali",
+            "Cantidad": 2,
+            "Total": 97,
+            "%": 0.020618556701030927
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Cota",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Ibague",
+            "Cantidad": 2,
+            "Total": 97,
+            "%": 0.020618556701030927
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Medellin",
+            "Cantidad": 4,
+            "Total": 97,
+            "%": 0.041237113402061855
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Simijaca",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-02",
+            "CIUDAD": "Villavicencio",
+            "Cantidad": 1,
+            "Total": 97,
+            "%": 0.010309278350515464
+        },
+        {
+            "Mes": "2026-03",
+            "CIUDAD": "Bogotá",
+            "Cantidad": 18,
+            "Total": 19,
+            "%": 0.9473684210526315
+        },
+        {
+            "Mes": "2026-03",
+            "CIUDAD": "Medellin",
+            "Cantidad": 1,
+            "Total": 19,
+            "%": 0.05263157894736842
+        }
+    ]
+}
