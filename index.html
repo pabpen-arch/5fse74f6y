@@ -9,8 +9,6 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-
 <nav class="navbar">
   <div class="logo">
     Plataforma de Inteligencia Digital<br>
@@ -18,90 +16,54 @@
   </div>
 
   <div class="menu">
-    <button class="nav-btn active-btn" onclick="showSection('benchmark', this)">Benchmark</button>
     <button class="nav-btn" onclick="showSection('status', this)">Status Productos</button>
     <button class="nav-btn" onclick="showSection('proyecciones', this)">Digital Impact Lab</button>
     <button class="nav-btn" onclick="showSection('plan', this)">Plan de Trabajo</button>
   </div>
 </nav>
 
-<!-- ================= BENCHMARK ================= -->
-
-<section id="benchmarkSection" class="section active">
-
-  <div class="section-header">
-    <h1>Digital Market Intelligence</h1>
-    <p>Panorama competitivo del ecosistema digital</p>
-  </div>
-
-  <div class="benchmark-wrapper">
-    <div class="benchmark-block" id="benchmarkCDAT"></div>
-    <div class="benchmark-block" id="benchmarkPAP"></div>
-  </div>
-
-</section>
-
-<!-- ================= STATUS PRODUCTOS ================= -->
-
-<section id="statusSection" class="section">
-
+<section id="statusSection" class="section active">
   <div class="section-header">
     <h1>Status Productos Digitales</h1>
     <p>Desempeño y adopción del canal virtual</p>
   </div>
 
   <div class="carousel" id="productsContainer"></div>
-
 </section>
 
-<!-- ================= DIGITAL IMPACT LAB ================= -->
-
 <section id="proyeccionesSection" class="section">
-
   <div class="section-header">
     <h1>Digital Impact Lab</h1>
     <p>Iniciativas estratégicas del canal virtual</p>
   </div>
 
   <div id="impactContainer" class="carousel"></div>
-
 </section>
 
-<!-- ================= PLAN DE TRABAJO ================= -->
-
 <section id="planSection" class="section">
-
   <div class="section-header">
     <h1>Innovation Pipeline 2025</h1>
     <p>Iniciativas estratégicas del canal virtual</p>
   </div>
 
   <div class="roadmap" id="roadmapContainer"></div>
-
 </section>
 
-<!-- ================= MODAL GENERAL (PRODUCTOS + IMPACT) ================= -->
-
 <div id="modal" class="modal hidden">
-
   <div class="modal-content">
-
     <span id="closeBtn">&times;</span>
     <h2 id="modalTitle"></h2>
 
     <div class="modal-grid">
 
-      <!-- ===== GRÁFICA PRINCIPAL ===== -->
-
       <div>
           <canvas id="chartProduct"></canvas>
           <canvas id="chartImpact" style="display:none;"></canvas>
-        <div id="metrics">
 
+          <div id="metrics">
           <button onclick="toggleDataset(0)">Valor Total</button>
           <button onclick="toggleDataset(1)">Autogestionado</button>
           <button onclick="toggleDataset(2)">Asesor</button>
-
           <div class="projection-control">
             <label>
               Simular Adopción Digital:
@@ -110,29 +72,20 @@
             <input type="range" id="projectionSlider" min="0" max="80" value="0">
           </div>
 
-          <!-- 🔥 Indicador dinámico -->
           <div class="impact-indicator">
             Impacto Proyectado:
             <strong id="impactValue">$0</strong>
           </div>
-
         </div>
       </div>
 
-      <!-- ===== PANEL DERECHO (ANÁLISIS / PIE CHART) ===== -->
-
       <div class="analysis-area" id="analysisPanel"></div>
+      <div id="benchmarkInlineContainer"></div>
 
     </div>
-
   </div>
-
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-
-
-onclick="showSection('impact', this)"

@@ -20,36 +20,67 @@ function showSection(sectionName, btn){
 
 /* ================= STATUS PRODUCTOS ================= */
 
+// 🔹 1. CARGAR PRODUCTOS (data.json)
 fetch("data.json")
-.then(res=>res.json())
-.then(data=>{
+  .then(res => res.json())
+  .then(data => {
 
-  const container=document.getElementById("productsContainer");
+    const container = document.getElementById("productsContainer");
 
-  data.products.forEach(product=>{
+    data.products.forEach(product => {
 
-    const last=product.monthlyData.at(-1);
+      const last = product.monthlyData.at(-1);
 
-    const adopcion=((last.valorAutogestionado/last.valorTotal)*100).toFixed(1);
+      const adopcion = ((last.valorAutogestionado / last.valorTotal) * 100).toFixed(1);
 
-    const card=document.createElement("div");
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      card.innerHTML = `
+        <h3>${product.name}</h3>
+        <p><strong>Total:</strong> ${formatNumber(last.valorTotal)}</p>
+        <p><strong>Adopción Digital:</strong> ${adopcion}%</p>
+      `;
+
+      card.onclick = () => openModal(product);
+
+      container.appendChild(card);
+    });
+
+  })
+  .catch(err => console.error("Error data.json:", err));
+
+
+// 🔹 2. CARGAR APP (base_instalada.json)
+fetch("base_instalada.json")
+  .then(res => res.json())
+  .then(data => {
+
+    const container = document.getElementById("productsContainer");
+
+    const last = data.at(-1);
+
+    const card = document.createElement("div");
     card.classList.add("card");
 
-    card.innerHTML=`
-      <h3>${product.name}</h3>
-      <p><strong>Total:</strong> ${formatNumber(last.valorTotal)}</p>
-      <p><strong>Adopción Digital:</strong> ${adopcion}%</p>
+    card.innerHTML = `
+      <h3>APP</h3>
+      <p><strong>Usuarios:</strong> ${formatNumber(last.Colombia.valor)}</p>
+      <p><strong>Variación:</strong> ${last.Colombia.variacion}%</p>
     `;
 
-    card.onclick=()=>openModal(product);
+    card.onclick = () => openAppModal(data);
 
     container.appendChild(card);
-  });
-});
+
+  })
+  .catch(err => console.error("Error APP:", err));
 
 /* ================= MODAL ================= */
 
 function openModal(product){
+
+  document.getElementById("benchmarkInlineContainer").innerHTML = "";
 
   // Mostrar botones nuevamente para productos
   document.querySelectorAll("#metrics button").forEach(btn=>{
@@ -96,6 +127,115 @@ function openModal(product){
   });
 
   renderProductAnalysis(product);
+
+  /* ===== INYECTAR BENCHMARK DENTRO DEL PRODUCTO ===== */
+
+let benchmarkHTML = "";
+
+const name = product.name.toLowerCase();
+
+if(name.includes("cdat")){
+
+benchmarkHTML = `
+<div class="benchmark-block benchmark-inline-scroll">
+
+  <div class="benchmark-title">CDAT Digital</div>
+
+  <div class="segment-grid">
+
+    <div class="segment-card">
+      <h4>Bancos Tradicionales</h4>
+      <p>Apertura Digital: 60% - 70%</p>
+      <p>Ticket: $12M - $18M</p>
+      <p>Plazo: 180 - 270 días</p>
+    </div>
+
+    <div class="segment-card">
+      <h4>Neobancos / Fintech</h4>
+      <p>Apertura Digital: 100%</p>
+      <p>Ticket: $4M - $8M</p>
+      <p>Plazo: 90 - 180 días</p>
+    </div>
+
+    <div class="segment-card">
+      <h4>Cooperativas Digitales</h4>
+      <p>Apertura Digital: 20% - 35%</p>
+      <p>Ticket: $6M - $10M</p>
+      <p>Plazo: 210 - 360 días</p>
+    </div>
+
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric-card">
+      <h3>60%</h3>
+      <span>Abandono en validación biométrica</span>
+    </div>
+    <div class="metric-card">
+      <h3>7PM - 10PM</h3>
+      <span>Hora pico apertura digital</span>
+    </div>
+    <div class="metric-card">
+      <h3>85%</h3>
+      <span>Origen desde Mobile App</span>
+    </div>
+    <div class="metric-card">
+      <h3>Tasa</h3>
+      <span>Factor decisor principal</span>
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <strong>Insights Estratégicos:</strong><br><br>
+    • La guerra de tasas está impulsando la digitalización.<br>
+    • El perfil cooperativo necesita soporte híbrido (chat/WhatsApp).<br>
+    • El ticket promedio digital aún es menor al físico.
+  </div>
+
+</div>
+`;
+}
+
+if(name.includes("pap") && 
+  !name.includes("whatsapp") && 
+  !name.includes("brigadas")){
+
+benchmarkHTML = `
+<div class="benchmark-block benchmark-inline-scroll">
+
+  <div class="benchmark-title">PAP Digital</div>
+
+  <div class="segment-grid">
+
+    <div class="segment-card">
+      <h4>Bancos & Billeteras</h4>
+      <p>Autogestionado: 28% - 35%</p>
+      <p>Monto: $250.000 mensual</p>
+      <p>Plazo: 180 días</p>
+    </div>
+
+    <div class="segment-card">
+      <h4>Cooperativas</h4>
+      <p>Autogestionado: 15% - 22%</p>
+      <p>Monto: $120.000 mensual</p>
+      <p>Plazo: 360 días</p>
+    </div>
+
+  </div>
+
+  <div class="insight-box">
+    <strong>Insights Estratégicos:</strong><br><br>
+    • 70% menos costo operativo en digital vs ventanilla.<br>
+    • 40% mayor permanencia con ahorro automático.<br>
+    • Data en tiempo real habilita reinversión anticipada.
+  </div>
+
+</div>
+`;
+}
+
+document.getElementById("benchmarkInlineContainer").innerHTML = benchmarkHTML;
+
 }
 
 /* ================= PROYECCION SOLO AUTOGESTIONADO ================= */
@@ -144,22 +284,53 @@ document.getElementById("projectionSlider").addEventListener("input",function(){
 
 function renderProductAnalysis(product){
 
-  const last=product.monthlyData.at(-1);
-  const adopcion=((last.valorAutogestionado/last.valorTotal)*100).toFixed(1);
+  const last = product.monthlyData.at(-1);
 
-  document.getElementById("analysisPanel").innerHTML=`
-    <h3>Gestión del Canal Virtual</h3>
-    <p>Adopción Digital actual: <strong>${adopcion}%</strong></p>
-    <p>Existe oportunidad de expansión estratégica
-    mediante fortalecimiento de journeys digitales
-    y reducción de fricción operativa.</p>
+  const adopcion = ((last.valorAutogestionado / last.valorTotal) * 100).toFixed(1);
+
+  const html = `
+    <h3>Resumen del Producto</h3>
+
+    <p><strong>Adopción Digital:</strong> ${adopcion}%</p>
+
+    <hr>
+
+    <h4>Promedios Generales</h4>
+    <p><strong>Monto Promedio:</strong> ${formatNumber(last.promMonto)}</p>
+    <p><strong>Plazo Promedio:</strong> ${last.plazoPromedio} días</p>
+
+    <hr>
+
+    <h4>Autogestionado</h4>
+    <p><strong>Monto:</strong> ${formatNumber(last.promMontoAutogestionado)}</p>
+    <p><strong>Plazo:</strong> ${last.plazoPromAutogestionado} días</p>
+
+    <hr>
+
+    <h4>Asesor</h4>
+    <p><strong>Monto:</strong> ${formatNumber(last.promMontoAsesor)}</p>
+    <p><strong>Plazo:</strong> ${last.plazoPromAsesor} días</p>
   `;
+
+  document.getElementById("analysisPanel").innerHTML = html;
 }
 
 /* ================= UTIL ================= */
 
 function formatNumber(num){
   return "$"+new Intl.NumberFormat("es-CO").format(Math.round(num));
+}
+
+/* ================= TOGGLE DATASET ================= */
+
+function toggleDataset(index){
+
+  if(!mainChart) return;
+
+  const meta = mainChart.getDatasetMeta(index);
+  meta.hidden = meta.hidden === null ? !mainChart.data.datasets[index].hidden : null;
+
+  mainChart.update();
 }
 
 /* ================= CERRAR MODAL ================= */
@@ -347,12 +518,13 @@ function renderBenchmark(){
   `;
 }
 
-renderBenchmark();
+
 
 /* ================= DIGITAL IMPACT LAB ================= */
 
 let impactLineChart = null;
 let impactPieChart = null;
+let brigadasData = null;
 
 async function loadImpactData(){
 
@@ -470,7 +642,7 @@ function openImpactModal(){
       }]
     },
     options:{
-      plugins:{
+    plugins:{
       legend:{
         labels:{
           color:"#ffffff"   // 🔥 TEXTO BLANCO
@@ -479,6 +651,260 @@ function openImpactModal(){
     }
   }
 });
-  }
+  
+}
 
 loadImpactData();
+
+/* ================= BRIGADAS ================= */
+
+async function loadBrigadasData(){
+
+  const response = await fetch("Analisis_Brigadas.json");
+  const data = await response.json();
+
+  // ===== Línea mensual =====
+  const months = data.total_mes.map(d => d.Mes);
+  const totalValues = data.total_mes.map(d => d["Total Brigadas"]);
+
+  // ===== Agrupar por estado (acumulado total histórico) =====
+  const estadosMap = {};
+
+  data.por_estado.forEach(row => {
+    if(!estadosMap[row.Estado]){
+      estadosMap[row.Estado] = 0;
+    }
+    estadosMap[row.Estado] += row.Cantidad;
+  });
+
+  const labelsPie = Object.keys(estadosMap);
+  const valuesPie = Object.values(estadosMap);
+
+  brigadasData = { months, totalValues, labelsPie, valuesPie };
+
+  renderBrigadasCard();
+}
+
+function renderBrigadasCard(){
+
+  const container = document.getElementById("impactContainer");
+
+  const card = document.createElement("div");
+  card.classList.add("product-card");
+
+  card.innerHTML = `
+    <h3>Brigadas</h3>
+    <p>Impacto territorial y ejecución operativa</p>
+    <div class="metric-highlight">
+      Total Histórico: ${brigadasData.totalValues.reduce((a,b)=>a+b,0).toLocaleString()}
+    </div>
+  `;
+
+  card.onclick = openBrigadasModal;
+
+  container.appendChild(card);
+}
+
+function openBrigadasModal(){
+
+  document.querySelectorAll("#metrics button").forEach(btn=>{
+    btn.style.display = "none";
+  });
+
+  document.querySelector(".projection-control").style.display = "none";
+  document.querySelector(".impact-indicator").style.display = "none";
+
+  currentProductData = null;
+
+  const modal = document.getElementById("modal");
+  modal.classList.remove("hidden");
+
+  document.getElementById("modalTitle").innerText = "Brigadas";
+
+  document.getElementById("chartProduct").style.display = "none";
+  document.getElementById("chartImpact").style.display = "block";
+
+  if(mainChart){
+    mainChart.destroy();
+    mainChart = null;
+  }
+
+  if(impactLineChart){
+    impactLineChart.destroy();
+  }
+
+  if(impactPieChart){
+    impactPieChart.destroy();
+  }
+
+  // ===== GRÁFICA 1: EVOLUCIÓN MENSUAL =====
+  impactLineChart = new Chart(document.getElementById("chartImpact"),{
+    type:"line",
+    data:{
+      labels: brigadasData.months,
+      datasets:[{
+        label:"Total Brigadas",
+        data: brigadasData.totalValues,
+        borderColor:"#22c55e",
+        backgroundColor:"rgba(34,197,94,0.2)",
+        tension:0.4,
+        fill:true
+      }]
+    },
+    options:{
+      plugins:{legend:{labels:{color:"white"}}},
+      scales:{
+        x:{ticks:{color:"white"}},
+        y:{ticks:{color:"white"}}
+      }
+    }
+  });
+
+  // ===== GRÁFICA 2: PARTICIPACIÓN POR ESTADO =====
+  document.getElementById("analysisPanel").innerHTML = `
+    <canvas id="brigadasPie"></canvas>
+  `;
+
+  impactPieChart = new Chart(document.getElementById("brigadasPie"),{
+    type:"doughnut",
+    data:{
+      labels: brigadasData.labelsPie,
+      datasets:[{
+        data: brigadasData.valuesPie,
+        backgroundColor:[
+          "#3b82f6","#22c55e","#f59e0b",
+          "#ef4444","#8b5cf6","#06b6d4",
+          "#14b8a6","#eab308"
+        ]
+      }]
+    },
+    options:{
+      plugins:{
+        legend:{
+          labels:{
+            color:"#ffffff"
+          }
+        }
+      }
+    }
+  });
+}
+
+/* ================= CERRAR CON ESC ================= */
+
+document.addEventListener("keydown", function(event){
+  if(event.key === "Escape"){
+    document.getElementById("modal").classList.add("hidden");
+  }
+});
+
+loadBrigadasData();
+
+function openAppModal(data){
+
+  // Ocultar benchmark
+  document.getElementById("benchmarkInlineContainer").innerHTML = "";
+
+  // Ocultar botones de métricas (NO aplican aquí)
+  document.querySelectorAll("#metrics button").forEach(btn=>{
+    btn.style.display = "none";
+  });
+
+  // Ocultar slider
+  document.querySelector(".projection-control").style.display = "none";
+  document.querySelector(".impact-indicator").style.display = "none";
+
+  // Mostrar modal
+  document.getElementById("modal").classList.remove("hidden");
+  document.getElementById("modalTitle").innerText = "APP - Base Instalada";
+
+  // ================= DATA =================
+
+  const labels = data.map(d=>d.mes);
+
+  const colombia = data.map(d=>d.Colombia.valor);
+  const global = data.map(d=>d.Global.valor);
+  const españa = data.map(d=>d.España.valor);
+  const usa = data.map(d=>d.USA.valor);
+  const chile = data.map(d=>d.Chile.valor);
+
+  if(mainChart) mainChart.destroy();
+
+  document.getElementById("chartProduct").style.display = "block";
+
+  // ================= GRÁFICA =================
+
+  mainChart = new Chart(document.getElementById("chartProduct"),{
+    type:'line',
+    data:{
+      labels,
+      datasets:[
+        {
+          label:"Colombia",
+          data:colombia,
+          borderColor:"#22c55e",
+          tension:0.3
+        },
+        {
+          label:"Global",
+          data:global,
+          borderColor:"#3b82f6",
+          tension:0.3
+        },
+        {
+          label:"España",
+          data:españa,
+          borderColor:"#f59e0b",
+          tension:0.3
+        },
+        {
+          label:"USA",
+          data:usa,
+          borderColor:"#ef4444",
+          tension:0.3
+        },
+        {
+          label:"Chile",
+          data:chile,
+          borderColor:"#a855f7",
+          tension:0.3
+        }
+      ]
+    },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{labels:{color:"white"}}
+      },
+      scales:{
+        x:{ticks:{color:"white"}},
+        y:{ticks:{color:"white"}}
+      }
+    }
+  });
+
+  // ================= PANEL DERECHO =================
+
+  const last = data.at(-1);
+
+  document.getElementById("analysisPanel").innerHTML = `
+    <h3>Base Instalada</h3>
+
+    <p><strong>Colombia:</strong> ${formatNumber(last.Colombia.valor)}</p>
+    <p><strong>Global:</strong> ${formatNumber(last.Global.valor)}</p>
+
+    <hr>
+
+    <p style="color:#22c55e;">
+      Variación Colombia: ${last.Colombia.variacion}%
+    </p>
+
+    <p style="color:#3b82f6;">
+      Variación Global: ${last.Global.variacion}%
+    </p>
+
+    <hr>
+
+    <p>Este indicador muestra el crecimiento de usuarios activos en la APP.</p>
+  `;
+}
