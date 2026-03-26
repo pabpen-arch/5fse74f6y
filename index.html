@@ -64,6 +64,12 @@
           <button onclick="toggleDataset(0)">Valor Total</button>
           <button onclick="toggleDataset(1)">Autogestionado</button>
           <button onclick="toggleDataset(2)">Asesor</button>
+          <div id="timeFilter" style="margin-bottom:10px;">
+          <button onclick="setTimeFilter(12)">12M</button>
+          <button onclick="setTimeFilter(6)">6M</button>
+          <button onclick="setTimeFilter(3)">3M</button>
+          <button onclick="setTimeFilter(1)">1M</button>
+          </div>
           <div class="projection-control">
             <label>
               Simular Adopción Digital:
@@ -73,10 +79,11 @@
           </div>
 
           <div class="impact-indicator">
-            Impacto Proyectado:
+            Cambio en adopción:
             <strong id="impactValue">$0</strong>
           </div>
         </div>
+        <button onclick="preguntaEstrategica()">💡 Insight</button>
       </div>
 
       <div class="analysis-area" id="analysisPanel"></div>
@@ -87,5 +94,25 @@
 </div>
 
 <script src="script.js"></script>
+<div id="avatarContainer">
+
+  <div id="avatarBubble">
+    <span id="avatarText">Hola 👋</span>
+  </div>
+
+  <div id="avatar" class="avatar">
+    
+  </div>
+
+  <button id="avatarBtn" onclick="modoDirector()">
+    🎤
+  </button>
+
+</div>
+
+
 </body>
+
+
 </html>
+
