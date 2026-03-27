@@ -598,7 +598,7 @@ background: linear-gradient(
 .avatar{
   width:150px ;
   height:150px;
-  background-image: url("ChatBot.png");
+  background-image: url("Chatbot.gif");
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -532,9 +532,54 @@ function renderProductAnalysis(product){
 
   let variacion = 0;
 
-  if(prev){
-    variacion = ((last.valorTotal - prev.valorTotal) / prev.valorTotal * 100).toFixed(1);
+  if(prev && prev.valorTotal > 0){
+    variacion = ((last.valorTotal - prev.valorTotal) / prev.valorTotal * 100);
+  }else{
+    variacion = null;
   }
+
+  let variacionTexto = "N/A";
+let color = "#94a3b8";
+let flecha = "";
+let alerta = "";
+
+// 🔥 FORMATO VISUAL
+if(variacion !== null){
+
+  const valor = variacion.toFixed(1);
+
+  if(variacion > 2){
+    flecha = "↑";
+    color = "#22c55e"; // verde
+    alerta = "Crecimiento sólido";
+  }
+  else if(variacion < -2){
+    flecha = "↓";
+    color = "#ef4444"; // rojo
+    alerta = "Caída relevante";
+  }
+  else{
+    flecha = "→";
+    color = "#eab308"; // amarillo
+    alerta = "Comportamiento estable";
+  }
+
+  variacionTexto = `${flecha} ${valor}%`;
+}
+
+function tendenciaSuavizada(data){
+
+  if(data.length < 3) return "N/A";
+
+  const last3 = data.slice(-3).map(d=>d.valorTotal);
+
+  const crecimiento =
+    (last3[2] - last3[0]) / last3[0] * 100;
+
+  return crecimiento.toFixed(1) + "%";
+}
+
+const tendencia = tendenciaSuavizada(data);
 
   const promMonto = calcularPromedio(data, "promMonto");
   const promAuto = calcularPromedio(data, "promMontoAutogestionado");
@@ -550,7 +595,6 @@ function renderProductAnalysis(product){
     <h3>Resumen del Producto</h3>
 
     <p><strong>Adopción Digital:</strong> ${adopcion}%</p>
-    <p><strong>Variación mensual:</strong> ${variacion}%</p>
 
     <hr>
 
