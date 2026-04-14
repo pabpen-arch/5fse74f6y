@@ -1,0 +1,1682 @@
+[
+    {
+        "mes": "2021-03",
+        "Global": {
+            "promedio": 2075.56,
+            "valor": 2169.23,
+            "variacion": 0
+        },
+        "Colombia": {
+            "promedio": 2030.84,
+            "valor": 2142.9,
+            "variacion": 0
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-04",
+        "Global": {
+            "promedio": 2189.75,
+            "valor": 2275.6,
+            "variacion": 4.9
+        },
+        "Colombia": {
+            "promedio": 2145.81,
+            "valor": 2208.53,
+            "variacion": 3.06
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-05",
+        "Global": {
+            "promedio": 2365.02,
+            "valor": 2424.5,
+            "variacion": 6.54
+        },
+        "Colombia": {
+            "promedio": 2313.99,
+            "valor": 2387.6,
+            "variacion": 8.11
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-06",
+        "Global": {
+            "promedio": 2385.46,
+            "valor": 2314.57,
+            "variacion": -4.53
+        },
+        "Colombia": {
+            "promedio": 2332.44,
+            "valor": 2244.87,
+            "variacion": -5.98
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-07",
+        "Global": {
+            "promedio": 2447.03,
+            "valor": 2528.2,
+            "variacion": 9.23
+        },
+        "Colombia": {
+            "promedio": 2383.56,
+            "valor": 2472.4,
+            "variacion": 10.14
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-08",
+        "Global": {
+            "promedio": 2517.35,
+            "valor": 2595.4,
+            "variacion": 2.66
+        },
+        "Colombia": {
+            "promedio": 2457.2,
+            "valor": 2528.9,
+            "variacion": 2.29
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-09",
+        "Global": {
+            "promedio": 2573.17,
+            "valor": 2573.7,
+            "variacion": -0.84
+        },
+        "Colombia": {
+            "promedio": 2518.48,
+            "valor": 2527.83,
+            "variacion": -0.04
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-10",
+        "Global": {
+            "promedio": 2695.76,
+            "valor": 2697.57,
+            "variacion": 4.81
+        },
+        "Colombia": {
+            "promedio": 2645.19,
+            "valor": 2641.27,
+            "variacion": 4.49
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-11",
+        "Global": {
+            "promedio": 2830.24,
+            "valor": 2958.9,
+            "variacion": 9.69
+        },
+        "Colombia": {
+            "promedio": 2777.57,
+            "valor": 2908.07,
+            "variacion": 10.1
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2021-12",
+        "Global": {
+            "promedio": 2777.41,
+            "valor": 2580.57,
+            "variacion": -12.79
+        },
+        "Colombia": {
+            "promedio": 2726.62,
+            "valor": 2536.3,
+            "variacion": -12.78
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-01",
+        "Global": {
+            "promedio": 2583.45,
+            "valor": 2735.67,
+            "variacion": 6.01
+        },
+        "Colombia": {
+            "promedio": 2536.04,
+            "valor": 2676.0,
+            "variacion": 5.51
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-02",
+        "Global": {
+            "promedio": 2725.48,
+            "valor": 2632.07,
+            "variacion": -3.79
+        },
+        "Colombia": {
+            "promedio": 2673.93,
+            "valor": 2588.13,
+            "variacion": -3.28
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-03",
+        "Global": {
+            "promedio": 2612.62,
+            "valor": 2595.4,
+            "variacion": -1.39
+        },
+        "Colombia": {
+            "promedio": 2556.08,
+            "valor": 2525.8,
+            "variacion": -2.41
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-04",
+        "Global": {
+            "promedio": 2694.79,
+            "valor": 2812.23,
+            "variacion": 8.35
+        },
+        "Colombia": {
+            "promedio": 2622.08,
+            "valor": 2751.63,
+            "variacion": 8.94
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-05",
+        "Global": {
+            "promedio": 2897.71,
+            "valor": 2833.93,
+            "variacion": 0.77
+        },
+        "Colombia": {
+            "promedio": 2829.29,
+            "valor": 2769.03,
+            "variacion": 0.63
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-06",
+        "Global": {
+            "promedio": 2723.23,
+            "valor": 2748.07,
+            "variacion": -3.03
+        },
+        "Colombia": {
+            "promedio": 2662.0,
+            "valor": 2675.63,
+            "variacion": -3.37
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-07",
+        "Global": {
+            "promedio": 2754.37,
+            "valor": 2744.3,
+            "variacion": -0.14
+        },
+        "Colombia": {
+            "promedio": 2681.11,
+            "valor": 2688.33,
+            "variacion": 0.47
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-08",
+        "Global": {
+            "promedio": 2803.8,
+            "valor": 2806.3,
+            "variacion": 2.26
+        },
+        "Colombia": {
+            "promedio": 2756.06,
+            "valor": 2761.83,
+            "variacion": 2.73
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-09",
+        "Global": {
+            "promedio": 2784.77,
+            "valor": 2766.47,
+            "variacion": -1.42
+        },
+        "Colombia": {
+            "promedio": 2737.95,
+            "valor": 2714.6,
+            "variacion": -1.71
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-10",
+        "Global": {
+            "promedio": 2788.23,
+            "valor": 2757.87,
+            "variacion": -0.31
+        },
+        "Colombia": {
+            "promedio": 2726.36,
+            "valor": 2690.0,
+            "variacion": -0.91
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-11",
+        "Global": {
+            "promedio": 2758.78,
+            "valor": 2814.1,
+            "variacion": 2.04
+        },
+        "Colombia": {
+            "promedio": 2676.66,
+            "valor": 2718.03,
+            "variacion": 1.04
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2022-12",
+        "Global": {
+            "promedio": 2694.62,
+            "valor": 2585.4,
+            "variacion": -8.13
+        },
+        "Colombia": {
+            "promedio": 2612.76,
+            "valor": 2522.2,
+            "variacion": -7.2
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-01",
+        "Global": {
+            "promedio": 2721.39,
+            "valor": 2857.93,
+            "variacion": 10.54
+        },
+        "Colombia": {
+            "promedio": 2662.65,
+            "valor": 2799.87,
+            "variacion": 11.01
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-02",
+        "Global": {
+            "promedio": 2763.89,
+            "valor": 2738.83,
+            "variacion": -4.17
+        },
+        "Colombia": {
+            "promedio": 2693.08,
+            "valor": 2653.47,
+            "variacion": -5.23
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-03",
+        "Global": {
+            "promedio": 2709.82,
+            "valor": 2700.97,
+            "variacion": -1.38
+        },
+        "Colombia": {
+            "promedio": 2625.73,
+            "valor": 2611.2,
+            "variacion": -1.59
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-04",
+        "Global": {
+            "promedio": 2755.95,
+            "valor": 2834.43,
+            "variacion": 4.94
+        },
+        "Colombia": {
+            "promedio": 2669.18,
+            "valor": 2748.47,
+            "variacion": 5.26
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 24.38,
+            "valor": 46.5,
+            "variacion": 0
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-05",
+        "Global": {
+            "promedio": 2931.74,
+            "valor": 2910.73,
+            "variacion": 2.69
+        },
+        "Colombia": {
+            "promedio": 2859.18,
+            "valor": 2846.57,
+            "variacion": 3.57
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 44.01,
+            "valor": 37.5,
+            "variacion": -19.35
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-06",
+        "Global": {
+            "promedio": 2709.95,
+            "valor": 2639.03,
+            "variacion": -9.33
+        },
+        "Colombia": {
+            "promedio": 2635.77,
+            "valor": 2578.6,
+            "variacion": -9.41
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 35.03,
+            "valor": 29.6,
+            "variacion": -21.07
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-07",
+        "Global": {
+            "promedio": 2715.89,
+            "valor": 2802.37,
+            "variacion": 6.19
+        },
+        "Colombia": {
+            "promedio": 2659.94,
+            "valor": 2739.9,
+            "variacion": 6.26
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 24.92,
+            "valor": 27.8,
+            "variacion": -6.08
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-08",
+        "Global": {
+            "promedio": 2816.88,
+            "valor": 2760.5,
+            "variacion": -1.49
+        },
+        "Colombia": {
+            "promedio": 2748.29,
+            "valor": 2681.4,
+            "variacion": -2.14
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 31.09,
+            "valor": 34.17,
+            "variacion": 22.9
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-09",
+        "Global": {
+            "promedio": 2784.57,
+            "valor": 2795.87,
+            "variacion": 1.28
+        },
+        "Colombia": {
+            "promedio": 2706.25,
+            "valor": 2725.7,
+            "variacion": 1.65
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 32.85,
+            "valor": 27.73,
+            "variacion": -18.83
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-10",
+        "Global": {
+            "promedio": 2827.4,
+            "valor": 2827.53,
+            "variacion": 1.13
+        },
+        "Colombia": {
+            "promedio": 2765.45,
+            "valor": 2762.37,
+            "variacion": 1.35
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 24.03,
+            "valor": 24.2,
+            "variacion": -12.74
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-11",
+        "Global": {
+            "promedio": 2744.65,
+            "valor": 2672.5,
+            "variacion": -5.48
+        },
+        "Colombia": {
+            "promedio": 2689.91,
+            "valor": 2639.63,
+            "variacion": -4.44
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 19.94,
+            "valor": 21.7,
+            "variacion": -10.33
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2023-12",
+        "Global": {
+            "promedio": 2559.6,
+            "valor": 2459.43,
+            "variacion": -7.97
+        },
+        "Colombia": {
+            "promedio": 2523.84,
+            "valor": 2413.23,
+            "variacion": -8.58
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 26.64,
+            "valor": 28.4,
+            "variacion": 30.88
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-01",
+        "Global": {
+            "promedio": 2640.73,
+            "valor": 2879.0,
+            "variacion": 17.06
+        },
+        "Colombia": {
+            "promedio": 2583.15,
+            "valor": 2805.17,
+            "variacion": 16.24
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 32.44,
+            "valor": 34.4,
+            "variacion": 21.13
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-02",
+        "Global": {
+            "promedio": 2850.04,
+            "valor": 2867.57,
+            "variacion": -0.4
+        },
+        "Colombia": {
+            "promedio": 2773.07,
+            "valor": 2784.8,
+            "variacion": -0.73
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 34.7,
+            "valor": 33.7,
+            "variacion": -2.03
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-03",
+        "Global": {
+            "promedio": 2819.4,
+            "valor": 2737.7,
+            "variacion": -4.53
+        },
+        "Colombia": {
+            "promedio": 2749.24,
+            "valor": 2682.17,
+            "variacion": -3.69
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 33.4,
+            "valor": 38.17,
+            "variacion": 13.26
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-04",
+        "Global": {
+            "promedio": 2815.95,
+            "valor": 2908.33,
+            "variacion": 6.23
+        },
+        "Colombia": {
+            "promedio": 2753.74,
+            "valor": 2843.2,
+            "variacion": 6.0
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 30.43,
+            "valor": 28.73,
+            "variacion": -24.72
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-05",
+        "Global": {
+            "promedio": 2917.8,
+            "valor": 2905.8,
+            "variacion": -0.09
+        },
+        "Colombia": {
+            "promedio": 2852.22,
+            "valor": 2841.13,
+            "variacion": -0.07
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 26.77,
+            "valor": 20.23,
+            "variacion": -29.58
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-06",
+        "Global": {
+            "promedio": 2994.81,
+            "valor": 3108.03,
+            "variacion": 6.96
+        },
+        "Colombia": {
+            "promedio": 2926.95,
+            "valor": 3035.47,
+            "variacion": 6.84
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 32.28,
+            "valor": 42.67,
+            "variacion": 110.88
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-07",
+        "Global": {
+            "promedio": 2980.11,
+            "valor": 2896.2,
+            "variacion": -6.82
+        },
+        "Colombia": {
+            "promedio": 2910.2,
+            "valor": 2831.67,
+            "variacion": -6.71
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 37.08,
+            "valor": 37.23,
+            "variacion": -12.74
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-08",
+        "Global": {
+            "promedio": 2981.94,
+            "valor": 2989.93,
+            "variacion": 3.24
+        },
+        "Colombia": {
+            "promedio": 2922.25,
+            "valor": 2935.17,
+            "variacion": 3.66
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 31.06,
+            "valor": 23.0,
+            "variacion": -38.23
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-09",
+        "Global": {
+            "promedio": 3071.19,
+            "valor": 3115.53,
+            "variacion": 4.2
+        },
+        "Colombia": {
+            "promedio": 3017.72,
+            "valor": 3056.6,
+            "variacion": 4.14
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 23.22,
+            "valor": 32.37,
+            "variacion": 40.73
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-10",
+        "Global": {
+            "promedio": 3134.69,
+            "valor": 3112.63,
+            "variacion": -0.09
+        },
+        "Colombia": {
+            "promedio": 3075.48,
+            "valor": 3055.37,
+            "variacion": -0.04
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 32.34,
+            "valor": 35.23,
+            "variacion": 8.85
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-11",
+        "Global": {
+            "promedio": 3091.52,
+            "valor": 3076.63,
+            "variacion": -1.16
+        },
+        "Colombia": {
+            "promedio": 3023.21,
+            "valor": 3000.33,
+            "variacion": -1.8
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 41.79,
+            "valor": 39.73,
+            "variacion": 12.77
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2024-12",
+        "Global": {
+            "promedio": 3154.6,
+            "valor": 3192.37,
+            "variacion": 3.76
+        },
+        "Colombia": {
+            "promedio": 3092.2,
+            "valor": 3129.2,
+            "variacion": 4.3
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 35.25,
+            "valor": 24.53,
+            "variacion": -38.26
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2025-01",
+        "Global": {
+            "promedio": 3170.66,
+            "valor": 3294.73,
+            "variacion": 3.21
+        },
+        "Colombia": {
+            "promedio": 3101.41,
+            "valor": 3224.0,
+            "variacion": 3.03
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 22.58,
+            "valor": 20.87,
+            "variacion": -14.94
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2025-02",
+        "Global": {
+            "promedio": 3079.34,
+            "valor": 2885.33,
+            "variacion": -12.43
+        },
+        "Colombia": {
+            "promedio": 3024.42,
+            "valor": 2838.23,
+            "variacion": -11.97
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 19.78,
+            "valor": 24.13,
+            "variacion": 15.65
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2025-03",
+        "Global": {
+            "promedio": 2802.01,
+            "valor": 2735.67,
+            "variacion": -5.19
+        },
+        "Colombia": {
+            "promedio": 2740.37,
+            "valor": 2677.27,
+            "variacion": -5.67
+        },
+        "España": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 33.84,
+            "valor": 33.97,
+            "variacion": 40.75
+        },
+        "Chile": {
+            "promedio": null,
+            "valor": null,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2025-04",
+        "Global": {
+            "promedio": 2762.05,
+            "valor": 2731.03,
+            "variacion": -0.17
+        },
+        "Colombia": {
+            "promedio": 2700.19,
+            "valor": 2666.23,
+            "variacion": -0.41
+        },
+        "España": {
+            "promedio": 0.9,
+            "valor": 1.6,
+            "variacion": 0
+        },
+        "USA": {
+            "promedio": 35.82,
+            "valor": 36.6,
+            "variacion": 7.75
+        },
+        "Chile": {
+            "promedio": 0.25,
+            "valor": 0.6,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2025-05",
+        "Global": {
+            "promedio": 2698.43,
+            "valor": 2796.53,
+            "variacion": 2.4
+        },
+        "Colombia": {
+            "promedio": 2633.95,
+            "valor": 2724.3,
+            "variacion": 2.18
+        },
+        "España": {
+            "promedio": 3.81,
+            "valor": 4.23,
+            "variacion": 164.56
+        },
+        "USA": {
+            "promedio": 22.36,
+            "valor": 17.93,
+            "variacion": -51.0
+        },
+        "Chile": {
+            "promedio": 2.11,
+            "valor": 2.93,
+            "variacion": 388.83
+        }
+    },
+    {
+        "mes": "2025-06",
+        "Global": {
+            "promedio": 2837.06,
+            "valor": 2767.2,
+            "variacion": -1.05
+        },
+        "Colombia": {
+            "promedio": 2762.14,
+            "valor": 2694.27,
+            "variacion": -1.1
+        },
+        "España": {
+            "promedio": 4.42,
+            "valor": 4.6,
+            "variacion": 8.67
+        },
+        "USA": {
+            "promedio": 18.49,
+            "valor": 18.27,
+            "variacion": 1.86
+        },
+        "Chile": {
+            "promedio": 2.88,
+            "valor": 2.77,
+            "variacion": -5.66
+        }
+    },
+    {
+        "mes": "2025-07",
+        "Global": {
+            "promedio": 2801.8,
+            "valor": 2833.33,
+            "variacion": 2.39
+        },
+        "Colombia": {
+            "promedio": 2730.0,
+            "valor": 2763.4,
+            "variacion": 2.57
+        },
+        "España": {
+            "promedio": 5.24,
+            "valor": 5.4,
+            "variacion": 17.39
+        },
+        "USA": {
+            "promedio": 20.69,
+            "valor": 21.83,
+            "variacion": 19.52
+        },
+        "Chile": {
+            "promedio": 2.23,
+            "valor": 1.47,
+            "variacion": -46.98
+        }
+    },
+    {
+        "mes": "2025-08",
+        "Global": {
+            "promedio": 2858.29,
+            "valor": 2849.87,
+            "variacion": 0.58
+        },
+        "Colombia": {
+            "promedio": 2789.57,
+            "valor": 2782.7,
+            "variacion": 0.7
+        },
+        "España": {
+            "promedio": 5.37,
+            "valor": 5.5,
+            "variacion": 1.85
+        },
+        "USA": {
+            "promedio": 21.91,
+            "valor": 21.97,
+            "variacion": 0.61
+        },
+        "Chile": {
+            "promedio": 1.54,
+            "valor": 1.63,
+            "variacion": 11.32
+        }
+    },
+    {
+        "mes": "2025-09",
+        "Global": {
+            "promedio": 2975.65,
+            "valor": 3016.13,
+            "variacion": 5.83
+        },
+        "Colombia": {
+            "promedio": 2902.53,
+            "valor": 2940.73,
+            "variacion": 5.68
+        },
+        "España": {
+            "promedio": 5.32,
+            "valor": 4.9,
+            "variacion": -10.91
+        },
+        "USA": {
+            "promedio": 22.34,
+            "valor": 22.33,
+            "variacion": 1.67
+        },
+        "Chile": {
+            "promedio": 1.57,
+            "valor": 1.73,
+            "variacion": 6.12
+        }
+    },
+    {
+        "mes": "2025-10",
+        "Global": {
+            "promedio": 2921.39,
+            "valor": 2842.87,
+            "variacion": -5.74
+        },
+        "Colombia": {
+            "promedio": 2849.05,
+            "valor": 2770.37,
+            "variacion": -5.79
+        },
+        "España": {
+            "promedio": 4.98,
+            "valor": 5.33,
+            "variacion": 8.84
+        },
+        "USA": {
+            "promedio": 21.0,
+            "valor": 18.8,
+            "variacion": -15.82
+        },
+        "Chile": {
+            "promedio": 2.12,
+            "valor": 1.97,
+            "variacion": 13.5
+        }
+    },
+    {
+        "mes": "2025-11",
+        "Global": {
+            "promedio": 2765.46,
+            "valor": 2721.13,
+            "variacion": -4.28
+        },
+        "Colombia": {
+            "promedio": 2698.31,
+            "valor": 2661.97,
+            "variacion": -3.91
+        },
+        "España": {
+            "promedio": 5.76,
+            "valor": 6.5,
+            "variacion": 21.88
+        },
+        "USA": {
+            "promedio": 19.01,
+            "valor": 19.77,
+            "variacion": 5.14
+        },
+        "Chile": {
+            "promedio": 1.61,
+            "valor": 1.93,
+            "variacion": -1.73
+        }
+    },
+    {
+        "mes": "2025-12",
+        "Global": {
+            "promedio": 2753.93,
+            "valor": 2710.1,
+            "variacion": -0.41
+        },
+        "Colombia": {
+            "promedio": 2692.59,
+            "valor": 2645.8,
+            "variacion": -0.61
+        },
+        "España": {
+            "promedio": 6.79,
+            "valor": 6.07,
+            "variacion": -6.66
+        },
+        "USA": {
+            "promedio": 19.84,
+            "valor": 19.23,
+            "variacion": -2.7
+        },
+        "Chile": {
+            "promedio": 2.42,
+            "valor": 2.6,
+            "variacion": 34.51
+        }
+    },
+    {
+        "mes": "2026-01",
+        "Global": {
+            "promedio": 2773.72,
+            "valor": 2948.0,
+            "variacion": 8.78
+        },
+        "Colombia": {
+            "promedio": 2706.38,
+            "valor": 2873.7,
+            "variacion": 8.61
+        },
+        "España": {
+            "promedio": 5.97,
+            "valor": 6.37,
+            "variacion": 4.94
+        },
+        "USA": {
+            "promedio": 19.17,
+            "valor": 19.73,
+            "variacion": 2.6
+        },
+        "Chile": {
+            "promedio": 3.18,
+            "valor": 3.57,
+            "variacion": 37.19
+        }
+    },
+    {
+        "mes": "2026-02",
+        "Global": {
+            "promedio": 2915.26,
+            "valor": 2885.43,
+            "variacion": -2.12
+        },
+        "Colombia": {
+            "promedio": 2839.01,
+            "valor": 2819.33,
+            "variacion": -1.89
+        },
+        "España": {
+            "promedio": 6.52,
+            "valor": 6.6,
+            "variacion": 3.66
+        },
+        "USA": {
+            "promedio": 19.25,
+            "valor": 19.07,
+            "variacion": -3.38
+        },
+        "Chile": {
+            "promedio": 3.18,
+            "valor": 2.73,
+            "variacion": -23.38
+        }
+    }
+]

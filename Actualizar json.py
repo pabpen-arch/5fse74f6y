@@ -34,7 +34,11 @@ numeric_columns = [
     "Prom Monto Autogestionado",
     "Plazo Prom Auto",
     "Prom Monto Asesor",
-    "Plazo Prom Asesor"
+    "Plazo Prom Asesor",
+    "Cantidad Total",
+    "Cantidad Autogestionado",
+    "Cantidad Asesor"
+    
 ]
 
 # Convertir todo a entero
@@ -67,7 +71,10 @@ for product_name, group in df.groupby("Indicador"):
             "plazoPromAutogestionado": row["Plazo Prom Auto"],
 
             "promMontoAsesor": row["Prom Monto Asesor"],
-            "plazoPromAsesor": row["Plazo Prom Asesor"]
+            "plazoPromAsesor": row["Plazo Prom Asesor"],
+            "cantidadTotal": row["Cantidad Total"],
+            "cantidadAutogestionado": row["Cantidad Autogestionado"],
+            "cantidadAsesor": row["Cantidad Asesor"]
         })
 
     products.append({

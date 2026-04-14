@@ -1,0 +1,962 @@
+[
+    {
+        "mes": "2016-05",
+        "iOS": {
+            "promedio": 7.0,
+            "valor": 7.0,
+            "variacion": 0
+        }
+    },
+    {
+        "mes": "2016-06",
+        "iOS": {
+            "promedio": 14.0,
+            "valor": 14.0,
+            "variacion": 100.0
+        }
+    },
+    {
+        "mes": "2016-07",
+        "iOS": {
+            "promedio": 93.0,
+            "valor": 93.0,
+            "variacion": 564.29
+        }
+    },
+    {
+        "mes": "2016-08",
+        "iOS": {
+            "promedio": 81.0,
+            "valor": 81.0,
+            "variacion": -12.9
+        }
+    },
+    {
+        "mes": "2016-09",
+        "iOS": {
+            "promedio": 69.0,
+            "valor": 69.0,
+            "variacion": -14.81
+        }
+    },
+    {
+        "mes": "2016-10",
+        "iOS": {
+            "promedio": 72.0,
+            "valor": 72.0,
+            "variacion": 4.35
+        }
+    },
+    {
+        "mes": "2016-11",
+        "iOS": {
+            "promedio": 77.0,
+            "valor": 77.0,
+            "variacion": 6.94
+        }
+    },
+    {
+        "mes": "2016-12",
+        "iOS": {
+            "promedio": 87.0,
+            "valor": 87.0,
+            "variacion": 12.99
+        }
+    },
+    {
+        "mes": "2017-01",
+        "iOS": {
+            "promedio": 188.0,
+            "valor": 188.0,
+            "variacion": 116.09
+        }
+    },
+    {
+        "mes": "2017-02",
+        "iOS": {
+            "promedio": 108.0,
+            "valor": 108.0,
+            "variacion": -42.55
+        }
+    },
+    {
+        "mes": "2017-03",
+        "iOS": {
+            "promedio": 122.0,
+            "valor": 122.0,
+            "variacion": 12.96
+        }
+    },
+    {
+        "mes": "2017-04",
+        "iOS": {
+            "promedio": 118.0,
+            "valor": 118.0,
+            "variacion": -3.28
+        }
+    },
+    {
+        "mes": "2017-05",
+        "iOS": {
+            "promedio": 120.0,
+            "valor": 120.0,
+            "variacion": 1.69
+        }
+    },
+    {
+        "mes": "2017-06",
+        "iOS": {
+            "promedio": 140.0,
+            "valor": 140.0,
+            "variacion": 16.67
+        }
+    },
+    {
+        "mes": "2017-07",
+        "iOS": {
+            "promedio": 151.0,
+            "valor": 151.0,
+            "variacion": 7.86
+        }
+    },
+    {
+        "mes": "2017-08",
+        "iOS": {
+            "promedio": 146.0,
+            "valor": 146.0,
+            "variacion": -3.31
+        }
+    },
+    {
+        "mes": "2017-09",
+        "iOS": {
+            "promedio": 155.0,
+            "valor": 155.0,
+            "variacion": 6.16
+        }
+    },
+    {
+        "mes": "2017-10",
+        "iOS": {
+            "promedio": 178.0,
+            "valor": 178.0,
+            "variacion": 14.84
+        }
+    },
+    {
+        "mes": "2017-11",
+        "iOS": {
+            "promedio": 190.0,
+            "valor": 190.0,
+            "variacion": 6.74
+        }
+    },
+    {
+        "mes": "2017-12",
+        "iOS": {
+            "promedio": 220.0,
+            "valor": 220.0,
+            "variacion": 15.79
+        }
+    },
+    {
+        "mes": "2018-01",
+        "iOS": {
+            "promedio": 298.0,
+            "valor": 298.0,
+            "variacion": 35.45
+        }
+    },
+    {
+        "mes": "2018-02",
+        "iOS": {
+            "promedio": 256.0,
+            "valor": 256.0,
+            "variacion": -14.09
+        }
+    },
+    {
+        "mes": "2018-03",
+        "iOS": {
+            "promedio": 308.0,
+            "valor": 308.0,
+            "variacion": 20.31
+        }
+    },
+    {
+        "mes": "2018-04",
+        "iOS": {
+            "promedio": 296.0,
+            "valor": 296.0,
+            "variacion": -3.9
+        }
+    },
+    {
+        "mes": "2018-05",
+        "iOS": {
+            "promedio": 322.0,
+            "valor": 322.0,
+            "variacion": 8.78
+        }
+    },
+    {
+        "mes": "2018-06",
+        "iOS": {
+            "promedio": 331.0,
+            "valor": 331.0,
+            "variacion": 2.8
+        }
+    },
+    {
+        "mes": "2018-07",
+        "iOS": {
+            "promedio": 403.0,
+            "valor": 403.0,
+            "variacion": 21.75
+        }
+    },
+    {
+        "mes": "2018-08",
+        "iOS": {
+            "promedio": 432.0,
+            "valor": 432.0,
+            "variacion": 7.2
+        }
+    },
+    {
+        "mes": "2018-09",
+        "iOS": {
+            "promedio": 526.0,
+            "valor": 526.0,
+            "variacion": 21.76
+        }
+    },
+    {
+        "mes": "2018-10",
+        "iOS": {
+            "promedio": 419.0,
+            "valor": 419.0,
+            "variacion": -20.34
+        }
+    },
+    {
+        "mes": "2018-11",
+        "iOS": {
+            "promedio": 404.0,
+            "valor": 404.0,
+            "variacion": -3.58
+        }
+    },
+    {
+        "mes": "2018-12",
+        "iOS": {
+            "promedio": 433.0,
+            "valor": 433.0,
+            "variacion": 7.18
+        }
+    },
+    {
+        "mes": "2019-01",
+        "iOS": {
+            "promedio": 486.0,
+            "valor": 486.0,
+            "variacion": 12.24
+        }
+    },
+    {
+        "mes": "2019-02",
+        "iOS": {
+            "promedio": 457.0,
+            "valor": 457.0,
+            "variacion": -5.97
+        }
+    },
+    {
+        "mes": "2019-03",
+        "iOS": {
+            "promedio": 451.0,
+            "valor": 451.0,
+            "variacion": -1.31
+        }
+    },
+    {
+        "mes": "2019-04",
+        "iOS": {
+            "promedio": 477.0,
+            "valor": 477.0,
+            "variacion": 5.76
+        }
+    },
+    {
+        "mes": "2019-05",
+        "iOS": {
+            "promedio": 456.0,
+            "valor": 456.0,
+            "variacion": -4.4
+        }
+    },
+    {
+        "mes": "2019-06",
+        "iOS": {
+            "promedio": 531.0,
+            "valor": 531.0,
+            "variacion": 16.45
+        }
+    },
+    {
+        "mes": "2019-07",
+        "iOS": {
+            "promedio": 556.0,
+            "valor": 556.0,
+            "variacion": 4.71
+        }
+    },
+    {
+        "mes": "2019-08",
+        "iOS": {
+            "promedio": 524.0,
+            "valor": 524.0,
+            "variacion": -5.76
+        }
+    },
+    {
+        "mes": "2019-09",
+        "iOS": {
+            "promedio": 499.0,
+            "valor": 499.0,
+            "variacion": -4.77
+        }
+    },
+    {
+        "mes": "2019-10",
+        "iOS": {
+            "promedio": 513.0,
+            "valor": 513.0,
+            "variacion": 2.81
+        }
+    },
+    {
+        "mes": "2019-11",
+        "iOS": {
+            "promedio": 518.0,
+            "valor": 518.0,
+            "variacion": 0.97
+        }
+    },
+    {
+        "mes": "2019-12",
+        "iOS": {
+            "promedio": 541.0,
+            "valor": 541.0,
+            "variacion": 4.44
+        }
+    },
+    {
+        "mes": "2020-01",
+        "iOS": {
+            "promedio": 705.0,
+            "valor": 705.0,
+            "variacion": 30.31
+        }
+    },
+    {
+        "mes": "2020-02",
+        "iOS": {
+            "promedio": 846.0,
+            "valor": 846.0,
+            "variacion": 20.0
+        }
+    },
+    {
+        "mes": "2020-03",
+        "iOS": {
+            "promedio": 891.0,
+            "valor": 891.0,
+            "variacion": 5.32
+        }
+    },
+    {
+        "mes": "2020-04",
+        "iOS": {
+            "promedio": 976.0,
+            "valor": 976.0,
+            "variacion": 9.54
+        }
+    },
+    {
+        "mes": "2020-05",
+        "iOS": {
+            "promedio": 828.0,
+            "valor": 828.0,
+            "variacion": -15.16
+        }
+    },
+    {
+        "mes": "2020-06",
+        "iOS": {
+            "promedio": 861.0,
+            "valor": 861.0,
+            "variacion": 3.99
+        }
+    },
+    {
+        "mes": "2020-07",
+        "iOS": {
+            "promedio": 1013.0,
+            "valor": 1013.0,
+            "variacion": 17.65
+        }
+    },
+    {
+        "mes": "2020-08",
+        "iOS": {
+            "promedio": 1033.0,
+            "valor": 1033.0,
+            "variacion": 1.97
+        }
+    },
+    {
+        "mes": "2020-09",
+        "iOS": {
+            "promedio": 1002.0,
+            "valor": 1002.0,
+            "variacion": -3.0
+        }
+    },
+    {
+        "mes": "2020-10",
+        "iOS": {
+            "promedio": 1012.0,
+            "valor": 1012.0,
+            "variacion": 1.0
+        }
+    },
+    {
+        "mes": "2020-11",
+        "iOS": {
+            "promedio": 1042.0,
+            "valor": 1042.0,
+            "variacion": 2.96
+        }
+    },
+    {
+        "mes": "2020-12",
+        "iOS": {
+            "promedio": 964.0,
+            "valor": 964.0,
+            "variacion": -7.49
+        }
+    },
+    {
+        "mes": "2021-01",
+        "iOS": {
+            "promedio": 1037.0,
+            "valor": 1037.0,
+            "variacion": 7.57
+        }
+    },
+    {
+        "mes": "2021-02",
+        "iOS": {
+            "promedio": 955.0,
+            "valor": 955.0,
+            "variacion": -7.91
+        }
+    },
+    {
+        "mes": "2021-03",
+        "iOS": {
+            "promedio": 941.0,
+            "valor": 941.0,
+            "variacion": -1.47
+        }
+    },
+    {
+        "mes": "2021-04",
+        "iOS": {
+            "promedio": 957.0,
+            "valor": 957.0,
+            "variacion": 1.7
+        }
+    },
+    {
+        "mes": "2021-05",
+        "iOS": {
+            "promedio": 996.0,
+            "valor": 996.0,
+            "variacion": 4.08
+        }
+    },
+    {
+        "mes": "2021-06",
+        "iOS": {
+            "promedio": 1037.0,
+            "valor": 1037.0,
+            "variacion": 4.12
+        }
+    },
+    {
+        "mes": "2021-07",
+        "iOS": {
+            "promedio": 1236.0,
+            "valor": 1236.0,
+            "variacion": 19.19
+        }
+    },
+    {
+        "mes": "2021-08",
+        "iOS": {
+            "promedio": 1292.0,
+            "valor": 1292.0,
+            "variacion": 4.53
+        }
+    },
+    {
+        "mes": "2021-09",
+        "iOS": {
+            "promedio": 1254.0,
+            "valor": 1254.0,
+            "variacion": -2.94
+        }
+    },
+    {
+        "mes": "2021-10",
+        "iOS": {
+            "promedio": 1383.0,
+            "valor": 1383.0,
+            "variacion": 10.29
+        }
+    },
+    {
+        "mes": "2021-11",
+        "iOS": {
+            "promedio": 1255.0,
+            "valor": 1255.0,
+            "variacion": -9.26
+        }
+    },
+    {
+        "mes": "2021-12",
+        "iOS": {
+            "promedio": 1304.0,
+            "valor": 1304.0,
+            "variacion": 3.9
+        }
+    },
+    {
+        "mes": "2022-01",
+        "iOS": {
+            "promedio": 1344.0,
+            "valor": 1344.0,
+            "variacion": 3.07
+        }
+    },
+    {
+        "mes": "2022-02",
+        "iOS": {
+            "promedio": 1354.0,
+            "valor": 1354.0,
+            "variacion": 0.74
+        }
+    },
+    {
+        "mes": "2022-03",
+        "iOS": {
+            "promedio": 1399.0,
+            "valor": 1399.0,
+            "variacion": 3.32
+        }
+    },
+    {
+        "mes": "2022-04",
+        "iOS": {
+            "promedio": 1465.0,
+            "valor": 1465.0,
+            "variacion": 4.72
+        }
+    },
+    {
+        "mes": "2022-05",
+        "iOS": {
+            "promedio": 1445.0,
+            "valor": 1445.0,
+            "variacion": -1.37
+        }
+    },
+    {
+        "mes": "2022-06",
+        "iOS": {
+            "promedio": 1539.0,
+            "valor": 1539.0,
+            "variacion": 6.51
+        }
+    },
+    {
+        "mes": "2022-07",
+        "iOS": {
+            "promedio": 1605.0,
+            "valor": 1605.0,
+            "variacion": 4.29
+        }
+    },
+    {
+        "mes": "2022-08",
+        "iOS": {
+            "promedio": 1671.0,
+            "valor": 1671.0,
+            "variacion": 4.11
+        }
+    },
+    {
+        "mes": "2022-09",
+        "iOS": {
+            "promedio": 1667.0,
+            "valor": 1667.0,
+            "variacion": -0.24
+        }
+    },
+    {
+        "mes": "2022-10",
+        "iOS": {
+            "promedio": 1610.0,
+            "valor": 1610.0,
+            "variacion": -3.42
+        }
+    },
+    {
+        "mes": "2022-11",
+        "iOS": {
+            "promedio": 1643.0,
+            "valor": 1643.0,
+            "variacion": 2.05
+        }
+    },
+    {
+        "mes": "2022-12",
+        "iOS": {
+            "promedio": 1663.0,
+            "valor": 1663.0,
+            "variacion": 1.22
+        }
+    },
+    {
+        "mes": "2023-01",
+        "iOS": {
+            "promedio": 1851.0,
+            "valor": 1851.0,
+            "variacion": 11.3
+        }
+    },
+    {
+        "mes": "2023-02",
+        "iOS": {
+            "promedio": 1684.0,
+            "valor": 1684.0,
+            "variacion": -9.02
+        }
+    },
+    {
+        "mes": "2023-03",
+        "iOS": {
+            "promedio": 1769.0,
+            "valor": 1769.0,
+            "variacion": 5.05
+        }
+    },
+    {
+        "mes": "2023-04",
+        "iOS": {
+            "promedio": 1811.0,
+            "valor": 1811.0,
+            "variacion": 2.37
+        }
+    },
+    {
+        "mes": "2023-05",
+        "iOS": {
+            "promedio": 1871.0,
+            "valor": 1871.0,
+            "variacion": 3.31
+        }
+    },
+    {
+        "mes": "2023-06",
+        "iOS": {
+            "promedio": 1878.0,
+            "valor": 1878.0,
+            "variacion": 0.37
+        }
+    },
+    {
+        "mes": "2023-07",
+        "iOS": {
+            "promedio": 2066.0,
+            "valor": 2066.0,
+            "variacion": 10.01
+        }
+    },
+    {
+        "mes": "2023-08",
+        "iOS": {
+            "promedio": 2102.0,
+            "valor": 2102.0,
+            "variacion": 1.74
+        }
+    },
+    {
+        "mes": "2023-09",
+        "iOS": {
+            "promedio": 2156.0,
+            "valor": 2156.0,
+            "variacion": 2.57
+        }
+    },
+    {
+        "mes": "2023-10",
+        "iOS": {
+            "promedio": 2114.0,
+            "valor": 2114.0,
+            "variacion": -1.95
+        }
+    },
+    {
+        "mes": "2023-11",
+        "iOS": {
+            "promedio": 2078.0,
+            "valor": 2078.0,
+            "variacion": -1.7
+        }
+    },
+    {
+        "mes": "2023-12",
+        "iOS": {
+            "promedio": 2136.0,
+            "valor": 2136.0,
+            "variacion": 2.79
+        }
+    },
+    {
+        "mes": "2024-01",
+        "iOS": {
+            "promedio": 2388.0,
+            "valor": 2388.0,
+            "variacion": 11.8
+        }
+    },
+    {
+        "mes": "2024-02",
+        "iOS": {
+            "promedio": 2367.0,
+            "valor": 2367.0,
+            "variacion": -0.88
+        }
+    },
+    {
+        "mes": "2024-03",
+        "iOS": {
+            "promedio": 2437.0,
+            "valor": 2437.0,
+            "variacion": 2.96
+        }
+    },
+    {
+        "mes": "2024-04",
+        "iOS": {
+            "promedio": 2405.0,
+            "valor": 2405.0,
+            "variacion": -1.31
+        }
+    },
+    {
+        "mes": "2024-05",
+        "iOS": {
+            "promedio": 2401.0,
+            "valor": 2401.0,
+            "variacion": -0.17
+        }
+    },
+    {
+        "mes": "2024-06",
+        "iOS": {
+            "promedio": 2553.0,
+            "valor": 2553.0,
+            "variacion": 6.33
+        }
+    },
+    {
+        "mes": "2024-07",
+        "iOS": {
+            "promedio": 2592.0,
+            "valor": 2592.0,
+            "variacion": 1.53
+        }
+    },
+    {
+        "mes": "2024-08",
+        "iOS": {
+            "promedio": 2748.0,
+            "valor": 2748.0,
+            "variacion": 6.02
+        }
+    },
+    {
+        "mes": "2024-09",
+        "iOS": {
+            "promedio": 2734.0,
+            "valor": 2734.0,
+            "variacion": -0.51
+        }
+    },
+    {
+        "mes": "2024-10",
+        "iOS": {
+            "promedio": 2899.0,
+            "valor": 2899.0,
+            "variacion": 6.04
+        }
+    },
+    {
+        "mes": "2024-11",
+        "iOS": {
+            "promedio": 2869.0,
+            "valor": 2869.0,
+            "variacion": -1.03
+        }
+    },
+    {
+        "mes": "2024-12",
+        "iOS": {
+            "promedio": 2908.0,
+            "valor": 2908.0,
+            "variacion": 1.36
+        }
+    },
+    {
+        "mes": "2025-01",
+        "iOS": {
+            "promedio": 3108.0,
+            "valor": 3108.0,
+            "variacion": 6.88
+        }
+    },
+    {
+        "mes": "2025-02",
+        "iOS": {
+            "promedio": 3075.0,
+            "valor": 3075.0,
+            "variacion": -1.06
+        }
+    },
+    {
+        "mes": "2025-03",
+        "iOS": {
+            "promedio": 3063.0,
+            "valor": 3063.0,
+            "variacion": -0.39
+        }
+    },
+    {
+        "mes": "2025-04",
+        "iOS": {
+            "promedio": 3078.0,
+            "valor": 3078.0,
+            "variacion": 0.49
+        }
+    },
+    {
+        "mes": "2025-05",
+        "iOS": {
+            "promedio": 3364.0,
+            "valor": 3364.0,
+            "variacion": 9.29
+        }
+    },
+    {
+        "mes": "2025-06",
+        "iOS": {
+            "promedio": 3417.0,
+            "valor": 3417.0,
+            "variacion": 1.58
+        }
+    },
+    {
+        "mes": "2025-07",
+        "iOS": {
+            "promedio": 3670.0,
+            "valor": 3670.0,
+            "variacion": 7.4
+        }
+    },
+    {
+        "mes": "2025-08",
+        "iOS": {
+            "promedio": 3719.0,
+            "valor": 3719.0,
+            "variacion": 1.34
+        }
+    },
+    {
+        "mes": "2025-09",
+        "iOS": {
+            "promedio": 3382.0,
+            "valor": 3382.0,
+            "variacion": -9.06
+        }
+    },
+    {
+        "mes": "2025-10",
+        "iOS": {
+            "promedio": 3818.0,
+            "valor": 3818.0,
+            "variacion": 12.89
+        }
+    },
+    {
+        "mes": "2025-11",
+        "iOS": {
+            "promedio": 3828.0,
+            "valor": 3828.0,
+            "variacion": 0.26
+        }
+    },
+    {
+        "mes": "2025-12",
+        "iOS": {
+            "promedio": 3945.0,
+            "valor": 3945.0,
+            "variacion": 3.06
+        }
+    },
+    {
+        "mes": "2026-01",
+        "iOS": {
+            "promedio": 4311.0,
+            "valor": 4311.0,
+            "variacion": 9.28
+        }
+    },
+    {
+        "mes": "2026-02",
+        "iOS": {
+            "promedio": 4066.0,
+            "valor": 4066.0,
+            "variacion": -5.68
+        }
+    },
+    {
+        "mes": "2026-03",
+        "iOS": {
+            "promedio": 4300.0,
+            "valor": 4300.0,
+            "variacion": 5.76
+        }
+    },
+    {
+        "mes": "2026-04",
+        "iOS": {
+            "promedio": 1614.0,
+            "valor": 1614.0,
+            "variacion": -62.47
+        }
+    }
+]
