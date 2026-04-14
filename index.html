@@ -5,9 +5,14 @@
 <title>Plataforma de Inteligencia Digital</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 
 <body>
+  <img src="LogoColor.png" alt="Logo barra lateral" class="logo-sidebar">
+  <img src="logo-derecha.png" alt="Logo superior derecho" class="logo-content-top">
 
 <nav class="navbar">
   <div class="logo">
@@ -16,13 +21,549 @@
   </div>
 
   <div class="menu">
+    <button class="nav-btn" onclick="showSection('home', this)">Inicio</button>
     <button class="nav-btn" onclick="showSection('status', this)">Status Productos</button>
     <button class="nav-btn" onclick="showSection('proyecciones', this)">Digital Impact Lab</button>
-    <button class="nav-btn" onclick="showSection('plan', this)">Plan de Trabajo</button>
+    <button class="nav-btn" onclick="abrirPlanTrabajo(this)">Plan de Trabajo</button>
+    <button class="nav-btn" onclick="abrirEvolucionProyectos(this)">
+      Evolución Productos Canales Digitales
+    </button>
+    <button class="nav-btn finco-bot-btn" onclick="activarFincoBot()">
+      🤖 Interactúa con FINCO BOT
+    </button>
   </div>
 </nav>
 
-<section id="statusSection" class="section active">
+<section id="homeSection" class="section active portada">
+
+  <div class="portada-container cinematic">
+
+    <h1 class="titulo-cine">Canal Virtual</h1>
+    <p class="subtitulo-cine">Donde la data se convierte en crecimiento</p>
+
+    <div class="imagen-grupo big" onclick="irOrganigrama()">
+      <img src="grupo.png">
+      <div class="overlay">
+        <span>Explorar equipo →</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="evolucionProyectosSection" class="section">
+
+  <div class="section-header">
+    <h1>Evolución Productos Canales Digitales</h1>
+    <p>Línea de tiempo evolutiva de mejoras, hitos y observaciones por producto</p>
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric-card">
+      <h3 id="kpiProyectosTotal">0</h3>
+      <span>Productos Estratégicos</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiAnioInicio">0</h3>
+      <span>Año Inicial</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiAnioActual">0</h3>
+      <span>Año Más Reciente</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiMejorasTotal">0</h3>
+      <span>Hitos Registrados</span>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="timeline-toolbar">
+    <div id="productosTimelineFilters" class="timeline-filters"></div>
+  </div>
+
+  <br>
+
+  <div class="timeline-shell">
+    <div class="timeline-years" id="timelineYearsRow"></div>
+    <div class="timeline-road" id="timelineRoadContainer"></div>
+  </div>
+
+  <br><br>
+
+  <div class="charts-grid">
+    <div class="chart-box">
+      <h3 id="timelineProductoTitulo">Visión del producto</h3>
+      <div id="timelineProductoResumen" class="timeline-summary-panel"></div>
+    </div>
+
+    <div class="chart-box">
+      <h3>Lectura Estratégica</h3>
+      <div id="insightsEvolucionProyectos" class="insight-box" style="margin-top:0;">
+        <strong>Insights Clave:</strong><br><br>
+        • Cargando insights...
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  <!-- ORGANIGRAMA -->
+<section id="organigramaSection" class="section organigrama-scene">
+
+  <div class="org-container">
+
+    <!-- NIVEL 1 -->
+    <div class="nivel nivel-1 fade-in">
+      <div class="persona grande" onclick="irPersona('director')">
+        <img src="1.png">
+        <p>Hector Henao</p>
+        <p>Director Canales no Presenciales</p>
+      </div>
+    </div>
+
+    <!-- LINEA -->
+    <div class="linea vertical"></div>
+
+    <!-- NIVEL 2 -->
+    <div class="nivel nivel-2 fade-in delay-1">
+      <div class="persona" onclick="irPersona('p1')"><img src="2.png">
+      <p class="nombre">Maria Claudia Zubieta</p>
+      <p class="cargo">Jefe Canal Virtual</p>
+      </div>
+      
+      <div class="persona" onclick="irPersona('p2')"><img src="3.png">
+      <p>Juan Pablo Peñaranda Rivera</p>
+      <p>Coordinador Datamarshall</p>
+      </div>
+      <div class="persona" onclick="irPersona('p3')"><img src="4.png">
+      <p>Luis Hernan Segura</p>
+      <p>Lider de Convenios</p>
+      </div>
+    </div>
+
+    <!-- LINEA -->
+    <div class="linea horizontal"></div>
+
+    <!-- SUBGRUPO -->
+    <div class="nivel nivel-3 fade-in delay-2">
+      <div class="subgrupo">
+        <div class="persona" onclick="irPersona('tatiana')"><img src="5.png">
+        <p>Tatiana Villareal</p>
+        <p>Analista III</p>
+        </div>
+        <div class="persona" onclick="irPersona('jennifer')"><img src="6.png">
+        <p>Jennifer Vanegas</p>
+        <p>Analista II</p>
+        </div>
+        <div class="persona" onclick="irPersona('valentina')"><img src="7.png">
+        <p>Valentina Portilla</p>
+        <p>Analista I</p>
+        </div>
+        <div class="persona" onclick="irPersona('p7')"><img src="8.png">
+        <p>Diana del Pilar Osorio</p>
+        <p>Auxiliar Canal Virtual</p>
+        </div>
+        <div class="persona" onclick="irPersona('p8')"><img src="9.png">
+        <p>David Alejandro Mantilla</p>
+        <p>Auxiliar Canal Virtual</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section> <!-- cierre organigrama -->
+
+
+<section id="p3Section" class="section">
+
+  <div class="section-header">
+    <h1>Luis Hernan Segura</h1>
+    <p>Lider de Convenios</p>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-box detalle-img-box">
+      <img src="convenios_1.png" alt="Detalle 1 Luis Hernan" class="detalle-persona-img">
+    </div>
+
+    <div class="chart-box detalle-img-box">
+      <img src="convenios_2.png" alt="Detalle 2 Luis Hernan" class="detalle-persona-img">
+    </div>
+  </div>
+
+</section>
+
+<section id="tatianaSection" class="section">
+
+  <div class="section-header">
+    <h1>Comunicaciones</h1>
+    <p>Análisis de gestión – Tatiana Villareal</p>
+  </div>
+
+  <!-- KPIs -->
+  <div class="metric-grid">
+    <div class="metric-card">
+      <h3 id="kpiTotal">0</h3>
+      <span>Total Enviado</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiEntregado">0%</h3>
+      <span>% Entregado</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiVisto">0%</h3>
+      <span>% Visto</span>
+    </div>
+  </div>
+
+  <!-- GRÁFICAS -->
+  <div class="charts-grid">
+    <div class="chart-box">
+      <canvas id="chartComunicaciones"></canvas>
+    </div>
+
+    <div class="chart-box">
+      <canvas id="chartPorcentajes"></canvas>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="charts-grid">
+    <div class="chart-box">
+      <h3>CDAT</h3>
+      <canvas id="chartCDAT"></canvas>
+    </div>
+
+    <div class="chart-box">
+      <h3>PAP</h3>
+      <canvas id="chartPAP"></canvas>
+    </div>
+  </div>
+
+    <div class="insight-box">
+    <strong>Insights Clave:</strong><br><br>
+
+    • El volumen de comunicaciones muestra crecimiento sostenido con picos en noviembre y diciembre, evidenciando estacionalidad comercial.<br><br>
+    • La tasa de entrega (76,5%) es sólida, pero existe oportunidad en optimización de bases y horarios para aumentar el % visto.<br><br>
+    • CDAT concentra el mayor retorno con eficiencia sobresaliente, especialmente en noviembre, donde se evidencia alto impacto comercial.<br><br>
+    • PAP presenta menor retorno relativo, indicando oportunidad de optimización en segmentación o mensaje.<br><br>
+    • La franja horaria de 3PM – 6PM concentra mayor efectividad, siendo clave para estrategias futuras de envíos.<br>
+
+    </div>
+
+</section>
+
+<section id="valentinaSection" class="section">
+
+  <div class="section-header">
+    <h1>Brigadas</h1>
+    <p>Gestión – Valentina Portilla</p>
+  </div>
+
+  <!-- KPIs -->
+  <div class="metric-grid">
+    <div class="metric-card">
+      <h3 id="kpiTotalValentina">0</h3>
+      <span>Total Brigadas</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiEntregadoValentina">0</h3>
+      <span>% Brigadas Presenciales</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiVistoValentina">0%</h3>
+      <span>% Brigadas Virtuales</span>
+    </div>
+  </div>
+
+  <!-- GRÁFICAS -->
+<div class="charts-grid">
+  <div class="chart-box">
+    <canvas id="chartValentina"></canvas>
+  </div>
+
+  <div class="chart-box">
+    <div class="ranking-controls" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:15px;">
+      <button onclick="cambiarMetricaValentina('creditos')">Créditos</button>
+      <button onclick="cambiarMetricaValentina('paps')">PAPS</button>
+      <button onclick="cambiarMetricaValentina('vinculaciones')">Vinculaciones</button>
+      <button onclick="cambiarMetricaValentina('brigadas')">Brigadas</button>
+      <button onclick="cambiarMetricaValentina('costo')">Costo</button>
+    </div>
+
+    <canvas id="chartPorcentajesValentina"></canvas>
+  </div>
+  </div>
+
+  <br><br>
+
+<!-- SEGUNDO BLOQUE -->
+<div class="charts-grid">
+
+  <div class="chart-box tabla-box">
+    <h3>Resumen General de Brigadas por Canal</h3>
+
+    <table class="tabla-brigadas">
+      <thead>
+        <tr>
+          <th>Canal</th>
+          <th>Cantidad Brigadas</th>
+          <th>Costo</th>
+          <th>Total Créditos</th>
+          <th>Total PAPS</th>
+          <th>Total Vinculaciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaResumenCanalesBody"></tbody>
+    </table>
+  </div>
+
+  <div class="chart-box tabla-box">
+    <h3>Resumen de Brigadas</h3>
+
+    <table class="tabla-brigadas">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Mes</th>
+          <th>Brigadas</th>
+          <th>Costo</th>
+          <th>Créditos</th>
+          <th>PAPS</th>
+          <th>Vinculaciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaBrigadasBody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+  <!-- MAPA -->
+  <div style="margin-top:60px;">
+    <div id="mapColombia" style="height:400px; border-radius:20px;"></div>
+  </div>
+
+  <!-- INSIGHTS -->
+  <div class="insight-box">
+    <strong>Insights Clave:</strong><br><br>
+
+    • El volumen de comunicaciones muestra crecimiento sostenido con picos en noviembre y diciembre, evidenciando estacionalidad comercial.<br><br>
+
+    • La tasa de entrega (76,5%) es sólida, pero existe oportunidad en optimización de bases y horarios para aumentar el % visto.<br><br>
+
+    • CDAT concentra el mayor retorno con eficiencia sobresaliente, especialmente en noviembre, donde se evidencia alto impacto comercial.<br><br>
+
+    • PAP presenta menor retorno relativo, indicando oportunidad de optimización en segmentación o mensaje.<br><br>
+
+    • La franja horaria de 3PM – 6PM concentra mayor efectividad, siendo clave para estrategias futuras de envíos.<br>
+  </div>
+
+</section>
+
+<section id="p7Section" class="section">
+
+  <div class="section-header">
+    <h1>ROM</h1>
+    <p>Gestión – Diana del Pilar Osorio</p>
+  </div>
+
+  <!-- KPIs -->
+  <div class="metric-grid">
+    <div class="metric-card">
+      <h3 id="kpiTotalP7">0</h3>
+      <span>Casos ROM</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiVar2025P7">0%</h3>
+      <span>% 2025 vs 2024</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiVarActualP7">0%</h3>
+      <span>% Actual vs 2024</span>
+    </div>
+  </div>
+
+  <!-- GRÁFICAS -->
+  <div class="charts-grid">
+  <div class="chart-box" style="height:420px;">
+    <canvas id="chartP7Mensual"></canvas>
+  </div>
+
+  <div class="chart-box" style="height:420px;">
+    <canvas id="chartP7Motivos"></canvas>
+  </div>
+  </div>
+
+  <br><br>
+
+  <div class="charts-grid">
+  <div class="chart-box" style="height:420px;">
+    <canvas id="chartP7Medio"></canvas>
+    </div>
+  </div>
+
+  <!-- INSIGHTS -->
+  <div class="insight-box" id="insightsP7">
+    <strong>Insights Clave:</strong><br><br>
+    • Alta concentración histórica en 2024: El volumen de casos ROM se concentró fuertemente en el primer semestre de 2024, con picos en febrero y marzo. A partir de 2025 se observa una caída sostenida, lo que refleja una reducción importante del volumen operativo. 2025 cerró con una disminución de 83,0% frente a 2024.<br><br>
+
+    • Los motivos están altamente concentrados en pocas tipologías: Los tres principales motivos —Acceso Denegado/Bloqueado, Incidencia Autenticación Truora e Incidencia usuario— reúnen la gran mayoría de los casos, por lo que cualquier mejora sobre estas causas tendría el mayor impacto en la reducción del volumen total.<br><br>
+
+    • El canal de entrada dominante es Call Center: El Call Center concentra el mayor medio de recepción con 72,87%, seguido por Portal Web con 12,32%. Esto indica que la operación ROM depende principalmente del canal telefónico, mientras los demás medios tienen una participación mucho menor, lo que abre oportunidad para desviar carga a canales más autogestionados.<br><br>
+
+  </div>
+
+</section>
+
+<section id="p8Section" class="section">
+
+  <div class="section-header">
+    <h1>Encuestas Canal No Presencial</h1>
+    <p>Gestión – David Alejandro Mantilla</p>
+  </div>
+
+  <!-- KPIs HORIZONTALES -->
+  <div class="metric-grid metric-grid-horizontal">
+    <div class="metric-card">
+      <h3 id="kpiTotalP8">0</h3>
+      <span>Total Encuestas</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiContactosP8">0%</h3>
+      <span>% Contactos Adicionales</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiClaridadP8">0</h3>
+      <span>Promedio Claridad</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiConocimientoP8">0</h3>
+      <span>Promedio Conocimiento</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiDisposicionP8">0</h3>
+      <span>Promedio Disposición</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiTiempoP8">0</h3>
+      <span>Promedio Tiempo Respuesta</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiRecCanalP8">0</h3>
+      <span>Promedio Recomendación Canal</span>
+    </div>
+
+    <div class="metric-card">
+      <h3 id="kpiRecServicioP8">0</h3>
+      <span>Promedio Recomendación Servicio</span>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- BLOQUE 1 -->
+  <div class="charts-grid">
+    <div class="chart-box tabla-box">
+      <h3>Promedios por Canal</h3>
+      <table class="tabla-brigadas">
+        <thead>
+          <tr>
+            <th>Canal Atención</th>
+            <th>Claridad</th>
+            <th>Conocimiento</th>
+            <th>Disponibilidad</th>
+            <th>Tiempo Respuesta</th>
+            <th>Recomendación Servicio</th>
+            <th>Recomendación Canales</th>
+          </tr>
+        </thead>
+        <tbody id="tablaP8PromediosBody"></tbody>
+      </table>
+    </div>
+
+    <div class="chart-box" style="height:420px;">
+      <canvas id="chartP8Contacto"></canvas>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- SUBTEMA PERCEPCION -->
+  <div class="section-header">
+    <h2>Detalle de Percepción</h2>
+    <p>Distribución general y por canal</p>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-box tabla-box">
+      <h3>Percepción Servicio</h3>
+      <table class="tabla-brigadas">
+        <thead>
+          <tr>
+            <th>Percepción</th>
+            <th>Total Comentarios</th>
+            <th>% Por Percepción</th>
+          </tr>
+        </thead>
+        <tbody id="tablaP8PercepcionBody"></tbody>
+      </table>
+    </div>
+
+    <div class="chart-box tabla-box">
+      <h3>% Percepción por Canal</h3>
+      <table class="tabla-brigadas">
+        <thead>
+          <tr>
+            <th>Canal Atención</th>
+            <th>Buena</th>
+            <th>Mala</th>
+            <th>Neutra</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="tablaP8CanalPercepcionBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="charts-grid">
+    <div class="chart-box" style="height:420px;">
+      <canvas id="chartP8PercepcionMensual"></canvas>
+    </div>
+  </div>
+
+  <div class="insight-box" id="insightsP8">
+    <strong>Insights Clave:</strong><br><br>
+    • Cargando insights...
+  </div>
+
+</section>
+
+<!-- STATUS PRODUCTOS -->
+<section id="statusSection" class="section">
   <div class="section-header">
     <h1>Status Productos Digitales</h1>
     <p>Desempeño y adopción del canal virtual</p>
@@ -46,6 +587,12 @@
     <p>Iniciativas estratégicas del canal virtual</p>
   </div>
 
+  <div class="timeline-toolbar">
+    <div id="planFilters" class="timeline-filters"></div>
+  </div>
+
+  <br>
+
   <div class="roadmap" id="roadmapContainer"></div>
 </section>
 
@@ -55,21 +602,27 @@
     <h2 id="modalTitle"></h2>
 
     <div class="modal-grid">
-
       <div>
-          <canvas id="chartProduct"></canvas>
-          <canvas id="chartImpact" style="display:none;"></canvas>
+        <canvas id="chartProduct"></canvas>
+        <canvas id="chartImpact" style="display:none;"></canvas>
 
-          <div id="metrics">
-          <button onclick="toggleDataset(0)">Valor Total</button>
-          <button onclick="toggleDataset(1)">Autogestionado</button>
-          <button onclick="toggleDataset(2)">Asesor</button>
+        <div id="metrics">
+
+          <button onclick="toggleViewMode()" id="viewToggleBtn">
+            Ver en Valores 💰
+          </button>
+
+          <button class="dataset-btn" onclick="toggleDataset(0)">Valor Total</button>
+          <button class="dataset-btn" onclick="toggleDataset(1)">Autogestionado</button>
+          <button class="dataset-btn" onclick="toggleDataset(2)">Asesor</button>
+
           <div id="timeFilter" style="margin-bottom:10px;">
-          <button onclick="setTimeFilter(12)">12M</button>
-          <button onclick="setTimeFilter(6)">6M</button>
-          <button onclick="setTimeFilter(3)">3M</button>
-          <button onclick="setTimeFilter(1)">1M</button>
+            <button onclick="setTimeFilter(12)">12M</button>
+            <button onclick="setTimeFilter(6)">6M</button>
+            <button onclick="setTimeFilter(3)">3M</button>
+            <button onclick="setTimeFilter(1)">1M</button>
           </div>
+
           <div class="projection-control">
             <label>
               Simular Adopción Digital:
@@ -83,6 +636,7 @@
             <strong id="impactValue">$0</strong>
           </div>
         </div>
+
         <button onclick="preguntaEstrategica()">💡 Insight</button>
       </div>
 
@@ -94,25 +648,27 @@
 </div>
 
 <script src="script.js"></script>
-<div id="avatarContainer">
 
+<div id="avatarContainer">
   <div id="avatarBubble">
     <span id="avatarText">Hola 👋</span>
   </div>
 
-  <div id="avatar" class="avatar">
-    
+  <div id="avatar" class="avatar"></div>
+
+  <div id="fincoBotPanel" class="finco-bot-panel hidden">
+    <h2>🤖 FINCO BOT</h2>
+    <p>Selecciona un producto para analizar</p>
+
+    <div id="productosBot" class="productos-bot"></div>
+    <div id="preguntasBot" class="preguntas-bot"></div>
+
+    <div id="respuestaUsuario" class="respuesta-bot hidden">
+      <textarea placeholder="Escribe tu respuesta."></textarea>
+      <button onclick="enviarRespuesta()">Enviar</button>
+    </div>
   </div>
-
-  <button id="avatarBtn" onclick="modoDirector()">
-    🎤
-  </button>
-
 </div>
-
-
-</body>
-
 
 </html>
 
