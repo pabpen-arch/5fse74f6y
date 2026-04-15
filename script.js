@@ -17,6 +17,10 @@ let fincoEducarProgramaChart = null;
 let fincoEducarMapa = null;
 let productoTimelineActivo = "FINCOEDUCAR";
 let proyectoPlanActivo = "FincoGo";
+let chartSegurosGeneralTipo = null;
+let chartSegurosModalidad = null;
+let chartSegurosAutoTipo = null;
+let chartSegurosAutoMensual = null;
 
 
 /* ================= SECCIONES ================= */
@@ -201,6 +205,31 @@ const resumenCanalesValentina = [
   }
 ];
 
+const segurosData = {
+  general: {
+    tipoSeguro: {
+      labels: ["Seguro Vehículos", "Exequias", "Seguro Vida", "Mascotas"],
+      values: [1050, 104, 75, 18]
+    },
+    modalidad: {
+      labels: ["Acompañamiento", "Autogestionado"],
+      values: [1218, 29]
+    }
+  },
+  autogestionado: {
+    tipoSeguro: {
+      labels: ["Exequias", "Seguro Vida"],
+      values: [16, 13]
+    },
+    mensual: {
+      labels: ["mayo", "junio", "julio", "agosto", "septiembre", "octubre", "diciembre", "enero", "febrero", "marzo", "abril"],
+      exequias: [50, 0, 42.86, 100, 66.67, 100, 50, 0, 100, 100, 100],
+      vida:      [50, 100, 57.14, 0, 33.33, 0, 50, 100, 0, 0, 0]
+    }
+  }
+};
+
+
 function formatearMonedaCOP(valor){
   return "$" + Number(valor).toLocaleString("es-CO");
 }
@@ -264,7 +293,6 @@ fetch("data.json")
 
       const last = product.monthlyData.at(-1);
 
-      // Desde mayo 2025 hasta la fecha
       const dataDesdeMayo2025 = product.monthlyData.filter(d => {
         const fecha = new Date(d.mes);
         return fecha >= new Date("2025-05-01");
@@ -292,6 +320,8 @@ fetch("data.json")
       container.appendChild(card);
 
     });
+
+    addSegurosCard();
 
   })
   .catch(err => console.error("Error data.json:", err));
@@ -333,6 +363,256 @@ Promise.all([
 
 })
 .catch(err => console.error("Error APP:", err));
+
+function addSegurosCard(){
+  const container = document.getElementById("productsContainer");
+  if(!container) return;
+
+  const totalGeneral = segurosData.general.tipoSeguro.values.reduce((a, b) => a + b, 0);
+  const auto = segurosData.general.modalidad.values[1];
+  const participacionAuto = ((auto / totalGeneral) * 100).toFixed(1);
+
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  card.innerHTML = `
+    <h3>Seguros</h3>
+    <p><strong>Total:</strong> ${totalGeneral.toLocaleString("es-CO")}</p>
+    <p><strong>Autogestionado:</strong> ${participacionAuto}%</p>
+  `;
+
+  card.onclick = () => openSegurosModal();
+
+  container.appendChild(card);
+}
+
+
+
+function openSegurosModal(){
+
+  document.getElementById("benchmarkInlineContainer").innerHTML = "";
+
+  document.querySelectorAll("#metrics button").forEach(btn=>{
+    btn.style.display = "none";
+  });
+
+  document.querySelector(".projection-control").style.display = "none";
+  document.querySelector(".impact-indicator").style.display = "none";
+
+  document.getElementById("modal").classList.remove("hidden");
+  document.getElementById("modalTitle").innerText = "Seguros - Indicadores";
+
+  document.getElementById("chartProduct").style.display = "none";
+  document.getElementById("chartImpact").style.display = "none";
+
+  if(mainChart){
+    mainChart.destroy();
+    mainChart = null;
+  }
+
+  if(chartSegurosGeneralTipo){
+    chartSegurosGeneralTipo.destroy();
+    chartSegurosGeneralTipo = null;
+  }
+  if(chartSegurosModalidad){
+    chartSegurosModalidad.destroy();
+    chartSegurosModalidad = null;
+  }
+  if(chartSegurosAutoTipo){
+    chartSegurosAutoTipo.destroy();
+    chartSegurosAutoTipo = null;
+  }
+  if(chartSegurosAutoMensual){
+    chartSegurosAutoMensual.destroy();
+    chartSegurosAutoMensual = null;
+  }
+
+  const panel = document.getElementById("analysisPanel");
+  panel.innerHTML = `
+    <div class="insight-box" style="margin-top:0;">
+      <strong>Resumen ejecutivo</strong><br><br>
+      Total general: ${segurosData.general.tipoSeguro.values.reduce((a,b)=>a+b,0).toLocaleString("es-CO")}<br>
+      Acompañamiento: ${segurosData.general.modalidad.values[0].toLocaleString("es-CO")}<br>
+      Autogestionado: ${segurosData.general.modalidad.values[1].toLocaleString("es-CO")}<br><br>
+
+      • Seguro Vehículos concentra la mayor participación del portafolio general.<br><br>
+      • La modalidad acompañamiento domina ampliamente el volumen total.<br><br>
+      • En autogestionado, la mezcla se concentra entre Exequias y Seguro Vida.<br><br>
+      • La evolución mensual autogestionada muestra meses totalmente concentrados en un solo tipo de seguro, lo que puede servir para detectar campañas, estacionalidad o cambios de foco comercial.
+    </div>
+  `;
+
+  document.getElementById("benchmarkInlineContainer").innerHTML = `
+    <div class="charts-grid">
+      <div class="chart-box" style="height:360px;">
+        <canvas id="chartSegurosGeneralTipo"></canvas>
+      </div>
+      <div class="chart-box" style="height:360px;">
+        <canvas id="chartSegurosModalidad"></canvas>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="charts-grid">
+      <div class="chart-box" style="height:360px;">
+        <canvas id="chartSegurosAutoTipo"></canvas>
+      </div>
+      <div class="chart-box" style="height:480px;">
+        <canvas id="chartSegurosAutoMensual"></canvas>
+      </div>
+    </div>
+  `;
+
+  renderSegurosCharts();
+}
+
+function renderSegurosCharts(){
+
+  const generalLabels = segurosData.general.tipoSeguro.labels;
+  const generalValues = segurosData.general.tipoSeguro.values;
+
+  const modalidadLabels = segurosData.general.modalidad.labels;
+  const modalidadValues = segurosData.general.modalidad.values;
+
+  const autoLabels = segurosData.autogestionado.tipoSeguro.labels;
+  const autoValues = segurosData.autogestionado.tipoSeguro.values;
+
+  const mensualLabels = segurosData.autogestionado.mensual.labels;
+  const mensualExequias = segurosData.autogestionado.mensual.exequias;
+  const mensualVida = segurosData.autogestionado.mensual.vida;
+
+  chartSegurosGeneralTipo = new Chart(document.getElementById("chartSegurosGeneralTipo"), {
+    type: "doughnut",
+    data: {
+      labels: generalLabels,
+      datasets: [{
+        data: generalValues,
+        backgroundColor: ["#cdbb67", "#264b63", "#e2d38a", "#86a9bf"]
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "white" } },
+        title: {
+          display: true,
+          text: "% Tipo de Seguro - General",
+          color: "white",
+          font: { size: 16, weight: "bold" }
+        }
+      }
+    }
+  });
+
+  chartSegurosModalidad = new Chart(document.getElementById("chartSegurosModalidad"), {
+    type: "bar",
+    data: {
+      labels: modalidadLabels,
+      datasets: [{
+        label: "Cantidad",
+        data: modalidadValues,
+        backgroundColor: ["#5b96bf", "#3b82f6"]
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: "Modalidad - General",
+          color: "white",
+          font: { size: 16, weight: "bold" }
+        }
+      },
+      scales: {
+        x: { ticks: { color: "white" } },
+        y: { ticks: { color: "white" } }
+      }
+    }
+  });
+
+  chartSegurosAutoTipo = new Chart(document.getElementById("chartSegurosAutoTipo"), {
+    type: "pie",
+    data: {
+      labels: autoLabels,
+      datasets: [{
+        data: autoValues,
+        backgroundColor: ["#264b63", "#e2d38a"]
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "white" } },
+        title: {
+          display: true,
+          text: "% Tipo de Seguro - Autogestionado",
+          color: "white",
+          font: { size: 16, weight: "bold" }
+        }
+      }
+    }
+  });
+
+  chartSegurosAutoMensual = new Chart(document.getElementById("chartSegurosAutoMensual"), {
+    type: "bar",
+    data: {
+      labels: mensualLabels,
+      datasets: [
+        {
+          label: "Exequias",
+          data: mensualExequias,
+          backgroundColor: "#264b63"
+        },
+        {
+          label: "Seguro Vida",
+          data: mensualVida,
+          backgroundColor: "#e2d38a"
+        }
+      ]
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "white" } },
+        title: {
+          display: true,
+          text: "Detalle Seguros Diarios - Autogestionado",
+          color: "white",
+          font: { size: 16, weight: "bold" }
+        },
+        tooltip: {
+          callbacks: {
+            label: function(context){
+              return `${context.dataset.label}: ${context.raw}%`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          max: 100,
+          ticks: {
+            color: "white",
+            callback: value => value + "%"
+          }
+        },
+        y: {
+          stacked: true,
+          ticks: { color: "white" }
+        }
+      }
+    }
+  });
+}
 
 /* ================= MODAL ================= */
 

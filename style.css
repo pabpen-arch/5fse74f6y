@@ -1543,3 +1543,11 @@ background: linear-gradient(
 .modal-grid > div:first-child{
   min-height: 400px;
 }
+
+#chartSegurosGeneralTipo,
+#chartSegurosModalidad,
+#chartSegurosAutoTipo,
+#chartSegurosAutoMensual{
+  width: 100% !important;
+  height: 100% !important;
+}
