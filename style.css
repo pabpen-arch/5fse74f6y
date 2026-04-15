@@ -617,11 +617,18 @@ background: linear-gradient(
 }
 */ 
 .avatar{
-  width:150px ;
+  width:150px;
   height:150px;
-  background-image: url("chatbot_pro.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image:url("chatbot_pro.gif");
+  background-size:cover;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  transition:transform 0.25s ease, filter 0.25s ease;
+}
+
+.avatar:hover{
+  transform:scale(1.05);
+  filter:drop-shadow(0 0 18px rgba(59,130,246,0.45));
 }
 
 #avatarBtn{
@@ -1544,10 +1551,36 @@ background: linear-gradient(
   min-height: 400px;
 }
 
-#chartSegurosGeneralTipo,
-#chartSegurosModalidad,
-#chartSegurosAutoTipo,
-#chartSegurosAutoMensual{
-  width: 100% !important;
-  height: 100% !important;
+/* ===== FIX MODAL SEGUROS ===== */
+.modal-content.seguros-mode .modal-grid{
+  grid-template-columns: 3fr 1fr;
+  align-items: start;
+}
+
+.modal-content.seguros-mode .modal-grid > div:first-child{
+  display: none !important;
+  min-height: 0 !important;
+}
+
+.modal-content.seguros-mode #analysisPanel{
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+}
+
+.modal-content.seguros-mode #benchmarkInlineContainer{
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 0 !important;
+  align-self: start;
+}
+
+.modal-content.seguros-mode .charts-grid{
+  margin-top: 0 !important;
+  align-items: start;
+}
+
+.modal-content.seguros-mode .chart-box{
+  height: auto;
+  min-height: 260px;
 }

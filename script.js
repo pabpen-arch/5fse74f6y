@@ -21,6 +21,8 @@ let chartSegurosGeneralTipo = null;
 let chartSegurosModalidad = null;
 let chartSegurosAutoTipo = null;
 let chartSegurosAutoMensual = null;
+let benchmarkVisible = false;
+let benchmarkHTMLActual = "";
 
 
 /* ================= SECCIONES ================= */
@@ -386,10 +388,9 @@ function addSegurosCard(){
   container.appendChild(card);
 }
 
-
-
 function openSegurosModal(){
 
+  document.querySelector(".modal-content").classList.add("seguros-mode");
   document.getElementById("benchmarkInlineContainer").innerHTML = "";
 
   document.querySelectorAll("#metrics button").forEach(btn=>{
@@ -466,6 +467,7 @@ function openSegurosModal(){
 
   renderSegurosCharts();
 }
+
 
 function renderSegurosCharts(){
 
@@ -704,7 +706,7 @@ function openModal(product){
     }
   });
 
-  avatarProducto(product);
+  //avatarProducto(product);
 
   function avatarProducto(product){
 
@@ -939,18 +941,18 @@ benchmarkHTML = `
 
     <strong>Insights de Mercado:</strong><br><br>
 
-    • 1. Bancos Tradicionales (Líderes en Volumen)<br>
+    1. Bancos Tradicionales (Líderes en Volumen)<br>
     • Bancolombia: Referente en UX (Experiencia de Usuario). Su apertura de CDT desde la App es el estándar de agilidad (menos de 3 minutos).<br>
     • Davivienda: Pionero en comunicación digital. Su estrategia de "CDT Móvil" captura al usuario que busca seguridad institucional con flujo 100% autogestionado.<br>
     • Banco de Bogotá: Líder en tasas competitivas dentro de la banca tradicional, especialmente en plazos cortos (60-90 días).<br>
-    • 2. Bancos Digitales y Fintech (Líderes en Tasa y Nicho).<br>
+    2. Bancos Digitales y Fintech (Líderes en Tasa y Nicho).<br>
     • Nu Colombia & Lulo Bank: Referentes en transparencia y cero fricción. Aunque su fuerte son cuentas de ahorro, han presionado al mercado a eliminar trámites físicos.<br>
     • La Hipotecaria & MiBanco: Actualmente lideran el ranking de rentabilidad en canales digitales (tasas superiores al 12% E.A. en 2026).<br>
-    • 3. Sector Cooperativo y/ entidades de financiamiento (Tus Competidores Directos)<br>
+    3. Sector Cooperativo y/ entidades de financiamiento (Tus Competidores Directos)<br>
     • Coomeva: Referente en ecosistema digital. Integran el CDT con servicios de salud y seguros, creando una oferta de valor integral.<br>
     • Cofinal & Coasmedas: Han liderado la transformación tecnológica (Cooptech) en el sector, implementando biometría y firmas digitales para igualar la experiencia bancaria.<br>
     • KOA (Compañia de Financiamiento-Vigilada por la superintendencia Financiera): Referente en tasas para el sector solidario, logrando captar usuarios jóvenes mediante una identidad visual moderna y procesos 100% online.<br>
-
+    * MejorCDT (Plataforma): Es el referente agregador. Permite comparar y abrir CDTs de múltiples entidades desde un solo lugar. Es tu competencia directa en el "proceso de decisión" del cliente.
   </div>
 
 </div>
