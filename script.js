@@ -2865,63 +2865,94 @@ function modoDirector(){
   `);
 }
 
-
 function activarFincoBot(){
 
   const panel = document.getElementById("fincoBotPanel");
-  const preguntasContainer = document.getElementById("preguntasBot");
-  const respuesta = document.getElementById("respuestaUsuario");
+  const preguntaBox = document.getElementById("preguntaVisibleBot");
+  const modal = document.getElementById("modal");
 
   if(!panel){
     console.error("No existe fincoBotPanel");
     return;
   }
 
-  panel.classList.remove("hidden");
-  panel.style.display = "block";
-  panel.style.visibility = "visible";
-  panel.style.opacity = "1";
+  document.querySelectorAll(".section").forEach(sec=>{
+    sec.classList.remove("active");
+  });
 
-  if(preguntasContainer){
-    preguntasContainer.innerHTML = "";
-  }
+  document.querySelectorAll(".nav-btn").forEach(b=>{
+    b.classList.remove("active-btn");
+  });
 
-  if(respuesta){
-    respuesta.classList.add("hidden");
+  if(modal){
+    modal.classList.add("hidden");
   }
 
   renderProductosBot();
 
-  hablar("Selecciona un producto para comenzar el análisis estratégico");
-}
-
-
-function ejecutarSecuenciaPreguntas(){
-
-  const preguntas = [
-    "¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?",
-    "¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?",
-    "¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?",
-    "¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?",
-    "¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?",
-    "¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia 'WOW' y personalizada para cada asociado?",
-    "¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?",
-    "Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?"
-  ];
-
-  let i = 0;
-
-  function siguientePregunta(){
-    if(i < preguntas.length){
-      hablar(preguntas[i]);
-      i++;
-      setTimeout(siguientePregunta, 6000);
-    }
+  if(preguntaBox){
+    preguntaBox.innerHTML = "";
+    preguntaBox.classList.add("hidden");
   }
 
-  siguientePregunta();
+  panel.classList.remove("hidden");
+  panel.style.display = "block";
+
+  hablar("Selecciona un canal");
 }
 
+function seleccionarProducto(producto){
+
+  let pregunta = "";
+  const preguntaBox = document.getElementById("preguntaVisibleBot");
+
+  if(producto === "captaciones"){
+    pregunta = "¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?";
+  }else if(producto === "credito"){
+    pregunta = "¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?";
+  }else if(producto === "fincoeducar"){
+    pregunta = "¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?";
+  }else if(producto === "marketing"){
+    pregunta = "¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?";
+  }else if(producto === "seguros"){
+    pregunta = "¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?";
+  }else if(producto === "servicios"){
+    pregunta = "¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia WOW y personalizada para cada asociado?";
+  }else if(producto === "integral"){
+    pregunta = "¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?";
+  }else if(producto === "conceptogerencial"){
+    pregunta = "Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?";
+  }
+
+  if(preguntaBox && pregunta){
+    preguntaBox.innerHTML = `
+      <div class="pregunta-card-bot">
+        <h3>Pregunta estratégica</h3>
+        <p>${pregunta}</p>
+      </div>
+    `;
+    preguntaBox.classList.remove("hidden");
+  }
+
+  if(pregunta){
+    hablar(pregunta);
+  }
+}
+
+document.addEventListener("click", function(e){
+
+  const panel = document.getElementById("fincoBotPanel");
+  const botonBot = document.querySelector(".finco-bot-btn");
+
+  if(!panel || panel.classList.contains("hidden")) return;
+
+  const clickDentroPanel = panel.contains(e.target);
+  const clickEnBoton = botonBot && botonBot.contains(e.target);
+
+  if(!clickDentroPanel && !clickEnBoton){
+    ocultarFincoBot();
+  }
+});
 
 function renderProductosBot(){
 
@@ -2966,70 +2997,44 @@ function renderProductosBot(){
 
 function seleccionarProducto(producto){
 
-  const preguntasContainer = document.getElementById("preguntasBot");
-
-  let preguntas = [];
+  let pregunta = "";
 
   if(producto === "captaciones"){
 
-    preguntas = [
-      "¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?"
-    ];
+    pregunta = "¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?";
 
   }else if(producto === "credito"){
 
-    preguntas = [
-      "¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?"
-    ];
+    pregunta = "¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?";
 
   }else if(producto === "fincoeducar"){
 
-    preguntas = [
-      "¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?"
-    ];
+    pregunta = "¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?";
 
   }else if(producto === "marketing"){
 
-    preguntas = [
-      "¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?"
-    ];
+    pregunta = "¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?";
 
   }else if(producto === "seguros"){
 
-    preguntas = [
-      "¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?"
-    ];
+    pregunta = "¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?";
 
   }else if(producto === "servicios"){
 
-    preguntas = [
-      "¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia 'WOW' y personalizada para cada asociado?"
-    ];
+    pregunta = "¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia WOW y personalizada para cada asociado?";
 
   }else if(producto === "integral"){
 
-    preguntas = [
-      "¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?"
-    ];
+    pregunta = "¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?";
 
   }else if(producto === "conceptogerencial"){
 
-    preguntas = [
-      "Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?"
-    ];
+    pregunta = "Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?";
   }
 
-  preguntasContainer.innerHTML = "";
-
-  preguntas.forEach(p => {
-    const btn = document.createElement("div");
-    btn.className = "pregunta-btn";
-    btn.innerText = p;
-    btn.onclick = () => hacerPregunta(p);
-    preguntasContainer.appendChild(btn);
-  });
-
-  hablar("Selecciona la pregunta estratégica para profundizar el análisis");
+  if(pregunta){
+    hablar(pregunta);
+  }
 }
 
 function hacerPregunta(pregunta){
@@ -3038,22 +3043,6 @@ function hacerPregunta(pregunta){
 
   const respuesta = document.getElementById("respuestaUsuario");
   respuesta.classList.remove("hidden");
-}
-
-function enviarRespuesta(){
-
-  const textarea = document.querySelector("#respuestaUsuario textarea");
-
-  const texto = textarea.value;
-
-  if(texto.trim() === ""){
-    hablar("Por favor escribe una respuesta");
-    return;
-  }
-
-  hablar("Interesante respuesta. Esto puede generar oportunidades estratégicas.");
-
-  textarea.value = "";
 }
 
 function ocultarFincoBot(){
