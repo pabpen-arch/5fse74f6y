@@ -24,7 +24,7 @@
     <button class="nav-btn" onclick="showSection('home', this)">Inicio</button>
     <button class="nav-btn" onclick="showSection('status', this)">Status Productos</button>
     <button class="nav-btn" onclick="showSection('proyecciones', this)">Digital Impact Lab</button>
-    <button class="nav-btn" onclick="abrirPlanTrabajo(this)">Plan de Trabajo</button>
+    <button class="nav-btn" onclick="abrirPlanTrabajo(this)">Proyectos</button>
     <button class="nav-btn" onclick="abrirEvolucionProyectos(this)">
       Evolución Productos Canales Digitales
     </button>
@@ -118,9 +118,9 @@
 
   <div class="org-container">
 
-    <!-- NIVEL 1 -->
+<!-- NIVEL 1 -->
     <div class="nivel nivel-1 fade-in">
-      <div class="persona grande" onclick="irPersona('director')">
+      <div class="persona grande" onclick="showSection('status')">
         <img src="1.png">
         <p>Hector Henao</p>
         <p>Director Canales no Presenciales</p>
@@ -132,9 +132,10 @@
 
     <!-- NIVEL 2 -->
     <div class="nivel nivel-2 fade-in delay-1">
-      <div class="persona" onclick="irPersona('p1')"><img src="2.png">
-      <p class="nombre">Maria Claudia Zubieta</p>
-      <p class="cargo">Jefe Canal Virtual</p>
+      <div class="persona" onclick="showSection('status')">
+        <img src="2.png">
+        <p class="nombre">Maria Claudia Zubieta</p>
+        <p class="cargo">Jefe Canal Virtual</p>
       </div>
       
       <div class="persona" onclick="irPersona('p2')"><img src="3.png">

@@ -281,7 +281,6 @@ function renderTablaResumenCanalesValentina(){
   tbody.appendChild(trTotal);
 }
 
-
 /* ================= STATUS PRODUCTOS ================= */
 // 🔹 1. CARGAR PRODUCTOS (data.json)
 fetch("data.json")
@@ -467,7 +466,6 @@ function openSegurosModal(){
 
   renderSegurosCharts();
 }
-
 
 function renderSegurosCharts(){
 
@@ -935,9 +933,7 @@ benchmarkHTML = `
   </ol>
 </div>
 
-
 <div class="insight-box">
-
 
     <strong>Insights de Mercado:</strong><br><br>
 
@@ -1028,7 +1024,6 @@ benchmarkHTML = `
 if(name.includes("pap") && 
   !name.includes("whatsapp") && 
   !name.includes("brigadas")){
-
 
 benchmarkHTML = `
 <div class="benchmark-block benchmark-inline-scroll">
@@ -1455,7 +1450,6 @@ benchmarkHTML = `
 `;
 }
 
-
 document.getElementById("benchmarkInlineContainer").innerHTML = benchmarkHTML;
 
 if(name.includes("educar") || name.includes("finco educar") || name.includes("fincoeducar")){
@@ -1463,10 +1457,7 @@ if(name.includes("educar") || name.includes("finco educar") || name.includes("fi
     initFincoEducarBenchmark();
   }, 100);
 }
-
-
 }
-
 
 function initFincoEducarBenchmark() {
   renderTablaFincoEducarUniversidades();
@@ -2072,6 +2063,33 @@ const roadmapData = [
         clase:"diseño",
         estadoActual:"diseño",
         detalle:"Creación de un flujo conversacional de asesoría de crédito, aplicación de modelo de originación y respuesta al usuario para proceso de retoma y desembolso por canal de WhatsApp."
+      }
+    ]
+  },
+  {
+    producto:"Tienda Virtual",
+    icono:"🛒",
+    proyectos:[
+      {
+        nombre:"Inclusión Tarjeta de Crédito",
+        estado:"Aprobación de flujo de compra y proceso contable",
+        clase:"control",
+        estadoActual:"control",
+        detalle:"Inclusion de Tarjeta de credito Fincomercio"
+      },
+      {
+        nombre:"Ecommerce",
+        estado:"Creación flujo mercadeo",
+        clase:"diseño",
+        estadoActual:"diseño",
+        detalle:"Opcion de credito propia del ecommerce con visualizacion de cupo aprobado"
+      },
+      {
+        nombre:"Notificaciones Whatssap",
+        estado:"Creación flujo mercadeo",
+        clase:"diseño",
+        estadoActual:"diseño",
+        detalle:"Diseño modulo de notificaciones integrado WhatsApp para marketing y remarketing"
       }
     ]
   }
@@ -2851,6 +2869,8 @@ function modoDirector(){
 function activarFincoBot(){
 
   const panel = document.getElementById("fincoBotPanel");
+  const preguntasContainer = document.getElementById("preguntasBot");
+  const respuesta = document.getElementById("respuestaUsuario");
 
   if(!panel){
     console.error("No existe fincoBotPanel");
@@ -2858,6 +2878,17 @@ function activarFincoBot(){
   }
 
   panel.classList.remove("hidden");
+  panel.style.display = "block";
+  panel.style.visibility = "visible";
+  panel.style.opacity = "1";
+
+  if(preguntasContainer){
+    preguntasContainer.innerHTML = "";
+  }
+
+  if(respuesta){
+    respuesta.classList.add("hidden");
+  }
 
   renderProductosBot();
 
@@ -2868,65 +2899,23 @@ function activarFincoBot(){
 function ejecutarSecuenciaPreguntas(){
 
   const preguntas = [
-
-    // CDAT
-    "¿Qué tan lejos estamos del benchmark digital del 70 por ciento en CDAT?",
-    "¿Cuánto valor estamos perdiendo por mantener procesos asistidos?",
-
-    // PAP
-    "¿Estamos capturando correctamente al segmento digital joven?",
-    "¿Qué fricciones están frenando la adopción digital del ahorro programado?",
-
-    // Crédito
-    "¿Cuál es el gap frente a fintechs en velocidad de crédito?",
-    "¿Debemos competir por volumen o por ticket promedio?"
+    "¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?",
+    "¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?",
+    "¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?",
+    "¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?",
+    "¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?",
+    "¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia 'WOW' y personalizada para cada asociado?",
+    "¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?",
+    "Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?"
   ];
 
   let i = 0;
 
   function siguientePregunta(){
-
     if(i < preguntas.length){
-
       hablar(preguntas[i]);
-
       i++;
-
-      setTimeout(siguientePregunta, 6000); // tiempo entre preguntas
-    }
-  }
-
-  siguientePregunta();
-}
-
-function ejecutarSecuenciaPreguntas(){
-
-  const preguntas = [
-
-    // CDAT
-    "¿Qué tan lejos estamos del benchmark digital del 70 por ciento en CDAT?",
-    "¿Cuánto valor estamos perdiendo por mantener procesos asistidos?",
-
-    // PAP
-    "¿Estamos capturando correctamente al segmento digital joven?",
-    "¿Qué fricciones están frenando la adopción digital del ahorro programado?",
-
-    // Crédito
-    "¿Cuál es el gap frente a fintechs en velocidad de crédito?",
-    "¿Debemos competir por volumen o por ticket promedio?"
-  ];
-
-  let i = 0;
-
-  function siguientePregunta(){
-
-    if(i < preguntas.length){
-
-      hablar(preguntas[i]);
-
-      i++;
-
-      setTimeout(siguientePregunta, 6000); // tiempo entre preguntas
+      setTimeout(siguientePregunta, 6000);
     }
   }
 
@@ -2940,16 +2929,36 @@ function renderProductosBot(){
 
   container.innerHTML = `
 
-    <div class="producto-btn" onclick="seleccionarProducto('cdat')">
-      💰 CDAT
-    </div>
-
-    <div class="producto-btn" onclick="seleccionarProducto('pap')">
-      💸 PAP
+    <div class="producto-btn" onclick="seleccionarProducto('captaciones')">
+      💰 Captaciones
     </div>
 
     <div class="producto-btn" onclick="seleccionarProducto('credito')">
       🚀 Crédito
+    </div>
+
+    <div class="producto-btn" onclick="seleccionarProducto('fincoeducar')">
+      🎓 Finco Educar
+    </div>
+
+    <div class="producto-btn" onclick="seleccionarProducto('marketing')">
+      📣 Marketing
+    </div>
+
+    <div class="producto-btn" onclick="seleccionarProducto('seguros')">
+      🛡️ Seguros
+    </div>
+
+    <div class="producto-btn" onclick="seleccionarProducto('servicios')">
+      ⭐ Servicios
+    </div>
+
+    <div class="producto-btn" onclick="seleccionarProducto('integral')">
+      🌐 Integral
+    </div>
+
+    <div class="producto-btn" onclick="seleccionarProducto('conceptogerencial')">
+      👔 Concepto Gerencial
     </div>
 
   `;
@@ -2961,42 +2970,66 @@ function seleccionarProducto(producto){
 
   let preguntas = [];
 
-  if(producto === "cdat"){
+  if(producto === "captaciones"){
 
     preguntas = [
-      "¿Qué tan lejos estamos del benchmark digital del 70%?",
-      "¿Cuánto valor estamos perdiendo por procesos asistidos?"
-    ];
-
-  }else if(producto === "pap"){
-
-    preguntas = [
-      "¿Estamos capturando al segmento digital joven?",
-      "¿Qué fricciones afectan la adopción?"
+      "¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?"
     ];
 
   }else if(producto === "credito"){
 
     preguntas = [
-      "¿Cuál es el gap frente a fintechs?",
-      "¿Debemos competir por volumen o ticket promedio?"
+      "¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?"
+    ];
+
+  }else if(producto === "fincoeducar"){
+
+    preguntas = [
+      "¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?"
+    ];
+
+  }else if(producto === "marketing"){
+
+    preguntas = [
+      "¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?"
+    ];
+
+  }else if(producto === "seguros"){
+
+    preguntas = [
+      "¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?"
+    ];
+
+  }else if(producto === "servicios"){
+
+    preguntas = [
+      "¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia 'WOW' y personalizada para cada asociado?"
+    ];
+
+  }else if(producto === "integral"){
+
+    preguntas = [
+      "¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?"
+    ];
+
+  }else if(producto === "conceptogerencial"){
+
+    preguntas = [
+      "Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?"
     ];
   }
 
   preguntasContainer.innerHTML = "";
 
   preguntas.forEach(p => {
-
     const btn = document.createElement("div");
     btn.className = "pregunta-btn";
     btn.innerText = p;
-
     btn.onclick = () => hacerPregunta(p);
-
     preguntasContainer.appendChild(btn);
   });
 
-  hablar("Selecciona una pregunta para profundizar el análisis");
+  hablar("Selecciona la pregunta estratégica para profundizar el análisis");
 }
 
 function hacerPregunta(pregunta){
@@ -3029,8 +3062,8 @@ function ocultarFincoBot(){
 
   if(panel){
     panel.classList.add("hidden");
+    panel.style.display = "none";
   }
-
 }
 
 function mostrarOrganigrama(){
