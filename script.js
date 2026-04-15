@@ -24,8 +24,18 @@ let chartSegurosAutoMensual = null;
 let benchmarkVisible = false;
 let benchmarkHTMLActual = "";
 
-
 /* ================= SECCIONES ================= */
+
+function toggleQrBox(sectionName){
+  const qrBox = document.querySelector(".qr-box-top");
+  if(!qrBox) return;
+
+  if(sectionName === "home"){
+    qrBox.style.display = "flex";
+  }else{
+    qrBox.style.display = "none";
+  }
+}
 
 function showSection(sectionName, btn){
 
@@ -46,6 +56,8 @@ function showSection(sectionName, btn){
   }else{
     console.error("Sección no encontrada:", sectionName + "Section");
   }
+
+  toggleQrBox(sectionName);
 
   if(sectionName === "home"){
     const portada = document.getElementById("homeSection");
@@ -619,13 +631,14 @@ function renderSegurosCharts(){
 function openModal(product){
 
   document.getElementById("benchmarkInlineContainer").innerHTML = "";
+  benchmarkVisible = false;
+  benchmarkHTMLActual = "";
 
-  // Mostrar botones nuevamente para productos
   document.querySelectorAll("#metrics button.dataset-btn").forEach(btn=>{
     btn.style.display = "inline-block";
   });
 
-  currentProductData=product;
+  currentProductData = product;
 
   document.getElementById("modal").classList.remove("hidden");
   document.getElementById("modalTitle").innerText=product.name;
@@ -1450,7 +1463,9 @@ benchmarkHTML = `
 `;
 }
 
-document.getElementById("benchmarkInlineContainer").innerHTML = benchmarkHTML;
+benchmarkHTMLActual = benchmarkHTML;
+document.getElementById("benchmarkInlineContainer").innerHTML = "";
+benchmarkVisible = false;
 
 if(name.includes("educar") || name.includes("finco educar") || name.includes("fincoeducar")){
   setTimeout(() => {
@@ -1924,6 +1939,28 @@ function renderProductAnalysis(product){
   `;
 
   document.getElementById("analysisPanel").innerHTML = html;
+}
+
+function toggleBenchmark(){
+  const container = document.getElementById("benchmarkInlineContainer");
+  if(!container) return;
+
+  if(!benchmarkVisible){
+    container.innerHTML = benchmarkHTMLActual || "";
+
+    const name = currentProductData?.name?.toLowerCase?.() || "";
+
+    if(name.includes("educar") || name.includes("finco educar") || name.includes("fincoeducar")){
+      setTimeout(() => {
+        initFincoEducarBenchmark();
+      }, 100);
+    }
+
+    benchmarkVisible = true;
+  }else{
+    container.innerHTML = "";
+    benchmarkVisible = false;
+  }
 }
 
 /* ================= UTIL ================= */
@@ -3086,6 +3123,24 @@ function irOrganigrama(){
   setTimeout(()=>{
     showSection("organigrama");
   },300);
+}
+
+function volverAOrganigrama(){
+
+  const modal = document.getElementById("modal");
+  const fincoBotPanel = document.getElementById("fincoBotPanel");
+
+  if(modal){
+    modal.classList.add("hidden");
+  }
+
+  if(fincoBotPanel){
+    fincoBotPanel.classList.add("hidden");
+    fincoBotPanel.style.display = "none";
+  }
+
+  showSection("organigrama");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function irPersona(persona){
@@ -4599,3 +4654,4 @@ const fincoEducarSocioData = {
   ]
 };
 
+toggleQrBox("home");
