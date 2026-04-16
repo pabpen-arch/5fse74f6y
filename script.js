@@ -1000,13 +1000,8 @@ function openModal(product){
 
   const name = product.name.toLowerCase();
 
-  const last = product.monthlyData.at(-1);
-
-  const adopcion = (
-    last.valorAutogestionado / last.valorTotal * 100
-  ).toFixed(1);
-
-  if(name.includes("cdat")){
+  const adopcion = calcularAdopcionProducto(product);
+    if(name.includes("cdat")){
 
     hablar(`
     Hola Mauricio Estás viendo CDAT.
@@ -2100,55 +2095,26 @@ if (projectionSlider) {
   });
 }
 
+function calcularAdopcionProducto(product){
+  const last = product?.monthlyData?.at(-1);
+
+  const total = Number(last?.cantidadTotal ?? 0);
+  const auto = Number(last?.cantidadAutogestionado ?? 0);
+
+  if(total <= 0) return "0.0";
+
+  return ((auto / total) * 100).toFixed(1);
+}
+
+
+
 /* ================= ANALISIS ================= */
 
 function renderProductAnalysis(product){
 
   const data = product.monthlyData;
   const last = data.at(-1);
-  const name = product.name.toLowerCase();
-
-  let variacionTexto = "N/A";
-  let flecha = "";
-  let color = "#94a3b8";
-  let alerta = "Sin suficientes datos";
-
-  if(data.length >= 2){
-    const current = data.at(-1).valorTotal;
-    const prev = data.at(-2).valorTotal;
-
-    const variacion = ((current - prev) / prev) * 100;
-    const valor = variacion.toFixed(1);
-
-    if(variacion > 2){
-      flecha = "↑";
-      color = "#22c55e";
-      alerta = "Crecimiento sólido";
-    }
-    else if(variacion < -2){
-      flecha = "↓";
-      color = "#ef4444";
-      alerta = "Caída relevante";
-    }
-    else{
-      flecha = "→";
-      color = "#eab308";
-      alerta = "Comportamiento estable";
-    }
-
-    variacionTexto = `${flecha} ${valor}%`;
-  }
-
-  function tendenciaSuavizada(data){
-    if(data.length < 3) return "N/A";
-
-    const last3 = data.slice(-3).map(d => d.valorTotal);
-    const crecimiento = (last3[2] - last3[0]) / last3[0] * 100;
-
-    return crecimiento.toFixed(1) + "%";
-  }
-
-  const tendencia = tendenciaSuavizada(data);
+  const name = (product.name || "").toLowerCase();
 
   const promMonto = calcularPromedio(data, "promMonto");
   const promAuto = calcularPromedio(data, "promMontoAutogestionado");
@@ -2189,7 +2155,7 @@ function renderProductAnalysis(product){
     plazoAsesorTexto = `${plazoAsesorDias} meses`;
   }
 
-  const adopcion = ((last.valorAutogestionado / last.valorTotal) * 100).toFixed(1);
+  const adopcion = calcularAdopcionProducto(product);
 
   const html = `
     <h3>Resumen del Producto</h3>
@@ -3200,9 +3166,22 @@ function hablar(texto){
 
   const bubble = document.getElementById("avatarBubble");
   const textEl = document.getElementById("avatarText");
+  const preguntaVisible = document.getElementById("preguntaVisibleBot");
 
-  textEl.innerText = texto;
-  bubble.style.display = "block";
+  if(textEl){
+    textEl.innerText = texto;
+  }
+
+  if(bubble){
+    bubble.style.display = "block";
+  }
+
+  if(preguntaVisible){
+    preguntaVisible.innerText = texto;
+    preguntaVisible.classList.remove("hidden");
+  }
+
+  window.speechSynthesis.cancel();
 
   const speech = new SpeechSynthesisUtterance(texto);
   speech.lang = "es-CO";
@@ -3210,10 +3189,13 @@ function hablar(texto){
 
   window.speechSynthesis.speak(speech);
 
-  setTimeout(()=>{
-    bubble.style.display = "none";
+  setTimeout(() => {
+    if(bubble){
+      bubble.style.display = "none";
+    }
   }, 6000);
 }
+
 function modoDirector(){
 
   hablar(`
@@ -3364,35 +3346,35 @@ function seleccionarProducto(producto){
 
   if(producto === "captaciones"){
 
-    pregunta = "¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?";
+    pregunta = "Mauricio, ¿Cómo optimizar el embudo de conversión digital en Fincomercio para aumentar la apertura autogestionada de productos de inversión?";
 
   }else if(producto === "credito"){
 
-    pregunta = "¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?";
+    pregunta = "Monica, ¿Qué ajustes en el modelo de scoring y desembolso de FincoGo son necesarios para igualar la inmediatez de las fintech y convertirlo en el crédito digital líder de nuestros asociados?";
 
   }else if(producto === "fincoeducar"){
 
-    pregunta = "¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?";
+    pregunta = "Viviana, ¿Qué fricciones debemos eliminar en el proceso de solicitud de crédito educativo para elevar el porcentaje de conversión autogestionada y optimizar la rentabilidad de la línea?";
 
   }else if(producto === "marketing"){
 
-    pregunta = "¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?";
+    pregunta = "Michael, ¿Cómo podemos optimizar el ROI de nuestros canales de comunicación para asegurar que cada impacto digital se traduzca en una conversión efectiva del asociado?";
 
   }else if(producto === "seguros"){
 
-    pregunta = "¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?";
+    pregunta = "Katherine, ¿Qué estrategias de personalización y automatización permitirían acelerar el crecimiento del canal digital en la colocación de seguros para nuestros asociados?";
 
   }else if(producto === "servicios"){
 
-    pregunta = "¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia WOW y personalizada para cada asociado?";
+    pregunta = "Diva, ¿Cómo podemos transformar los hallazgos de nuestras encuestas de servicio en acciones concretas que garanticen una experiencia WOW y personalizada para cada asociado?";
 
   }else if(producto === "integral"){
 
-    pregunta = "¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?";
+    pregunta = "Angelica, Lina y Cesar, ¿De qué manera te conviertes en un embajador del ecosistema digital para asegurar que ningún asociado se quede atrás en esta evolución?";
 
   }else if(producto === "conceptogerencial"){
 
-    pregunta = "Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?";
+    pregunta = "Jefe Gloria, Como líder de la fuerza comercial, ¿cuál considera que debe ser la hoja de ruta para evolucionar hacia un ecosistema digital integral que no solo empodere a los equipos y potencie la rentabilidad, sino que preserve nuestro propósito de transformar comunidades y marcando la diferencia competitiva en el mercado?";
   }
 
   if(pregunta){
