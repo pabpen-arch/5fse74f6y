@@ -401,8 +401,133 @@ function addSegurosCard(){
 
 function openSegurosModal(){
 
+  resetModalToDefault();
+
   document.querySelector(".modal-content").classList.add("seguros-mode");
-  document.getElementById("benchmarkInlineContainer").innerHTML = "";
+  document.getElementById("benchmarkInlineContainer").innerHTML = `
+    <div class="charts-grid">
+      <div class="chart-box" style="height:360px;">
+        <canvas id="chartSegurosGeneralTipo"></canvas>
+      </div>
+      <div class="chart-box" style="height:360px;">
+        <canvas id="chartSegurosModalidad"></canvas>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="charts-grid">
+      <div class="chart-box" style="height:360px;">
+        <canvas id="chartSegurosAutoTipo"></canvas>
+      </div>
+      <div class="chart-box" style="height:480px;">
+        <canvas id="chartSegurosAutoMensual"></canvas>
+      </div>
+    </div>
+
+    <div class="benchmark-block benchmark-inline-scroll">
+
+      <div class="benchmark-title">Seguros - Benchmark Estratégico</div>
+
+      <table class="benchmark-table">
+        <tr>
+          <th>Variable</th>
+          <th>Canal 100% Digital (Autogestión)</th>
+          <th>Canal Digital Asistido (Acompañamiento)</th>
+          <th>Entidad Referente (Líder por variable)</th>
+        </tr>
+
+        <tr>
+          <td>% sobre el Total de Solicitudes</td>
+          <td>~35% - 40%</td>
+          <td>~60% - 65%</td>
+          <td>Sura / Bancolombia (Líderes en adopción digital pura)</td>
+        </tr>
+
+        <tr>
+          <td>Tasa de Colocación (Conversión)</td>
+          <td>12% - 18% (Alta deserción en el flujo)</td>
+          <td>45% - 55% (El asesor cierra la brecha de dudas)</td>
+          <td>Seguros Bolívar (Alta eficiencia en tele-asistencia)</td>
+        </tr>
+
+        <tr>
+          <td>Ticket Promedio</td>
+          <td>$450,000 - $650,000 (Seguros masivos/simplificados)</td>
+          <td>$1,100,000 - $1,800,000 (Seguros de vida, hogar, autos)</td>
+          <td>Bancolombia / BBVA (Ticket alto por seguros vinculados)</td>
+        </tr>
+
+        <tr>
+          <td>Plazo Promedio (Vigencia)</td>
+          <td>12 meses (Renovación automática común)</td>
+          <td>36 - 60 meses (Ligado a créditos de largo plazo)</td>
+          <td>Cooperativa Coomeva (Fidelización en plazos largos)</td>
+        </tr>
+
+        <tr>
+          <td>Perfil del Usuario</td>
+          <td>"Digital Native": 18-35 años, busca inmediatez y precio bajo.</td>
+          <td>"Digital Migrant": 36-55 años, valora la seguridad de un experto.</td>
+          <td>Nequi / Daviplata (Dominan el perfil joven)</td>
+        </tr>
+
+        <tr>
+          <td>Tiempo de Respuesta</td>
+          <td>Instantáneo (Emisión en línea en minutos)</td>
+          <td>2 - 6 horas hábiles (Depende del contacto del asesor)</td>
+          <td>Global Seguros (Rapidez en procesos asistidos)</td>
+        </tr>
+
+        <tr>
+          <td>Producto Estrella</td>
+          <td>SOAT, Accidentes Personales, Bolso Protegido.</td>
+          <td>Vida Grupo, Multiriesgo Hogar, Salud.</td>
+          <td>Mapfre (Especialista en hogar/autos digital)</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <div class="perfil-box-container">
+        <div class="perfil-box">
+          <h3>📱 Perfil de Usuario Digital</h3>
+
+          <div class="item">
+            <span>Segmento 1</span>
+            <p>Afluente Digital: Personas que realizan transacciones financieras al menos 3 veces por semana. Buscan pólizas de Salud y Hogar.</p>
+          </div>
+
+          <div class="item">
+            <span>Segmento 2</span>
+            <p>Sub-asegurado Tecnológico: Usuarios de billeteras digitales que compran seguros micro (desde $5,000 COP) para proteger sus dispositivos o transacciones.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fuentes">
+        <em>Fuentes de Consulta:</em>
+        <ol>
+          <li>Estrategia de Seguros Embebidos (Embedded Insurance): Las entidades líderes no esperan a que el cliente busque el seguro. Lo integran en el flujo de otros productos (ej. un seguro de desempleo al solicitar un crédito digital).</li>
+          <li>Uso de IA GenAI en el Acompañamiento: El "Acompañamiento de asesor" ya no es solo humano. El uso de chatbots avanzados con lenguaje natural ha permitido que el 40% de la "asistencia" sea automatizada, manteniendo altas tasas de conversión sin aumentar el gasto administrativo.</li>
+          <li>Diferenciador en Cooperativas: A diferencia de los bancos, las cooperativas líderes están usando el "Perfil de Vínculo". Premian la antigüedad y el aporte social con tasas preferenciales en seguros digitales, lo que eleva el ticket promedio por encima del promedio bancario en el segmento de Vida.</li>
+          <li><em>Cámara Colombiana de Comercio Electrónico (CCCE): Reporte anual de consumo digital (Categoría Seguros y Servicios Financieros).</em></li>
+          <li><em>McKinsey & Company: Global Insurance Report 2025 (Enfoque Latam).</em></li>
+        </ol>
+      </div>
+
+      <div class="insight-box">
+        <strong>Insights Clave:</strong><br><br>
+
+        • <strong>Seguros Embebidos:</strong> las entidades líderes no esperan a que el cliente busque el seguro; lo integran dentro del flujo de otros productos, reduciendo fricción y elevando la conversión.<br><br>
+
+        • <strong>Acompañamiento Potenciado con IA:</strong> el acompañamiento ya no depende solo del asesor humano; la automatización conversacional permite mantener altas tasas de colocación sin escalar proporcionalmente los costos operativos.<br><br>
+
+        • <strong>Diferenciador Cooperativo:</strong> las cooperativas pueden competir no solo por precio, sino por vínculo, confianza y personalización, elevando el ticket promedio especialmente en líneas de Vida, Hogar y Salud.
+      </div>
+
+    </div>
+  `;
 
   document.querySelectorAll("#metrics button").forEach(btn=>{
     btn.style.display = "none";
@@ -451,28 +576,6 @@ function openSegurosModal(){
       • La modalidad acompañamiento domina ampliamente el volumen total.<br><br>
       • En autogestionado, la mezcla se concentra entre Exequias y Seguro Vida.<br><br>
       • La evolución mensual autogestionada muestra meses totalmente concentrados en un solo tipo de seguro, lo que puede servir para detectar campañas, estacionalidad o cambios de foco comercial.
-    </div>
-  `;
-
-  document.getElementById("benchmarkInlineContainer").innerHTML = `
-    <div class="charts-grid">
-      <div class="chart-box" style="height:360px;">
-        <canvas id="chartSegurosGeneralTipo"></canvas>
-      </div>
-      <div class="chart-box" style="height:360px;">
-        <canvas id="chartSegurosModalidad"></canvas>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="charts-grid">
-      <div class="chart-box" style="height:360px;">
-        <canvas id="chartSegurosAutoTipo"></canvas>
-      </div>
-      <div class="chart-box" style="height:480px;">
-        <canvas id="chartSegurosAutoMensual"></canvas>
-      </div>
     </div>
   `;
 
@@ -626,29 +729,105 @@ function renderSegurosCharts(){
   });
 }
 
+function resetModalToDefault(){
+
+  const modalContent = document.querySelector(".modal-content");
+  const benchmarkContainer = document.getElementById("benchmarkInlineContainer");
+  const analysisPanel = document.getElementById("analysisPanel");
+  const chartProduct = document.getElementById("chartProduct");
+  const chartImpact = document.getElementById("chartImpact");
+  const modal = document.getElementById("modal");
+
+  if(modalContent){
+    modalContent.classList.remove("seguros-mode");
+  }
+
+  if(modal){
+    modal.scrollTop = 0;
+  }
+
+  if(modalContent){
+    modalContent.scrollTop = 0;
+  }
+
+  if(benchmarkContainer){
+    benchmarkContainer.innerHTML = "";
+  }
+
+  benchmarkVisible = false;
+  benchmarkHTMLActual = "";
+
+  if(chartProduct){
+    chartProduct.style.display = "block";
+  }
+
+  if(chartImpact){
+    chartImpact.style.display = "none";
+  }
+
+  // restaurar botones y controles del modal normal
+  const viewToggleBtn = document.getElementById("viewToggleBtn");
+  if(viewToggleBtn){
+    viewToggleBtn.style.display = "inline-block";
+  }
+
+  document.querySelectorAll("#metrics .dataset-btn").forEach(btn=>{
+    btn.style.display = "inline-block";
+  });
+
+  document.querySelectorAll("#timeFilter button").forEach(btn=>{
+    btn.style.display = "inline-block";
+  });
+
+  const projectionControl = document.querySelector(".projection-control");
+  if(projectionControl){
+    projectionControl.style.display = "none";
+  }
+
+  const impactIndicator = document.querySelector(".impact-indicator");
+  if(impactIndicator){
+    impactIndicator.style.display = "none";
+  }
+
+  // destruir charts de seguros si quedaron vivos
+  if(chartSegurosGeneralTipo){
+    chartSegurosGeneralTipo.destroy();
+    chartSegurosGeneralTipo = null;
+  }
+
+  if(chartSegurosModalidad){
+    chartSegurosModalidad.destroy();
+    chartSegurosModalidad = null;
+  }
+
+  if(chartSegurosAutoTipo){
+    chartSegurosAutoTipo.destroy();
+    chartSegurosAutoTipo = null;
+  }
+
+  if(chartSegurosAutoMensual){
+    chartSegurosAutoMensual.destroy();
+    chartSegurosAutoMensual = null;
+  }
+
+  // limpia panel si quieres evitar residuos visuales
+  if(analysisPanel && !currentProductData){
+    analysisPanel.innerHTML = "";
+  }
+}
+
 /* ================= MODAL ================= */
 
 function openModal(product){
 
-  document.getElementById("benchmarkInlineContainer").innerHTML = "";
-  benchmarkVisible = false;
-  benchmarkHTMLActual = "";
-
-  document.querySelectorAll("#metrics button.dataset-btn").forEach(btn=>{
-    btn.style.display = "inline-block";
-  });
+  resetModalToDefault();
 
   currentProductData = product;
-
   document.getElementById("modal").classList.remove("hidden");
-  document.getElementById("modalTitle").innerText=product.name;
-  // Volver a mostrar controles para productos
-  document.querySelector(".projection-control").style.display = "block";
-  document.querySelector(".impact-indicator").style.display = "block";
+  document.getElementById("modalTitle").innerText = product.name;
 
   let data = product.monthlyData;
 
-  // 🔥 aplicar filtro
   if(currentTimeFilter){
     data = data.slice(-currentTimeFilter);
   }
@@ -2086,7 +2265,8 @@ const roadmapData = [
         estado:"Diseño de POC",
         clase:"diseño",
         estadoActual:"diseño",
-        detalle:"Se está generando integración de agentes virtuales para venta de seguro de hogar, generación y envío de extractos y estados de cuenta."
+        detalle:"Se está generando integración de agentes virtuales para venta de seguro de hogar, generación y envío de extractos y estados de cuenta.",
+        url:"https://gnsdev.elevenlabs.gns.dev/"
       }
     ]
   },
@@ -2163,7 +2343,18 @@ function renderRoadmap(){
         ${renderTimeline(p)}
 
         <div class="plan-project-detail">
-          ${p.detalle ? p.detalle : "Sin detalle registrado"}
+          ${
+            p.detalle
+              ? (
+                  p.url
+                    ? p.detalle.replace(
+                        "estados de cuenta.",
+                        `estados de cuenta <a href="${p.url}" target="_blank" class="timeline-link">Ver demo</a>.`
+                      )
+                    : p.detalle
+                )
+              : "Sin detalle registrado"
+          }
         </div>
       `).join("")}
     </div>
@@ -4425,6 +4616,27 @@ const dataEvolucionProyectos = [
     mes: "ABRIL",
     mejora: "MONITOR",
     observacion: "Proyecto registrado en fase 2026 dentro de la evolución de FincoMóvil."
+  },
+  {
+    proyecto: "CHATBOT",
+    anio: 2020,
+    mes: "",
+    mejora: "ATENCION POR CANALES DE BOT Y WHATSAPP",
+    observacion: "Mediante flujos conversacionales generaba atención y respuesta a requerimientos de los asociados. Se generaron opciones autogestionadas en la generación de estados de cuentas y certificaciones."
+  },
+  {
+    proyecto: "CHATBOT",
+    anio: 2026,
+    mes: "",
+    mejora: "WHATSAPP CON IA GENERATIVA E INTEGRACIÓN IVR",
+    observacion: "Se implementó un canal único de WhatsApp con IA Generativa, el cual se integró exitosamente como canal de atención en el IVR de las líneas de servicio y venta. Esta solución permite el cargue de campañas y el onboarding al gestor comercial directamente vía WhatsApp, optimizando el nivel de contactabilidad y reduciendo los tiempos de gestión en la operación comercial."
+  },
+  {
+    proyecto: "PORTAL TRANSACCIONAL",
+    anio: 2024,
+    mes: "",
+    mejora: "OPTIMIZACIÓN Y ROBUSTEZ DEL PORTAL",
+    observacion: "Se ejecutó la transición de la agencia virtual hacia un portal transaccional de nueva generación, rediseñando la experiencia de usuario (UX) mediante una arquitectura de servicios apificados. Esta evolución integra protocolos de seguridad y autenticación robustos, además de un módulo administrativo que permite la parametrización de componentes, optimizando significativamente los tiempos y costos operativos."
   }
 ];
 
@@ -4655,3 +4867,43 @@ const fincoEducarSocioData = {
 };
 
 toggleQrBox("home");
+
+function showConvenioTab(tabId, btn){
+  document.querySelectorAll(".convenio-tab-content").forEach(tab=>{
+    tab.classList.remove("active");
+  });
+
+  document.querySelectorAll(".tab-convenio").forEach(b=>{
+    b.classList.remove("active");
+  });
+
+  const tab = document.getElementById(tabId);
+  if(tab){
+    tab.classList.add("active");
+  }
+
+  if(btn){
+    btn.classList.add("active");
+  }
+}
+
+function showP7View(view, btn){
+
+  document.querySelectorAll("#p7Section .p7-view").forEach(el=>{
+    el.classList.remove("active");
+  });
+
+  document.querySelectorAll("#p7Section .subnav-btn-p7").forEach(el=>{
+    el.classList.remove("active");
+  });
+
+  if(view === "rom"){
+    document.getElementById("p7RomView").classList.add("active");
+  }else if(view === "brigadas"){
+    document.getElementById("p7BrigadasView").classList.add("active");
+  }
+
+  if(btn){
+    btn.classList.add("active");
+  }
+}

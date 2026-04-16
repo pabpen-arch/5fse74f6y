@@ -1655,3 +1655,207 @@ background: linear-gradient(
   transform:scale(1.08);
   box-shadow:0 24px 50px rgba(0,0,0,0.6);
 }
+
+.convenios-section{
+  padding-top: 40px;
+}
+
+.convenios-hero{
+  margin-bottom: 30px;
+}
+
+.convenios-subtitle{
+  margin-top: 12px;
+  font-size: 16px;
+  color: #cbd5e1;
+  background: rgba(255,255,255,0.05);
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(59,130,246,0.25);
+}
+
+.convenios-kpis{
+  margin-bottom: 30px;
+}
+
+.convenios-layout{
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.convenios-panel{
+  background: linear-gradient(145deg, rgba(15,23,42,0.92), rgba(30,41,59,0.88));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  backdrop-filter: blur(10px);
+}
+
+.panel-title{
+  font-size: 24px;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 8px;
+}
+
+.panel-subtitle{
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.detalle-img-box.premium{
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+
+.detalle-persona-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  background: #f3f4f6;
+}
+
+.tabs-convenios{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tab-convenio{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
+.tab-convenio.active{
+  background: linear-gradient(90deg,#3b82f6,#22c55e);
+  color: white;
+}
+
+.convenio-tab-content{
+  display: none;
+}
+
+.convenio-tab-content.active{
+  display: block;
+  animation: fadeIn 0.35s ease;
+}
+
+.cards-mini-grid,
+.gestion-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 14px;
+}
+
+.mini-card{
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 16px;
+  color: #e2e8f0;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.mini-card:hover{
+  transform: translateY(-4px);
+  border-color: rgba(59,130,246,0.5);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+@media (max-width: 1100px){
+  .convenios-layout{
+    grid-template-columns: 1fr;
+  }
+}
+
+.subnav-p7{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:25px 0 30px 0;
+}
+
+.subnav-btn-p7{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  color:white;
+  padding:10px 18px;
+  border-radius:999px;
+  cursor:pointer;
+  transition:0.3s ease;
+  font-weight:600;
+}
+
+.subnav-btn-p7:hover{
+  transform:translateY(-2px);
+  border-color:rgba(59,130,246,0.5);
+}
+
+.subnav-btn-p7.active{
+  background:linear-gradient(90deg,#3b82f6,#22c55e);
+  color:white;
+  box-shadow:0 8px 24px rgba(59,130,246,0.35);
+}
+
+.p7-view{
+  display:none;
+}
+
+.p7-view.active{
+  display:block;
+  animation:fadeIn 0.4s ease;
+}
+
+.brigadas-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:25px;
+}
+
+.brigada-photo-card{
+  background:rgba(15,23,42,0.70);
+  border:1px solid rgba(255,255,255,0.10);
+  border-radius:22px;
+  padding:10px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.35);
+  overflow:hidden;
+  transition:0.3s ease;
+  backdrop-filter:blur(6px);
+}
+
+.brigada-photo-card:hover{
+  transform:translateY(-6px) scale(1.01);
+  box-shadow:0 20px 45px rgba(0,0,0,0.45);
+}
+
+.brigada-photo-card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  display:block;
+  border-radius:16px;
+  background:#0f172a;
+}
