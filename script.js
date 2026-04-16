@@ -400,18 +400,17 @@ fetch("data.json")
         return fecha >= new Date("2025-05-01");
       });
 
-      /* TOTAL DE LA TARJETA = COMO ESTABA ANTES (EN VALOR $) */
       const totalAcumulado = dataDesdeMayo2025.reduce((acc, d) => {
         return acc + (Number(d.valorTotal) || 0);
       }, 0);
 
-      /* % ADOPCIÓN = NUEVA FORMA AJUSTADA */
       const totalTarjeta = Number(last?.cantidadTotal ?? 0);
       const autoTarjeta = Number(last?.cantidadAutogestionado ?? 0);
 
       const adopcion = totalTarjeta > 0
         ? ((autoTarjeta / totalTarjeta) * 100).toFixed(1)
         : "0.0";
+
       const card = document.createElement("div");
       card.classList.add("card");
 
@@ -425,7 +424,6 @@ fetch("data.json")
 
       container.appendChild(card);
     });
-
     addSegurosCard();
 
   })
@@ -1914,7 +1912,7 @@ function renderChartFincoEducarPrograma() {
         },
         title: {
           display: true,
-          text: "Detalle Programa Educativo",
+          text: "Detalle Tipo Codeudor",
           color: "white",
           font: { size: 16, weight: "bold" }
         },
@@ -2631,6 +2629,7 @@ async function loadImpactData(){
 function renderImpactCard(months, totalValues, labelsPie, valuesPie){
 
   const container = document.getElementById("impactContainer");
+  if(!container) return;
 
   container.innerHTML = `
     <div class="product-card" onclick="openImpactModal()">
@@ -2765,6 +2764,8 @@ async function loadBrigadasData(){
 function renderBrigadasCard(){
 
   const container = document.getElementById("impactContainer");
+  if(!container) return;
+  if(!brigadasData) return;
 
   const card = document.createElement("div");
   card.classList.add("product-card");
@@ -3714,9 +3715,17 @@ const dataFuerzaDirecta = [
 
 let metricaActualValentina = "creditos";
 
+const titulosMetricasValentina = {
+  creditos: "Top Ejecutivos por Créditos",
+  paps: "Top Ejecutivos por PAPS",
+  vinculaciones: "Top Ejecutivos por Vinculaciones",
+  brigadas: "Top Ejecutivos por Brigadas",
+  costo: "Top Ejecutivos por Costo"
+};
+
 function cambiarMetricaValentina(metrica) {
   metricaActualValentina = metrica;
-  renderRankingValentina();
+  actualizarRankingValentina();
 }
 
 const dataTablaBrigadas = [
@@ -3807,6 +3816,12 @@ function renderGraficasValentina() {
   renderRankingValentina();
 }
 
+function obtenerDataOrdenadaValentina() {
+  return [...dataFuerzaDirecta].sort((a, b) => {
+    return (Number(b[metricaActualValentina]) || 0) - (Number(a[metricaActualValentina]) || 0);
+  });
+}
+
 function renderRankingValentina() {
   const canvasRanking = document.getElementById("chartPorcentajesValentina");
 
@@ -3820,25 +3835,16 @@ function renderRankingValentina() {
     chartPorcentajesValentinaInst = null;
   }
 
-  const dataOrdenada = [...dataFuerzaDirecta].sort((a, b) => b[metricaActualValentina] - a[metricaActualValentina]);
-
+  const dataOrdenada = obtenerDataOrdenadaValentina();
   const labels = dataOrdenada.map(d => d.nombre);
-  const valores = dataOrdenada.map(d => d[metricaActualValentina]);
-
-  const titulos = {
-    creditos: "Top Ejecutivos por Créditos",
-    paps: "Top Ejecutivos por PAPS",
-    vinculaciones: "Top Ejecutivos por Vinculaciones",
-    brigadas: "Top Ejecutivos por Brigadas",
-    costo: "Top Ejecutivos por Costo"
-  };
+  const valores = dataOrdenada.map(d => Number(d[metricaActualValentina]) || 0);
 
   chartPorcentajesValentinaInst = new Chart(canvasRanking, {
     type: "bar",
     data: {
       labels: labels,
       datasets: [{
-        label: titulos[metricaActualValentina],
+        label: titulosMetricasValentina[metricaActualValentina],
         data: valores,
         backgroundColor: "#3b82f6",
         borderRadius: 8
@@ -3854,7 +3860,7 @@ function renderRankingValentina() {
         },
         title: {
           display: true,
-          text: titulos[metricaActualValentina],
+          text: titulosMetricasValentina[metricaActualValentina],
           color: "white",
           font: {
             size: 16,
@@ -3899,7 +3905,24 @@ function renderRankingValentina() {
         }
       }
     }
-});
+  });
+}
+
+function actualizarRankingValentina() {
+  if (!chartPorcentajesValentinaInst) {
+    renderRankingValentina();
+    return;
+  }
+
+  const dataOrdenada = obtenerDataOrdenadaValentina();
+  const labels = dataOrdenada.map(d => d.nombre);
+  const valores = dataOrdenada.map(d => Number(d[metricaActualValentina]) || 0);
+
+  chartPorcentajesValentinaInst.data.labels = labels;
+  chartPorcentajesValentinaInst.data.datasets[0].label = titulosMetricasValentina[metricaActualValentina];
+  chartPorcentajesValentinaInst.data.datasets[0].data = valores;
+  chartPorcentajesValentinaInst.options.plugins.title.text = titulosMetricasValentina[metricaActualValentina];
+  chartPorcentajesValentinaInst.update();
 }
 
 function renderMapaValentina() {
@@ -4945,16 +4968,11 @@ const fincoEducarSocioData = {
 
   programa: {
     labels: [
-      "Pregrado",
-      "Posgrado/Especialización",
-      "Diplomado",
-      "Curso de Idiomas",
-      "Pregrado matrícula > 10.000.000",
-      "Programas en el exterior",
-      "Colegios"
+      "Con Codeudor",
+      "Sin Codeudor"
     ],
-    cantidades: [9029, 2828, 315, 236, 224, 55, 16],
-    porcentajes: [71.08, 22.26, 2.48, 1.86, 1.76, 0.43, 0.13]
+    cantidades: [12136, 13416],
+    porcentajes: [47.5, 52.5]
   },
 
   universidades: [
