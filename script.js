@@ -293,6 +293,77 @@ function renderTablaResumenCanalesValentina(){
   tbody.appendChild(trTotal);
 }
 
+
+const ajustesProductosCantidades = {
+  cdats: {
+    "2025-05": 420,
+    "2025-06": 388,
+    "2025-07": 537,
+    "2025-08": 421,
+    "2025-09": 375,
+    "2025-10": 373,
+    "2025-11": 260,
+    "2025-12": 395,
+    "2026-01": 482,
+    "2026-02": 447,
+    "2026-03": 414,
+    "2026-04": 131
+  },
+
+  paps: {
+    "2025-05": 1628,
+    "2025-06": 1289,
+    "2025-07": 1849,
+    "2025-08": 1406,
+    "2025-09": 1498,
+    "2025-10": 1326,
+    "2025-11": 1035,
+    "2025-12": 1047,
+    "2026-01": 2206,
+    "2026-02": 1964,
+    "2026-03": 2346,
+    "2026-04": 530
+  },
+
+  fincogo: {
+    "2025-05": 178,
+    "2025-06": 149,
+    "2025-07": 1261,
+    "2025-08": 636,
+    "2025-09": 963,
+    "2025-10": 285,
+    "2025-11": 1676,
+    "2025-12": 1281,
+    "2026-01": 14,
+    "2026-02": 29,
+    "2026-03": 504,
+    "2026-04": 122
+  }
+};
+
+function obtenerClaveAjusteProducto(nombreProducto){
+  const name = (nombreProducto || "").toLowerCase();
+
+  if(name.includes("cdat")) return "cdats";
+
+  if(
+    name.includes("pap") &&
+    !name.includes("whatsapp") &&
+    !name.includes("brigadas")
+  ){
+    return "paps";
+  }
+
+  if(
+    name.includes("finco go") ||
+    name.includes("fincogo")
+  ){
+    return "fincogo";
+  }
+
+  return null;
+}
+
 /* ================= STATUS PRODUCTOS ================= */
 // 🔹 1. CARGAR PRODUCTOS (data.json)
 fetch("data.json")
@@ -304,6 +375,24 @@ fetch("data.json")
 
     data.products.forEach(product => {
 
+      const claveAjuste = obtenerClaveAjusteProducto(product.name);
+
+      if(claveAjuste){
+        const ajustesMes = ajustesProductosCantidades[claveAjuste] || {};
+
+        product.monthlyData = product.monthlyData.map(d => {
+          const mesKey = d.mes.substring(0,7);
+          const ajuste = ajustesMes[mesKey] || 0;
+          const cantidadOriginal = Number(d.cantidadTotal) || 0;
+
+          return {
+            ...d,
+            cantidadTotalOriginal: cantidadOriginal,
+            cantidadTotal: cantidadOriginal + ajuste
+          };
+        });
+      }
+
       const last = product.monthlyData.at(-1);
 
       const dataDesdeMayo2025 = product.monthlyData.filter(d => {
@@ -311,14 +400,18 @@ fetch("data.json")
         return fecha >= new Date("2025-05-01");
       });
 
+      /* TOTAL DE LA TARJETA = COMO ESTABA ANTES (EN VALOR $) */
       const totalAcumulado = dataDesdeMayo2025.reduce((acc, d) => {
         return acc + (Number(d.valorTotal) || 0);
       }, 0);
 
-      const adopcion = last && last.valorTotal > 0
-        ? ((last.valorAutogestionado / last.valorTotal) * 100).toFixed(1)
-        : "0.0";
+      /* % ADOPCIÓN = NUEVA FORMA AJUSTADA */
+      const totalTarjeta = Number(last?.cantidadTotal ?? 0);
+      const autoTarjeta = Number(last?.cantidadAutogestionado ?? 0);
 
+      const adopcion = totalTarjeta > 0
+        ? ((autoTarjeta / totalTarjeta) * 100).toFixed(1)
+        : "0.0";
       const card = document.createElement("div");
       card.classList.add("card");
 
@@ -331,7 +424,6 @@ fetch("data.json")
       card.onclick = () => openModal(product);
 
       container.appendChild(card);
-
     });
 
     addSegurosCard();
@@ -359,16 +451,24 @@ Promise.all([
   };
 
   const container = document.getElementById("productsContainer");
-  const last = baseInstalada.at(-1);
+const first = baseInstalada[0];
+const last = baseInstalada.at(-1);
 
-  const card = document.createElement("div");
-  card.classList.add("card");
+const valorInicialAPP = Number(first?.Colombia?.valor || 0);
+const valorActualAPP = Number(last?.Colombia?.valor || 0);
 
-  card.innerHTML = `
-    <h3>APP</h3>
-    <p><strong>Usuarios:</strong> ${Math.round(Number(last.Colombia.valor)).toLocaleString("es-CO")}</p>
-    <p><strong>Variación:</strong> ${last.Colombia.variacion}%</p>
-  `;
+const variacionAPP = valorInicialAPP > 0
+  ? (((valorActualAPP - valorInicialAPP) / valorInicialAPP) * 100).toFixed(1)
+  : "0.0";
+
+const card = document.createElement("div");
+card.classList.add("card");
+
+card.innerHTML = `
+  <h3>APP</h3>
+  <p><strong>Usuarios:</strong> ${Math.round(valorActualAPP).toLocaleString("es-CO")}</p>
+  <p><strong>Variación:</strong> ${variacionAPP}%</p>
+`;
 
   card.onclick = () => openAppModal();
 
@@ -2794,6 +2894,9 @@ loadBrigadasData();
 
 function openAppModal(){
 
+  currentProductData = null;
+  resetModalToDefault();
+
   document.getElementById("benchmarkInlineContainer").innerHTML = "";
 
   document.querySelectorAll("#metrics button").forEach(btn=>{
@@ -2857,7 +2960,38 @@ function renderAppMetricSummary(metricKey){
 
   let titulo = "";
   let valorTexto = "";
-  let variacionTexto = `${last.Colombia?.variacion ?? last.iOS?.variacion ?? 0}%`;
+let variacionTexto = "0.0%";
+
+if(metricKey === "base_instalada" || metricKey === "usuarios_recurrentes"){
+  const first = data[0];
+  const valorInicial = Number(first?.Colombia?.valor || 0);
+  const valorActual = Number(last?.Colombia?.valor || 0);
+
+  variacionTexto = valorInicial > 0
+    ? `${(((valorActual - valorInicial) / valorInicial) * 100).toFixed(1)}%`
+    : "0.0%";
+}
+
+if(metricKey === "dispositivos_ios"){
+  const first = data[0];
+  const valorInicial = Number(first?.iOS?.valor || 0);
+  const valorActual = Number(last?.iOS?.valor || 0);
+
+  variacionTexto = valorInicial > 0
+    ? `${(((valorActual - valorInicial) / valorInicial) * 100).toFixed(1)}%`
+    : "0.0%";
+}
+
+if(metricKey === "valoracion_google_play"){
+  const first = data[0];
+  const valorInicial = Number(first?.Colombia?.valor || 0);
+  const valorActual = Number(last?.Colombia?.valor || 0);
+
+  variacionTexto = valorInicial > 0
+    ? `${(((valorActual - valorInicial) / valorInicial) * 100).toFixed(1)}%`
+    : "0.0%";
+}
+
   let descripcion = "";
 
   if(metricKey === "base_instalada"){
@@ -4901,9 +5035,60 @@ function showP7View(view, btn){
     document.getElementById("p7RomView").classList.add("active");
   }else if(view === "brigadas"){
     document.getElementById("p7BrigadasView").classList.add("active");
+    setTimeout(() => {
+      updateBrigadasCarousel();
+    }, 50);
   }
 
   if(btn){
     btn.classList.add("active");
   }
 }
+
+
+let brigadasImages = [
+  "brigada_1.jpeg",
+  "brigada_2.jpeg",
+  "brigada_3.jpeg",
+  "brigada_4.jpeg",
+  "brigada_5.jpeg",
+  "brigada_6.jpeg",
+  "brigada_7.jpeg",
+  "brigada_8.jpeg",
+  "brigada_9.jpeg"
+];
+
+let brigadasCurrentIndex = 0;
+
+function updateBrigadasCarousel(){
+  const mainImage = document.getElementById("brigadasMainImage");
+  const thumbs = document.querySelectorAll(".brigadas-thumb");
+
+  if(!mainImage) return;
+
+  mainImage.src = brigadasImages[brigadasCurrentIndex];
+
+  thumbs.forEach((thumb, index) => {
+    thumb.classList.toggle("active", index === brigadasCurrentIndex);
+  });
+}
+
+function moveBrigadasSlide(step){
+  brigadasCurrentIndex += step;
+
+  if(brigadasCurrentIndex < 0){
+    brigadasCurrentIndex = brigadasImages.length - 1;
+  }
+
+  if(brigadasCurrentIndex >= brigadasImages.length){
+    brigadasCurrentIndex = 0;
+  }
+
+  updateBrigadasCarousel();
+}
+
+function setBrigadasSlide(index){
+  brigadasCurrentIndex = index;
+  updateBrigadasCarousel();
+}
+

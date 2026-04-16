@@ -548,16 +548,28 @@
       </div>
     </div>
 
-    <div class="brigadas-gallery">
-      <div class="brigada-photo-card"><img src="brigada_1.jpeg" alt="Foto Brigada 1"></div>
-      <div class="brigada-photo-card"><img src="brigada_2.jpeg" alt="Foto Brigada 2"></div>
-      <div class="brigada-photo-card"><img src="brigada_3.jpeg" alt="Foto Brigada 3"></div>
-      <div class="brigada-photo-card"><img src="brigada_4.jpeg" alt="Foto Brigada 4"></div>
-      <div class="brigada-photo-card"><img src="brigada_5.jpeg" alt="Foto Brigada 5"></div>
-      <div class="brigada-photo-card"><img src="brigada_6.jpeg" alt="Foto Brigada 6"></div>
-      <div class="brigada-photo-card"><img src="brigada_7.jpeg" alt="Foto Brigada 7"></div>
-      <div class="brigada-photo-card"><img src="brigada_8.jpeg" alt="Foto Brigada 8"></div>
-      <div class="brigada-photo-card"><img src="brigada_9.jpeg" alt="Foto Brigada 9"></div>
+    <div class="brigadas-carousel">
+
+      <button class="brigadas-nav brigadas-prev" onclick="moveBrigadasSlide(-1)">&#10094;</button>
+
+      <div class="brigadas-main-frame">
+        <img id="brigadasMainImage" src="brigada_1.jpg" alt="Foto Brigada Principal">
+      </div>
+
+      <button class="brigadas-nav brigadas-next" onclick="moveBrigadasSlide(1)">&#10095;</button>
+
+    </div>
+
+    <div class="brigadas-thumbs">
+      <img src="brigada_1.jpeg" alt="Foto Brigada 1" class="brigadas-thumb active" onclick="setBrigadasSlide(0)">
+      <img src="brigada_2.jpeg" alt="Foto Brigada 2" class="brigadas-thumb" onclick="setBrigadasSlide(1)">
+      <img src="brigada_3.jpeg" alt="Foto Brigada 3" class="brigadas-thumb" onclick="setBrigadasSlide(2)">
+      <img src="brigada_4.jpeg" alt="Foto Brigada 4" class="brigadas-thumb" onclick="setBrigadasSlide(3)">
+      <img src="brigada_5.jpeg" alt="Foto Brigada 5" class="brigadas-thumb" onclick="setBrigadasSlide(4)">
+      <img src="brigada_6.jpeg" alt="Foto Brigada 6" class="brigadas-thumb" onclick="setBrigadasSlide(5)">
+      <img src="brigada_7.jpeg" alt="Foto Brigada 7" class="brigadas-thumb" onclick="setBrigadasSlide(6)">
+      <img src="brigada_8.jpeg" alt="Foto Brigada 8" class="brigadas-thumb" onclick="setBrigadasSlide(7)">
+      <img src="brigada_9.jpeg" alt="Foto Brigada 9" class="brigadas-thumb" onclick="setBrigadasSlide(8)">
     </div>
 
     <div class="insight-box">
